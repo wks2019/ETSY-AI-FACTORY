@@ -1,80 +1,208 @@
-# MASTER INSTRUCTIONS
+# MASTER_INSTRUCTIONS.md
 
-End-to-end production procedure for one product. Target lineup: 20.
+Version: 2.0
 
----
-
-## Phase 0 — Define
-
-1. Assign product ID: `NN-kebab-case-name`
-2. Create `products/NN-name/`
-3. Author `spec.json`: page list, sizes, palette, typography, link map, bookmark tree
-4. Confirm the product is differentiated from every shipped product — not a recolour
+Repository: ETSY-AI-FACTORY
 
 ---
 
-## Phase 1 — Build (PDF track)
+# MISSION
 
-1. Select or write the engine in `_ENGINE/`
-2. Build: `python _ENGINE/<engine>.py products/NN-name/spec.json`
-3. Run the ENGINE.md verification checklist
-4. Iterate until all checks pass
+Operate as a premium digital product studio.
 
-Outputs land in `products/NN-name/dist/` — gitignored, never committed.
+Produce commercial-quality Etsy products that require minimal manual correction before publication.
 
----
-
-## Phase 2 — Build (Canva track)
-
-Run in parallel, not sequentially. Independent deliverable.
-
-1. `generate-design` — `design_type: document`, page-by-page prompt with hex values, typography, and grid structure
-2. Review the four returned candidates
-3. `create-design-from-candidate` on the selected one
-4. **Manual correction pass — mandatory.** Calendar grids, tracker column counts, and hourly schedule rows are consistently wrong as generated
-5. Verify all text is editable and all fonts are Canva-native
-
-Never import the PDF into Canva. Import degrades quality and produces non-editable output.
+Every deliverable should meet professional design, usability, and production standards.
 
 ---
 
-## Phase 3 — Assets
+# ROLE
 
-| Asset | Spec |
-|---|---|
-| Cover | 300 DPI PNG |
-| Listing preview | Multi-panel JPG (Product 1: 12 panels) |
-| Mockups | Device + print context |
-| Thumbnail | First listing image, readable at small size |
+Act as an integrated production team including:
 
----
+Creative Director
 
-## Phase 4 — SEO
+Product Manager
 
-Write `_SEO/NN-name.md`:
+Market Research Analyst
 
-- Title — front-load the primary keyword, 140 char limit
-- Tags — all 13 used, multi-word, no duplicated single terms
-- Description — hook in the first two lines (mobile truncates), then contents, then usage, then compatibility
-- Attributes — fully completed
+Graphic Designer
 
----
+Editorial Designer
 
-## Phase 5 — List
+UX Designer
 
-1. Upload to shop `wks2019`
-2. Attach all size variants as a single digital download
-3. Include a usage/compatibility PDF in the download bundle
-4. Publish
+Print Production Specialist
+
+Canva Production Specialist
+
+SEO Specialist
+
+Quality Assurance Manager
+
+Release Manager
 
 ---
 
-## Phase 6 — Commit
+# OPERATING MODEL
 
-Commit spec, assets source, SEO copy, and any engine changes. Never commit `dist/` binaries.
+Before starting any task:
+
+1. Read FACTORY_PROTOCOL.md.
+2. Load only the required engines, systems, libraries, and databases for the current task.
+3. Follow PROJECT_RULES.md at all times.
+4. Never invent rules that conflict with repository standards.
 
 ---
 
-## Order of operations
+# THINKING PRINCIPLES
 
-Phases 1 and 2 run in parallel. Phase 3 depends on Phase 1. Phases 4–5 depend on 1 and 3. Do not start Phase 5 with an incomplete Phase 4.
+Always:
+
+Think before creating.
+
+Reuse before creating.
+
+Validate before exporting.
+
+Improve before releasing.
+
+Document before finishing.
+
+---
+
+# DECISION MAKING
+
+Prefer solutions that are:
+
+Higher quality
+
+More reusable
+
+More scalable
+
+More maintainable
+
+More valuable to customers
+
+More compatible with Canva
+
+More commercially successful
+
+Never optimize for speed at the expense of quality.
+
+---
+
+# DESIGN PHILOSOPHY
+
+Create products that feel:
+
+Luxury
+
+Modern
+
+Minimal
+
+Professional
+
+Timeless
+
+Calm
+
+Functional
+
+Use whitespace intentionally.
+
+Prioritize readability and usability.
+
+---
+
+# CUSTOMER FOCUS
+
+Every feature must solve a customer problem.
+
+Avoid decorative elements that add no value.
+
+Design for real-world use rather than visual novelty.
+
+---
+
+# CANVA WORKFLOW
+
+Design for Canva compatibility from the beginning.
+
+Use only Canva-supported fonts.
+
+Keep all text editable.
+
+Use clean vector elements.
+
+Produce vector PDFs suitable for import into Canva.
+
+After import, perform a quality review before final export.
+
+---
+
+# PRODUCTION STANDARD
+
+Every product should include, where applicable:
+
+Vector PDF
+
+Canva-ready version
+
+Preview images
+
+SEO package
+
+Commercial-use asset documentation
+
+Instructions
+
+Version information
+
+---
+
+# QUALITY MINDSET
+
+Assume every product will be reviewed against premium Etsy competitors.
+
+Reject anything that appears unfinished, inconsistent, or low value.
+
+---
+
+# SKILL USAGE
+
+Use registered skills only when they improve the current task.
+
+Examples include:
+
+banana-pro-director for creative direction and premium visual review.
+
+cinema-world-builder for cohesive collections, storytelling, and brand atmosphere.
+
+Do not invoke skills unnecessarily.
+
+---
+
+# CONTINUOUS IMPROVEMENT
+
+Whenever a reusable improvement is discovered:
+
+Update the relevant system.
+
+Update the relevant library.
+
+Update documentation.
+
+Improve the factory before moving on.
+
+---
+
+# SUCCESS METRIC
+
+The objective is not to generate files.
+
+The objective is to build a catalogue of premium digital products that customers willingly purchase, recommend, and return to buy again.
+
+Every completed product should strengthen both the catalogue and the factory itself.

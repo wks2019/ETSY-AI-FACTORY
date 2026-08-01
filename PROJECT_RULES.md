@@ -1,86 +1,268 @@
-# PROJECT RULES
+# PROJECT_RULES.md
 
-Binding constraints. Applies to every product and every commit.
+Version: 2.0
 
----
-
-## 1. Pipeline over one-offs
-
-Every product is produced by a reusable engine driven by a spec. If a task cannot be expressed as a spec, fix the engine — do not hand-build the artefact.
-
-Saving a generator as a reusable engine file measurably reduces cost on subsequent products. This pattern is repeated for each new product type.
+Repository: ETSY-AI-FACTORY
 
 ---
 
-## 2. Repository
+# 1. PURPOSE
 
-| Rule | Detail |
-|---|---|
-| Source of truth | `wks2019/ETSY-AI-FACTORY` (private) |
-| Binaries | Never committed. `dist/`, PDF, PNG, JPG are gitignored |
-| Secrets | Never committed, never pasted into chat |
-| Structure | `_ENGINE/`, `_SCHEMA/`, `products/`, `_SEO/`, `_CANVA/`, `docs/` |
+The ETSY-AI-FACTORY exists to create premium commercial digital products suitable for immediate sale on Etsy and other digital marketplaces.
+
+The factory is designed for consistency, scalability, quality, and continuous improvement.
 
 ---
 
-## 3. Naming
+# 2. SINGLE SOURCE OF TRUTH
 
-| Item | Convention |
-|---|---|
-| Product directory | `NN-kebab-case-name` |
-| Engine file | `<type>_engine.py` |
-| SEO file | `_SEO/NN-kebab-case-name.md` |
-| Commit message | Conventional commits — `feat:`, `fix:`, `chore:`, `docs:` |
+This repository is the authoritative source for all production standards.
 
----
+No rule may exist outside the repository.
 
-## 4. Licensing
-
-- Fonts must be OFL, Apache-2.0, or explicitly commercially licensed. Current set: Cormorant Garamond, Inter.
-- No stock asset ships without a verified commercial licence.
-- No copyrighted character, brand, or quotation in any product or listing image.
+If a reusable rule is discovered during production, it must be added to the appropriate system or library.
 
 ---
 
-## 5. Quality gates
+# 3. RULE PRECEDENCE
 
-A product does not ship until:
+When two instructions conflict, resolve them in this order:
 
-- All four sizes render clean
-- Every internal link resolves
-- Bookmark tree is complete
-- Fonts are embedded, no substitution
-- SEO package is complete — all 13 tags, full description, full attributes
-- Mockups exist
+1. PROJECT_RULES.md
+2. FACTORY_PROTOCOL.md
+3. ENGINE.md
+4. Domain Engines
+5. Systems
+6. Libraries
+7. Databases
+8. Product Files
 
-No partial listings.
-
----
-
-## 6. Canva
-
-- PDF import is prohibited. Native build only.
-- AI generation is a style and structure approximation, never a final deliverable.
-- Grids, tracker columns, and schedule rows always get a manual correction pass.
+Higher-ranked documents always take precedence.
 
 ---
 
-## 7. Scope discipline
+# 4. PRODUCT STANDARD
 
-- Simplest working solution first.
-- No abstraction without a second real consumer.
-- No dependency without a concrete need.
-- No refactor of a shipped product's engine without a stated reason.
+Every product must be:
+
+Commercial quality
+
+Professionally designed
+
+Easy to use
+
+Easy to print
+
+Easy to edit
+
+Consistent with the brand
+
+Ready for immediate sale
+
+No placeholders.
+
+No unfinished work.
 
 ---
 
-## 8. Differentiation
+# 5. DESIGN STANDARD
 
-Each of the 20 products must stand alone as a distinct offering. Palette swaps and cover changes do not constitute a new product.
+Every design must be:
+
+Luxury
+
+Minimal
+
+Modern
+
+Timeless
+
+Editorial
+
+Balanced
+
+Readable
+
+Whitespace-driven
+
+No clutter.
+
+No decorative elements without purpose.
 
 ---
 
-## 9. Credentials
+# 6. PDF & CANVA STANDARD
 
-- GitHub access is via the Claude Github MCP Connector GitHub App, scoped to this repository.
-- Personal Access Tokens are never pasted into chat. If one is exposed, revoke immediately at `github.com/settings/tokens`.
+The official production workflow is:
+
+Design
+
+↓
+
+Vector PDF
+
+↓
+
+Import into Canva
+
+↓
+
+Quality Review
+
+↓
+
+Minor refinement if required
+
+↓
+
+Save Canva Template
+
+↓
+
+Export final customer deliverables
+
+Rules:
+
+Use Canva-supported fonts only.
+
+Export vector PDFs.
+
+Keep text editable.
+
+Avoid rasterized typography.
+
+Avoid clipping masks.
+
+Avoid unsupported transparency.
+
+Maintain editable structure.
+
+The PDF-first workflow is mandatory unless explicitly overridden for a specific product.
+
+---
+
+# 7. ASSET POLICY
+
+Only use:
+
+Original assets
+
+Commercial-use assets
+
+Open-source assets
+
+Public-domain assets
+
+Never use copyrighted material without an appropriate commercial license.
+
+---
+
+# 8. CANVA COMPATIBILITY
+
+Every product must import into Canva with minimal adjustments.
+
+Design decisions must prioritize editability over visual effects.
+
+---
+
+# 9. REUSABILITY
+
+Before creating anything new:
+
+Search existing systems.
+
+Search libraries.
+
+Reuse existing components whenever possible.
+
+Only create new assets when no suitable reusable asset exists.
+
+Every reusable asset must be documented.
+
+---
+
+# 10. QUALITY
+
+A product is complete only when it passes the Quality Engine.
+
+Products below the required quality threshold must not be released.
+
+---
+
+# 11. SEO
+
+Every product must include:
+
+SEO Title
+
+Optimized Description
+
+13 Etsy Tags
+
+Keywords
+
+Bundle Suggestions
+
+Cross-Sell Suggestions
+
+---
+
+# 12. DOCUMENTATION
+
+Whenever reusable knowledge is created:
+
+Update the relevant system.
+
+Update the relevant library.
+
+Update documentation.
+
+Never rely on memory.
+
+---
+
+# 13. CONTINUOUS IMPROVEMENT
+
+Every completed product must improve the factory.
+
+Reusable discoveries become permanent repository knowledge.
+
+The same mistake should never occur twice.
+
+---
+
+# 14. PRODUCT-FIRST PRINCIPLE
+
+The purpose of this repository is to produce sellable products.
+
+Architecture exists to support production.
+
+Do not redesign the factory without evidence from real production.
+
+Ship products.
+
+Learn.
+
+Improve.
+
+Repeat.
+
+---
+
+# 15. FINAL RULE
+
+Every decision must increase one or more of:
+
+Customer value
+
+Product quality
+
+Brand consistency
+
+Automation
+
+Scalability
+
+Commercial success
+
+If a decision improves none of these, reject it.
