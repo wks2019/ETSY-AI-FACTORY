@@ -1,6 +1,6 @@
 # ETSY AI FACTORY ENGINE
 
-Version: 1.0
+Version: 1.1
 
 ## PURPOSE
 
@@ -28,37 +28,22 @@ Never sacrifice quality for speed.
 
 ---
 
-# STARTUP SEQUENCE
+# STARTUP
 
-Before performing any task:
+Loading is governed by `FACTORY_PROTOCOL.md`. This file no longer lists resources.
 
-1. Read README.md
-2. Read MASTER_INSTRUCTIONS.md
-3. Read PROJECT_RULES.md
-4. Read DESIGN_SYSTEM.md
-5. Read BRAND_SYSTEM.md
-6. Read COLOR_SYSTEM.md
-7. Read TYPOGRAPHY_SYSTEM.md
-8. Read PAGE_LIBRARY.md
-9. Read LAYOUT_LIBRARY.md
-10. Read COMPONENT_LIBRARY.md
-11. Read ICON_LIBRARY.md
-12. Read ILLUSTRATION_SYSTEM.md
-13. Read PRINT_STANDARDS.md
-14. Read CANVA_STANDARDS.md
-15. Read PDF_EXPORT_RULES.md
-16. Read SEO_SYSTEM.md
-17. Read ETSY_OPTIMIZATION.md
-18. Read MARKET_RESEARCH.md
-19. Read NICHE_DATABASE.md
-20. Read KEYWORD_DATABASE.md
-21. Read PRODUCT_PIPELINE.md
-22. Read QUALITY_CONTROL.md
-23. Read CHECKLIST.md
-24. Read PROMPT_LIBRARY.md
-25. Read WORKFLOW.md
+1. Read `FACTORY_PROTOCOL.md`
+2. Read `PROJECT_RULES.md`
+3. Read `SKILL_REGISTRY.md`
+4. Identify the task type
+5. Look up required resources in the Task Routing table
+6. Load only those engines, systems, and libraries — whole files
+7. Query databases. Never load them whole
+8. Run the integrity check. Report any missing file
+9. Resolve conflicts by the precedence hierarchy. Log every conflict
+10. Begin production
 
-Never skip this sequence.
+Adding an engine, system, or library requires no edit to this file.
 
 ---
 
@@ -139,6 +124,8 @@ Quality Audit
 ↓
 
 Ready For Sale
+
+Stage detail lives in `engines/AUTOMATION_ENGINE.md`.
 
 ---
 
@@ -327,6 +314,8 @@ Before completion verify:
 ✓ File naming
 
 If any item fails, fix it before continuing.
+
+Full audit and scoring in `engines/QUALITY_ENGINE.md`. Minimum release score is 95/100.
 
 ---
 
