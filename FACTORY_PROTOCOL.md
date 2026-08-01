@@ -1,10 +1,10 @@
 # FACTORY_PROTOCOL.md
 
-Version: 1.0
+Status: Active
+Version: 1.1
 Repository Schema: 2.0
-
-Repository:
-ETSY-AI-FACTORY
+Last Updated: 2026-08-01
+Owner: ETSY-AI-FACTORY
 
 ---
 
@@ -57,19 +57,23 @@ Tier 1 is discovered dynamically: list `engines/` and read what is there. Adding
 
 # PRECEDENCE HIERARCHY
 
-When two files conflict, the higher rank wins. Conflicts resolve upward, never sideways.
+The canonical hierarchy is defined in `PROJECT_RULES.md` §3. It is reproduced here for routing convenience only. If the two ever differ, `PROJECT_RULES.md` prevails.
 
-```
-1. PROJECT_RULES.md          — hard constraints, licensing, non-negotiables
-2. FACTORY_PROTOCOL.md       — loading and precedence
-3. engines/DECISION_ENGINE   — how to choose
-4. engines/QUALITY_ENGINE    — release authority, can veto
-5. engines/ENGINE            — master coordination
-6. Domain engines            — RESEARCH, DESIGN, AUTOMATION
-7. systems/                  — brand, colour, typography, print, Canva, SEO
-8. libraries/                — pages, layouts, components, icons
-9. databases/                — evidence, never authority
-```
+| Rank | Authority | Role |
+|---|---|---|
+| 1 | `PROJECT_RULES.md` | Constitution of the factory |
+| 2 | `FACTORY_PROTOCOL.md` | Routing, loading, integrity, conflict resolution |
+| 3 | `engines/QUALITY_ENGINE.md` | Final release authority. Holds veto |
+| 4 | `engines/DECISION_ENGINE.md` | Determines choices before production |
+| 5 | `ENGINE.md` | Coordinates execution |
+| 6 | Domain engines | Design, Research, Automation, and any future engine |
+| 7 | `systems/` | Brand, typography, colour, print, Canva, SEO |
+| 8 | `libraries/` | Components, layouts, icons, pages, prompts |
+| 9 | `databases/` | Search-only factual information |
+
+**Authority flows downward only. Lower-ranked documents may extend higher-ranked rules but must never contradict them. If a conflict exists, the higher-ranked document always prevails without exception.**
+
+A failed quality audit cannot be overridden by any document ranked 4 or lower.
 
 Two files of equal rank must not contradict each other. If they do, that is a defect — log it, do not silently pick one.
 
@@ -107,8 +111,8 @@ README.md
 FACTORY_PROTOCOL.md
 ENGINE.md
 PROJECT_RULES.md
-SKILL_REGISTRY.md
 MASTER_INSTRUCTIONS.md
+SKILL_REGISTRY.md
 VERSION.md
 CHANGELOG.md
 ROADMAP.md
@@ -129,6 +133,8 @@ docs/
 ```
 
 If a required file is missing: **report the gap explicitly and proceed without it.** Never substitute an assumption for a missing rule file.
+
+Known gaps at Schema 2.0: `CHANGELOG.md`, `ROADMAP.md`, and all contents of `systems/`, `libraries/`, `databases/`.
 
 ---
 
@@ -176,6 +182,21 @@ Skills are resolved through `SKILL_REGISTRY.md`, never invoked from an engine's 
 
 ---
 
+# FILE HEADERS
+
+Every major document carries:
+
+```
+Status: Draft | Active | Deprecated
+Version: X.Y
+Last Updated: YYYY-MM-DD
+Owner: ETSY-AI-FACTORY
+```
+
+Apply on next edit. Do not rewrite a file solely to add a header — the cost exceeds the benefit.
+
+---
+
 # EXTENSION RULES
 
 | Change | Required edit |
@@ -184,7 +205,7 @@ Skills are resolved through `SKILL_REGISTRY.md`, never invoked from an engine's 
 | New system or library | Add a row to Task Routing |
 | New database | Add to Integrity Check. Never to a load tier |
 | New skill | `SKILL_REGISTRY.md` only |
-| New precedence rank | This file |
+| New precedence rank | `PROJECT_RULES.md` §3, then mirror here |
 
 If a change requires editing three files, the architecture is wrong. Fix the architecture.
 
@@ -202,6 +223,14 @@ Revisit when both are true:
 - A retrieval layer is actually reachable from the working environment (MCP server, local vector store, or equivalent)
 
 Until both hold, an index would be unreachable and would add a component with no consumer.
+
+---
+
+# ARCHITECTURE FREEZE
+
+Schema 2.0 is complete. Per `PROJECT_RULES.md` §14, no further structural change without evidence from real production.
+
+The next change to this file should be caused by a problem encountered while building a product — not by a better idea.
 
 ---
 

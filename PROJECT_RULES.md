@@ -1,8 +1,9 @@
 # PROJECT_RULES.md
 
-Version: 2.0
-
-Repository: ETSY-AI-FACTORY
+Status: Active
+Version: 2.1
+Last Updated: 2026-08-01
+Owner: ETSY-AI-FACTORY
 
 ---
 
@@ -26,18 +27,25 @@ If a reusable rule is discovered during production, it must be added to the appr
 
 # 3. RULE PRECEDENCE
 
-When two instructions conflict, resolve them in this order:
+This is the canonical authority hierarchy for the entire factory. Every other document defers to it.
 
-1. PROJECT_RULES.md
-2. FACTORY_PROTOCOL.md
-3. ENGINE.md
-4. Domain Engines
-5. Systems
-6. Libraries
-7. Databases
-8. Product Files
+| Rank | Authority | Role |
+|---|---|---|
+| 1 | `PROJECT_RULES.md` | Constitution of the factory |
+| 2 | `FACTORY_PROTOCOL.md` | Routing, loading, integrity, conflict resolution |
+| 3 | `engines/QUALITY_ENGINE.md` | Final release authority. Holds veto |
+| 4 | `engines/DECISION_ENGINE.md` | Determines choices before production |
+| 5 | `ENGINE.md` | Coordinates execution |
+| 6 | Domain engines | Design, Research, Automation, and any future engine |
+| 7 | `systems/` | Brand, typography, colour, print, Canva, SEO |
+| 8 | `libraries/` | Components, layouts, icons, pages, prompts |
+| 9 | `databases/` | Search-only factual information |
 
-Higher-ranked documents always take precedence.
+**Authority flows downward only. Lower-ranked documents may extend higher-ranked rules but must never contradict them. If a conflict exists, the higher-ranked document always prevails without exception.**
+
+A failed quality audit cannot be overridden by any document ranked 4 or lower.
+
+Databases are evidence, never authority.
 
 ---
 
@@ -249,7 +257,22 @@ Repeat.
 
 ---
 
-# 15. FINAL RULE
+# 15. FILE STATUS HEADERS
+
+Every major document carries a header:
+
+```
+Status: Draft | Active | Deprecated
+Version: X.Y
+Last Updated: YYYY-MM-DD
+Owner: ETSY-AI-FACTORY
+```
+
+Apply the header when a file is next edited. Do not rewrite files solely to add one.
+
+---
+
+# 16. FINAL RULE
 
 Every decision must increase one or more of:
 
