@@ -1,0 +1,24 @@
+# Build output
+dist/
+build/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
