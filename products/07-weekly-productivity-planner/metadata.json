@@ -1,0 +1,50 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Weekly Productivity Planner",
+    "slug": "weekly-productivity-planner",
+    "subtitle": "Thirteen Weeks · Planned, Run, Reviewed",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "006",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 112,
+    "sizes": 4,
+    "internal_links": 4138
+  },
+  "positioning": {
+    "unit_of_planning": "the week",
+    "scope": "whole life — work, health, food, money",
+    "cycles_included": 13,
+    "one_line": "A quarter of weeks in one file, with the weekly review that makes them add up."
+  },
+  "audience": {
+    "primary": ["Professionals", "Entrepreneurs", "Managers", "Freelancers", "Consultants", "Business owners", "Students"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "Thirteen full weekly cycles, not one repeated spread",
+    "Five distinct weekly review pages",
+    "Hour-by-day weekly calendar grid",
+    "Time allocation planned against actual hours",
+    "Health, water, exercise and meal tracking at weekly cadence",
+    "A stated weekly ritual with timings",
+    "Four sizes, verified page and link parity",
+    "Undated — reusable indefinitely"
+  ],
+  "differs_from": {
+    "001-business-productivity-planner": "Weekly is one section there; the unit here",
+    "002-ceo-planner": "Executive scope and quarterly rhythm",
+    "003-project-planner": "Bound to one project",
+    "005-goal-planner": "The goal is the unit; the week only serves it",
+    "007-daily-productivity-planner": "The day is the unit",
+    "008-time-blocking-planner": "The calendar slot is the unit"
+  },
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended"
+  }
+}

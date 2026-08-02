@@ -1,0 +1,45 @@
+{
+  "$comment": "Preview and listing asset manifest. Generated assets live in dist/ and are gitignored.",
+  "product": "Weekly Productivity Planner",
+  "slug": "weekly-productivity-planner",
+  "version": "1.0",
+  "generated": "2026-08-02",
+  "assets": [
+    {
+      "file": "weekly-productivity-planner-cover.png",
+      "role": "cover",
+      "format": "PNG",
+      "dpi": 300,
+      "source": "a4 page 1",
+      "listing_position": 1
+    },
+    {
+      "file": "weekly-productivity-planner-listing-preview.jpg",
+      "role": "listing preview",
+      "format": "JPEG",
+      "quality": 90,
+      "panels": 12,
+      "columns": 4,
+      "source": "a4 pages 1-12",
+      "listing_position": 2
+    }
+  ],
+  "mockups_required": [
+    { "context": "desk", "shows": "printed A4 weekly overview beside a pen", "listing_position": 3 },
+    { "context": "tablet", "shows": "weekly calendar open in an annotation app", "listing_position": 4 },
+    { "context": "flat lay", "shows": "the weekly set printed and stacked", "listing_position": 5 },
+    { "context": "detail", "shows": "habit and water trackers at full size", "listing_position": 6 },
+    { "context": "thumbnail", "shows": "cover, readable at small size", "listing_position": 7 }
+  ],
+  "mockup_rules": {
+    "honesty": "Every mockup must show the actual product. A mockup implying content the buyer will not receive is prohibited — systems/BRAND_SYSTEM.md 13",
+    "lighting": "natural, soft, single direction",
+    "props": "maximum two, both plausible",
+    "people": "hands only, no faces"
+  },
+  "status": {
+    "cover": "generated",
+    "listing_preview": "generated",
+    "mockups": "not started"
+  }
+}
