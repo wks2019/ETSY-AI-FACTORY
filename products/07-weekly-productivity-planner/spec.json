@@ -1,0 +1,235 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Weekly Productivity Planner",
+    "slug": "weekly-productivity-planner",
+    "collection": "Business Collection",
+    "subtitle": "Thirteen Weeks · Planned, Run, Reviewed",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["weekly planner", "weekly productivity planner", "undated weekly planner", "weekly review printable", "weekly habit tracker", "weekly meal planner", "hyperlinked weekly planner", "week at a glance", "weekly schedule printable", "weekly goal planner", "13 week planner", "weekly task manager", "goodnotes weekly planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Vision", "target": "vision" },
+    { "label": "Quarter", "target": "quarter" },
+    { "label": "Month", "target": "month" },
+    { "label": "Week", "target": "overview" },
+    { "label": "Tasks", "target": "task" },
+    { "label": "Track", "target": "habits" },
+    { "label": "Review", "target": "reflection" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Weekly Productivity Planner" },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for your own work and life", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "readme", "type": "readme", "layout": "prose", "title": "Read Me",
+      "subtitle": "Set up once, then run the week",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk. A5 and Half Letter suit a tablet or a bag, and print two-up on a full sheet."] },
+        { "heading": "Digital use", "ordered": true, "items": ["Open the PDF in GoodNotes, Notability, Noteshelf, Xodo or any app that imports PDFs", "Import as a document, not as an image", "Switch the app to read mode to tap links, and write mode to write", "Use the Week tab to reach the current week from anywhere", "Tap Contents in the footer to return to the index"] },
+        { "heading": "Printing", "ordered": true, "items": ["Print at 100% scale and never select fit to page", "Use 100 to 120 gsm paper for double-sided printing", "Print the weekly set once and reprint it each week — the pages are undated"] }
+      ] } },
+
+    { "id": "howto", "type": "howto", "layout": "prose", "title": "How To Use",
+      "subtitle": "The weekly cycle, in ninety minutes a week",
+      "elements": { "blocks": [
+        { "heading": "Friday — close the week, 30 minutes", "ordered": true, "items": ["Fill the Wins page before anything else", "Then Challenges, honestly", "Then Reflection — where the time actually went", "Carry unfinished tasks forward on the Next Week page"] },
+        { "heading": "Sunday — open the week, 30 minutes", "ordered": true, "items": ["Read the Quarterly Focus page, then set Top Three Goals", "Fill the Weekly Calendar with fixed commitments first", "Allocate hours before assigning tasks — the Time Allocation page comes before the Task Manager", "Set the habits, meals and exercise for the week"] },
+        { "heading": "Daily — five minutes", "paragraphs": ["Mark the trackers. That is all. The planning was done on Sunday, and the reviewing happens on Friday. A weekly system that needs daily planning is a daily system wearing the wrong label."] },
+        { "heading": "Why thirteen weeks", "paragraphs": ["Thirteen weeks is one quarter. Most weekly planners give you one weekly spread and expect you to reprint it, which means the review pages are never kept and nothing compounds. This planner contains the full cycle thirteen times, so a quarter of weeks sits in one file and the reflection pages accumulate into evidence."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Horizons above the week",
+      "elements": { "column_break": 16, "include_types": ["vision", "quarter", "month", "overview"] } },
+
+    { "id": "index-run", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Running the week",
+      "elements": { "column_break": 16, "include_types": ["priorities", "topthree", "calendar", "allocation", "task", "habits"] } },
+
+    { "id": "index-track", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Tracking and reviewing",
+      "elements": { "column_break": 16, "include_types": ["health", "water", "exercise", "meals", "finance", "wins", "challenges", "reflection", "lessons", "nextweek", "notes", "resources"] } },
+
+    { "id": "vision", "type": "vision", "layout": "panels", "title": "Annual Vision",
+      "subtitle": "Set once. Referenced every Sunday",
+      "elements": { "chips": "quarter", "panels": [
+        { "label": "What This Year Is For", "lines": 3 },
+        { "label": "Three Things That Must Happen", "lines": 4 },
+        { "label": "What A Good Week Looks Like", "lines": 4 },
+        { "label": "What I Will Not Give Time To", "lines": 3 }
+      ] } },
+
+    { "id": "quarter", "type": "quarter", "layout": "quarter",
+      "subtitle": "Thirteen weeks, one focus",
+      "repeat_labels": ["Quarter One", "Quarter Two", "Quarter Three", "Quarter Four"],
+      "elements": { "months": ["First Month", "Second Month", "Third Month"], "lines": 7, "chips": "quarter",
+        "panels": [
+          { "label": "The Focus For These Thirteen Weeks", "lines": 2 },
+          { "label": "How Many Hours A Week It Needs", "lines": 1 },
+          { "label": "What I Am Pausing", "lines": 2 }
+        ] } },
+
+    { "id": "month", "type": "month", "layout": "month", "subtitle": "Commitments and deadlines",
+      "repeat_labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "elements": { "rows": 6, "chips": "month" } },
+
+    { "id": "overview", "type": "overview", "layout": "week",
+      "subtitle": "The week at a glance",
+      "repeat_labels": ["Week One", "Week Two", "Week Three", "Week Four", "Week Five", "Week Six", "Week Seven", "Week Eight", "Week Nine", "Week Ten", "Week Eleven", "Week Twelve", "Week Thirteen"],
+      "elements": { "lines": 4, "chips": "month",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Weekend", "Carried From Last Week"] } },
+
+    { "id": "priorities", "type": "priorities", "layout": "panels",
+      "subtitle": "Set on Sunday, defended all week",
+      "repeat_labels": ["Priorities One", "Priorities Two", "Priorities Three", "Priorities Four", "Priorities Five", "Priorities Six"],
+      "elements": { "chips": "overview", "panels": [
+        { "label": "Must Happen This Week", "lines": 4 },
+        { "label": "Should Happen If There Is Room", "lines": 4 },
+        { "label": "Deliberately Not This Week", "lines": 3 },
+        { "label": "Waiting On Someone Else", "lines": 3 }
+      ] } },
+
+    { "id": "topthree", "type": "topthree", "layout": "panels",
+      "subtitle": "If only three things get done, these are they",
+      "repeat_labels": ["Top Three One", "Top Three Two", "Top Three Three", "Top Three Four"],
+      "elements": { "chips": "priorities", "panels": [
+        { "label": "One", "lines": 3 },
+        { "label": "Two", "lines": 3 },
+        { "label": "Three", "lines": 3 },
+        { "label": "The Hours These Actually Need", "lines": 2 },
+        { "label": "When In The Week They Happen", "lines": 3 }
+      ] } },
+
+    { "id": "calendar", "type": "calendar", "layout": "record",
+      "subtitle": "Fixed commitments first, every week",
+      "repeat_labels": ["Calendar One", "Calendar Two", "Calendar Three", "Calendar Four", "Calendar Five", "Calendar Six"],
+      "elements": { "rows": 13, "chips": "overview",
+        "columns": ["Time", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] } },
+
+    { "id": "allocation", "type": "allocation", "layout": "record",
+      "subtitle": "Hours are the budget. Spend them before the week does",
+      "repeat_labels": ["Time Allocation One", "Time Allocation Two", "Time Allocation Three", "Time Allocation Four"],
+      "elements": { "rows": 13, "chips": "calendar",
+        "columns": ["Category", { "label": "Planned Hours", "numeric": true }, { "label": "Actual Hours", "numeric": true }, { "label": "Difference", "numeric": true }, "Worth It"] } },
+
+    { "id": "task", "type": "task", "layout": "record",
+      "subtitle": "Assigned to a day, or it does not happen",
+      "repeat_labels": ["Task Manager One", "Task Manager Two", "Task Manager Three", "Task Manager Four", "Task Manager Five", "Task Manager Six"],
+      "elements": { "rows": 16, "chips": "priorities",
+        "columns": ["Task", "For Which Priority", "Day", { "label": "Est Hours", "numeric": true }, "Blocked By", "Done"] } },
+
+    { "id": "habits", "type": "habits", "layout": "tracker",
+      "subtitle": "Seven days, marked daily",
+      "repeat_labels": ["Habits One", "Habits Two", "Habits Three", "Habits Four", "Habits Five", "Habits Six"],
+      "elements": { "columns": 7, "chips": "overview",
+        "items": ["Planned the day", "Deep work done", "Inbox closed", "Moved my body", "Ate properly", "Read or studied", "Off screens by nine", "Slept seven hours", "Said no once", "Reviewed the day"] } },
+
+    { "id": "health", "type": "health", "layout": "tracker",
+      "subtitle": "Energy is the input, not the reward",
+      "repeat_labels": ["Health One", "Health Two", "Health Three", "Health Four"],
+      "elements": { "columns": 7, "chips": "habits",
+        "items": ["Hours slept", "Energy on waking", "Energy at three", "Mood", "Stress", "Headache or pain", "Screen hours", "Time outdoors", "Alcohol", "Rest taken"] } },
+
+    { "id": "water", "type": "water", "layout": "tracker",
+      "subtitle": "Eight glasses, seven days",
+      "repeat_labels": ["Water One", "Water Two"],
+      "elements": { "columns": 7, "chips": "health",
+        "items": ["Glass one", "Glass two", "Glass three", "Glass four", "Glass five", "Glass six", "Glass seven", "Glass eight"] } },
+
+    { "id": "exercise", "type": "exercise", "layout": "record",
+      "subtitle": "What you did, and how it felt afterwards",
+      "repeat_labels": ["Exercise One", "Exercise Two", "Exercise Three", "Exercise Four"],
+      "elements": { "rows": 14, "chips": "health",
+        "columns": ["Day", "Activity", { "label": "Minutes", "numeric": true }, "Intensity", "How I Felt After", "Done"] } },
+
+    { "id": "meals", "type": "meals", "layout": "record",
+      "subtitle": "Decided on Sunday, so Wednesday is not a decision",
+      "repeat_labels": ["Meals One", "Meals Two", "Meals Three", "Meals Four", "Meals Five", "Meals Six"],
+      "elements": { "rows": 8, "chips": "overview",
+        "columns": ["Day", "Breakfast", "Lunch", "Dinner", "Snacks", "Prep Needed"] } },
+
+    { "id": "finance", "type": "finance", "layout": "ledger",
+      "subtitle": "What the week actually cost",
+      "repeat_labels": ["Finance One", "Finance Two", "Finance Three", "Finance Four"],
+      "elements": { "rows": 14, "totals": true, "chips": "month",
+        "columns": ["Day", "What On", "Category", { "label": "Amount", "numeric": true }, "Planned"] } },
+
+    { "id": "wins", "type": "wins", "layout": "panels",
+      "subtitle": "Written first, before the criticism starts",
+      "repeat_labels": ["Wins One", "Wins Two", "Wins Three"],
+      "elements": { "chips": "reflection", "panels": [
+        { "label": "Finished This Week", "lines": 5 },
+        { "label": "Progressed, Not Finished", "lines": 4 },
+        { "label": "Handled Better Than Last Time", "lines": 3 },
+        { "label": "Someone Else Deserves Credit For", "lines": 3 }
+      ] } },
+
+    { "id": "challenges", "type": "challenges", "layout": "panels",
+      "subtitle": "What went wrong, and what it cost",
+      "repeat_labels": ["Challenges One", "Challenges Two", "Challenges Three"],
+      "elements": { "chips": "reflection", "panels": [
+        { "label": "What Did Not Happen", "lines": 4 },
+        { "label": "What Interrupted The Week", "lines": 4 },
+        { "label": "What I Avoided", "lines": 3 },
+        { "label": "What This Cost In Hours", "lines": 2 }
+      ] } },
+
+    { "id": "reflection", "type": "reflection", "layout": "panels",
+      "subtitle": "Friday, thirty minutes, honest",
+      "repeat_labels": ["Reflection One", "Reflection Two", "Reflection Three", "Reflection Four", "Reflection Five", "Reflection Six"],
+      "elements": { "chips": "nextweek", "panels": [
+        { "label": "Where The Time Actually Went", "lines": 4 },
+        { "label": "Which Priority Was Really First", "lines": 3 },
+        { "label": "What I Would Repeat", "lines": 3 },
+        { "label": "What I Would Not", "lines": 3 }
+      ] } },
+
+    { "id": "lessons", "type": "lessons", "layout": "panels",
+      "subtitle": "Patterns across weeks, not one bad Tuesday",
+      "repeat_labels": ["Lessons One", "Lessons Two"],
+      "elements": { "chips": "reflection", "panels": [
+        { "label": "The Same Thing Keeps Happening", "lines": 4 },
+        { "label": "What Consistently Works", "lines": 4 },
+        { "label": "What I Consistently Overestimate", "lines": 3 },
+        { "label": "The Change I Am Making", "lines": 3 }
+      ] } },
+
+    { "id": "nextweek", "type": "nextweek", "layout": "panels",
+      "subtitle": "Written Friday, so Sunday is easy",
+      "repeat_labels": ["Next Week One", "Next Week Two", "Next Week Three", "Next Week Four"],
+      "elements": { "chips": "overview", "panels": [
+        { "label": "Carrying Forward", "lines": 4 },
+        { "label": "Already Committed Next Week", "lines": 3 },
+        { "label": "The One Thing That Must Happen", "lines": 2 },
+        { "label": "What I Am Protecting Time For", "lines": 3 }
+      ] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "overview" } },
+
+    { "id": "resources", "type": "resources", "layout": "record", "title": "Tools And Contacts",
+      "subtitle": "What you use every week",
+      "elements": { "rows": 15,
+        "columns": ["Tool Or Person", "What It Is For", "How Often", { "label": "Cost", "numeric": true }, "Keep"],
+        "notice": "Record what a tool is for and who to contact. Do not write passwords, card details or account credentials here — a planner is synced, printed and left on desks." } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Weekly Productivity Planner",
+      "subtitle": "Undated · Thirteen Weeks · Reusable",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
