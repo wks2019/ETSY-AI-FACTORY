@@ -1,0 +1,73 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Ultimate Digital Planner",
+    "slug": "ultimate-digital-planner",
+    "collection": "The Ultimate Collection",
+    "subtitle": "Undated · Hyperlinked · Four Sizes",
+    "edition": "Ultimate",
+    "version": "1.1",
+    "author": "wks2019",
+    "keywords": ["digital planner", "undated planner", "hyperlinked planner", "goodnotes planner", "printable planner"]
+  },
+  "design": {
+    "theme": "neutral",
+    "fonts": { "display": "Cormorant Garamond", "body": "Inter" }
+  },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": {
+    "tabs": [
+      { "label": "Index", "target": "index" },
+      { "label": "Year", "target": "year" },
+      { "label": "Month", "target": "month" },
+      { "label": "Week", "target": "week" },
+      { "label": "Day", "target": "day" },
+      { "label": "Track", "target": "tracker" },
+      { "label": "Notes", "target": "notes" }
+    ]
+  },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Ultimate Digital Planner" },
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Every page in this planner",
+      "elements": { "include_types": ["year","month","week","day","tracker","goals","finance","project","review","notes"] } },
+    { "id": "year", "type": "year", "layout": "year", "title": "Year at a Glance",
+      "subtitle": "Twelve months, one view",
+      "elements": { "weekday_labels": ["Q1","Q2","Q3","Q4"], "rows": 3, "chips": "month" } },
+    { "id": "month", "type": "month", "layout": "month", "subtitle": "Monthly overview",
+      "repeat_labels": ["January","February","March","April","May","June","July","August","September","October","November","December"],
+      "elements": { "rows": 6, "chips": "month" } },
+    { "id": "week", "type": "week", "layout": "week", "subtitle": "Weekly plan",
+      "repeat_labels": ["Week One","Week Two","Week Three","Week Four","Week Five"],
+      "elements": { "lines": 4, "chips": "month" } },
+    { "id": "day", "type": "day", "layout": "day", "subtitle": "Daily schedule and priorities",
+      "repeat_labels": ["Daily Plan One","Daily Plan Two","Daily Plan Three","Daily Plan Four","Daily Plan Five","Daily Plan Six","Daily Plan Seven"],
+      "elements": { "hour_start": 6, "hour_end": 21, "chips": "week",
+        "panels": [ { "label": "Top Three Priorities", "lines": 3 }, { "label": "Tasks", "lines": 7 }, { "label": "Notes", "lines": 5 } ] } },
+    { "id": "tracker", "type": "tracker", "layout": "tracker",
+      "subtitle": "Mark each day you complete the habit",
+      "repeat_labels": ["Habit Tracker","Mood Tracker","Sleep Tracker"],
+      "elements": { "columns": 31, "chips": "month",
+        "items": ["Wake early","Movement","Water","Reading","Deep work","Outdoors","No screens after nine","Gratitude","Tidy space","Sleep by eleven"] } },
+    { "id": "goals", "type": "goals", "layout": "panels", "subtitle": "Define it, then break it down",
+      "repeat_labels": ["Annual Goals","Quarterly Goals"],
+      "elements": { "chips": "month",
+        "panels": [ { "label": "The Goal", "lines": 3 }, { "label": "Why It Matters", "lines": 3 }, { "label": "Milestones", "lines": 6 }, { "label": "First Action", "lines": 2 }, { "label": "Obstacles", "lines": 4 } ] } },
+    { "id": "finance", "type": "finance", "layout": "panels", "subtitle": "Income, outgoings, and what is left",
+      "repeat_labels": ["Monthly Budget","Savings Plan"],
+      "elements": { "chips": "month",
+        "panels": [ { "label": "Income", "lines": 4 }, { "label": "Fixed Costs", "lines": 7 }, { "label": "Variable Spending", "lines": 7 }, { "label": "Savings", "lines": 3 } ] } },
+    { "id": "project", "type": "project", "layout": "panels", "subtitle": "One project, start to finish",
+      "repeat_labels": ["Project Plan One","Project Plan Two"],
+      "elements": { "chips": "month",
+        "panels": [ { "label": "Project", "lines": 2 }, { "label": "Outcome", "lines": 3 }, { "label": "Steps", "lines": 9 }, { "label": "Deadline", "lines": 1 } ] } },
+    { "id": "review", "type": "review", "layout": "panels", "subtitle": "Look back before you plan forward",
+      "repeat_labels": ["Monthly Review","Quarterly Review"],
+      "elements": { "chips": "month",
+        "panels": [ { "label": "What Worked", "lines": 5 }, { "label": "What Did Not", "lines": 5 }, { "label": "What Changes Next", "lines": 5 }, { "label": "One Thing To Celebrate", "lines": 2 } ] } },
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes","Notes","Ideas","Lists"],
+      "elements": { "lines": 24, "chips": "month" } }
+  ]
+}

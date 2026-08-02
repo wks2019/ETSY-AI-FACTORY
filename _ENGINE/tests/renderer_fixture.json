@@ -1,0 +1,65 @@
+{
+  "schema": "1.1",
+  "product": {
+    "name": "Renderer Fixture",
+    "slug": "renderer-fixture",
+    "collection": "Engine Tests",
+    "subtitle": "Exercises every renderer",
+    "version": "1.0",
+    "author": "wks2019"
+  },
+  "design": { "theme": "neutral" },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": {
+    "tabs": [
+      { "label": "Index", "target": "index" },
+      { "label": "Quarter", "target": "quarter" },
+      { "label": "Meeting", "target": "meeting" },
+      { "label": "Expenses", "target": "expenses" },
+      { "label": "Contacts", "target": "contacts" }
+    ]
+  },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Renderer Fixture" },
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "Permitted and prohibited use",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for personal or single-business use", "Print unlimited copies for your own use"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files", "Sell printed copies"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. The licence covers the fonts only, not this document."] }
+      ] } },
+    { "id": "readme", "type": "readme", "layout": "prose", "title": "Read Me",
+      "subtitle": "Start here",
+      "elements": { "blocks": [
+        { "heading": "Digital planning", "ordered": true, "items": ["Open the PDF in your annotation app", "Import as a document, not an image", "Tap the tabs to jump between sections"] },
+        { "heading": "Printing", "ordered": true, "items": ["Print at 100% scale", "Use 100 to 120 gsm paper"] }
+      ] } },
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "elements": { "include_types": ["quarter","meeting","project","expenses","contacts","resources"] } },
+    { "id": "quarter", "type": "quarter", "layout": "quarter", "subtitle": "Three months, one objective",
+      "repeat_labels": ["Quarter One", "Quarter Two"],
+      "elements": { "months": ["Month One","Month Two","Month Three"], "lines": 8,
+        "panels": [ { "label": "Quarter Objective", "lines": 3 }, { "label": "Key Dates", "lines": 3 } ] } },
+    { "id": "meeting", "type": "meeting", "layout": "agenda", "subtitle": "Decisions and actions",
+      "repeat_labels": ["Meeting Notes"],
+      "elements": { "lines": 7, "rows": 6,
+        "panels": [ { "label": "Attendees", "lines": 2 }, { "label": "Agenda", "lines": 4 } ],
+        "action_columns": ["Action", "Owner", "Due"] } },
+    { "id": "project", "type": "project", "layout": "timeline", "subtitle": "Sequence and dependencies",
+      "repeat_labels": ["Project Timeline"],
+      "elements": { "periods": ["W1","W2","W3","W4","W5","W6","W7","W8","W9","W10","W11","W12"],
+        "items": ["Research","Draft","Review","Build","Test","Launch"],
+        "panels": [ { "label": "Outcome", "lines": 2 }, { "label": "Dependencies", "lines": 3 } ] } },
+    { "id": "expenses", "type": "expenses", "layout": "ledger", "subtitle": "Record as you go",
+      "repeat_labels": ["Expense Tracker"],
+      "elements": { "rows": 18, "totals": true,
+        "columns": ["Date", "Description", "Category", { "label": "Amount", "numeric": true }] } },
+    { "id": "contacts", "type": "contacts", "layout": "record", "subtitle": "Clients and suppliers",
+      "repeat_labels": ["Contacts"],
+      "elements": { "rows": 16, "columns": ["Name", "Company", "Contact", "Notes"] } },
+    { "id": "resources", "type": "resources", "layout": "record", "subtitle": "Tools and subscriptions",
+      "repeat_labels": ["Resources"],
+      "elements": { "rows": 16, "columns": ["Item", "Purpose", { "label": "Cost", "numeric": true }],
+        "notice": "Record access hints only. Never write full passwords or banking credentials." } }
+  ]
+}
