@@ -1,7 +1,7 @@
 """
 layout_renderer.py
 ETSY-AI-FACTORY / _ENGINE
-Version: 2.0
+Version: 2.1
 
 Converts a product specification into an HTML document and a size-specific
 stylesheet.
@@ -170,6 +170,15 @@ def build_css(spec: dict, size: PageSize, theme: Theme, font_paths) -> str:
     margin_mm = round(14 * s, 2)
     line_pt = round(WRITING_LINE_PT * s, 1)
 
+    def sp(multiple: float = 1) -> float:
+        """8-point spacing, scaled with the page.
+
+        Fixed px spacing does not shrink at A5 and Half Letter, which silently
+        clipped content that still fitted inside the page count. Caught by the
+        link-parity gate during the Product 001 build.
+        """
+        return round(SPACE * multiple * s, 1)
+
     parts = [
         font_face_css(font_paths),
         theme.css_variables(),
@@ -182,10 +191,10 @@ body {{ margin: 0; }}
          color: var(--text-primary); }}
 .page:last-child {{ page-break-after: auto; }}
 a {{ color: inherit; text-decoration: none; }}
-.head {{ margin-bottom: {SPACE * 2}px; }}
+.head {{ margin-bottom: {sp(2)}px; }}
 .body {{ flex: 1; }}
 table {{ width: 100%; border-collapse: collapse; }}
-.split {{ display: flex; gap: {SPACE * 2}px; }}
+.split {{ display: flex; gap: {sp(2)}px; }}
 .col {{ flex: 1; }}
 """,
         _type_rule("html", "body", s, "  color: var(--text-primary);\n"),
@@ -195,24 +204,24 @@ table {{ width: 100%; border-collapse: collapse; }}
         # outline gains a second level and bookmark count exceeds page count.
         _type_rule("h2", "subtitle", s,
                    "  text-transform: uppercase;\n  color: var(--text-muted);\n"
-                   f"  margin: 0 0 {SPACE * 1.5}px 0;\n  bookmark-level: none;\n"),
+                   f"  margin: 0 0 {sp(1.5)}px 0;\n  bookmark-level: none;\n"),
         _type_rule("h3", "section", s,
                    "  text-transform: uppercase;\n  color: var(--text-muted);\n"
-                   f"  margin: {SPACE * 2}px 0 {SPACE}px 0;\n  bookmark-level: none;\n"),
+                   f"  margin: {sp(2)}px 0 {sp()}px 0;\n  bookmark-level: none;\n"),
         _type_rule(".tab", "button", s,
                    "  text-transform: uppercase;\n  color: var(--text-muted);\n"
-                   f"  padding: {SPACE * 0.4}px {SPACE * 0.9}px;\n"
+                   f"  padding: {sp(0.4)}px {sp(0.9)}px;\n"
                    "  border: 0.5pt solid var(--border);\n  border-radius: 2pt;\n"),
         _type_rule(".chip", "button", s,
                    "  color: var(--text-primary);\n"
-                   f"  padding: {SPACE * 0.5}px {SPACE * 0.9}px;\n"
+                   f"  padding: {sp(0.5)}px {sp(0.9)}px;\n"
                    "  border: 0.5pt solid var(--border);\n  border-radius: 2pt;\n"
                    f"  min-width: {round(52 * s, 1)}pt;\n  text-align: center;\n"),
         _type_rule(".label", "label", s,
                    "  text-transform: uppercase;\n  color: var(--text-muted);\n"
-                   f"  margin-bottom: {SPACE * 0.8}px;\n"),
+                   f"  margin-bottom: {sp(0.8)}px;\n"),
         _type_rule(".foot", "footnote", s, "  color: var(--text-muted);\n"),
-        _type_rule(".prose p", "body-large", s, f"  margin: 0 0 {SPACE}px 0;\n"),
+        _type_rule(".prose p", "body-large", s, f"  margin: 0 0 {sp()}px 0;\n"),
         _type_rule(".prose li", "body-large", s, "  margin: 0 0 4px 0;\n"),
         _type_rule("td", "table", s, "  color: var(--text-secondary);\n"),
         _type_rule("th", "table-head", s,
@@ -224,27 +233,27 @@ table {{ width: 100%; border-collapse: collapse; }}
 .tab.current {{ color: var(--text-inverse); background: var(--primary-strong);
                 border-color: var(--primary-strong); }}
 
-.tabs {{ display: flex; gap: {SPACE * 0.5}px; margin-bottom: {SPACE * 2}px;
-         padding-bottom: {SPACE}px; border-bottom: 0.5pt solid var(--divider); }}
-.chips {{ display: flex; flex-wrap: wrap; gap: {SPACE * 0.5}px; margin-top: {SPACE * 1.5}px; }}
-.foot {{ margin-top: {SPACE * 2}px; padding-top: {SPACE}px;
+.tabs {{ display: flex; gap: {sp(0.5)}px; margin-bottom: {sp(2)}px;
+         padding-bottom: {sp()}px; border-bottom: 0.5pt solid var(--divider); }}
+.chips {{ display: flex; flex-wrap: wrap; gap: {sp(0.5)}px; margin-top: {sp(1.5)}px; }}
+.foot {{ margin-top: {sp(2)}px; padding-top: {sp()}px;
          border-top: 0.5pt solid var(--divider); display: flex; justify-content: space-between; }}
 
 .cover {{ justify-content: center; align-items: center; text-align: center; }}
 .cover .rule {{ width: {round(60 * s, 1)}pt; height: 0.75pt; background: var(--secondary);
-                margin: {SPACE * 3}px auto; }}
+                margin: {sp(3)}px auto; }}
 .cover .sub {{ font-family: var(--font-body); font-weight: 500; font-size: {round(9 * s, 2)}pt;
                letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-muted); }}
 
 .lines .line {{ border-bottom: 0.5pt solid var(--border); height: {line_pt}pt; }}
 .panel {{ border: 0.5pt solid var(--border); border-radius: 2pt;
-          padding: {SPACE * 1.2}px; margin-bottom: {SPACE * 1.2}px; }}
+          padding: {sp(1.2)}px; margin-bottom: {sp(1.2)}px; }}
 
-.cal th {{ padding-bottom: {SPACE * 0.6}px; border-bottom: 0.5pt solid var(--border); }}
+.cal th {{ padding-bottom: {sp(0.6)}px; border-bottom: 0.5pt solid var(--border); }}
 .cal td {{ height: {round(52 * s, 1)}pt; border: 0.5pt solid var(--border);
-           vertical-align: top; padding: {SPACE * 0.4}px; color: var(--text-muted); }}
+           vertical-align: top; padding: {sp(0.4)}px; color: var(--text-muted); }}
 
-.track th {{ padding-bottom: {SPACE * 0.5}px; border-bottom: 0.5pt solid var(--border);
+.track th {{ padding-bottom: {sp(0.5)}px; border-bottom: 0.5pt solid var(--border);
              text-align: center; }}
 .track td {{ border-bottom: 0.5pt solid var(--border); height: {round(17 * s, 1)}pt; }}
 .track td.name {{ text-align: left; width: 34%; }}
@@ -253,19 +262,19 @@ table {{ width: 100%; border-collapse: collapse; }}
 .hours td {{ border-bottom: 0.5pt solid var(--border); height: {round(21 * s, 1)}pt; }}
 .hours td.h {{ width: {round(38 * s, 1)}pt; color: var(--text-muted); }}
 
-.toc td {{ border-bottom: 0.5pt solid var(--divider); padding: {SPACE * 0.7}px 0; }}
+.toc td {{ border-bottom: 0.5pt solid var(--divider); padding: {sp(0.7)}px 0; }}
 .toc td.num {{ text-align: right; color: var(--text-muted); width: 18%; }}
 
-.grid th {{ background: var(--surface); padding: {SPACE * 0.5}px {SPACE * 0.4}px;
+.grid th {{ background: var(--surface); padding: {sp(0.5)}px {sp(0.4)}px;
             border-bottom: 0.5pt solid var(--border); }}
 .grid td {{ border-bottom: 0.5pt solid var(--border); border-left: 0.5pt solid var(--border);
-            height: {line_pt}pt; padding: 0 {SPACE * 0.4}px; }}
+            height: {line_pt}pt; padding: 0 {sp(0.4)}px; }}
 .grid td:first-child, .grid th:first-child {{ border-left: none; }}
 .grid td.num, .grid th.num {{ text-align: right; font-variant-numeric: tabular-nums; }}
 .grid tr.total td {{ background: var(--surface); font-weight: 500; color: var(--text-primary); }}
 
 .timeline th {{ text-align: center; border-bottom: 0.5pt solid var(--border);
-                padding-bottom: {SPACE * 0.5}px; }}
+                padding-bottom: {sp(0.5)}px; }}
 .timeline td {{ border-bottom: 0.5pt solid var(--border); height: {round(20 * s, 1)}pt; }}
 .timeline td.name {{ width: 30%; text-align: left; }}
 .timeline td.slot {{ border-left: 0.5pt solid var(--border); }}
@@ -274,9 +283,9 @@ table {{ width: 100%; border-collapse: collapse; }}
 .quarter .month .label {{ text-align: center; }}
 
 .prose {{ max-width: 75ch; }}
-.prose ol, .prose ul {{ margin: 0 0 {SPACE}px 0; padding-left: {SPACE * 2}px; }}
+.prose ol, .prose ul {{ margin: 0 0 {sp()}px 0; padding-left: {sp(2)}px; }}
 .notice {{ border: 0.5pt solid var(--border); border-left: 2pt solid var(--danger);
-           padding: {SPACE}px; margin-top: {SPACE * 1.5}px; color: var(--text-secondary); }}
+           padding: {sp()}px; margin-top: {sp(1.5)}px; color: var(--text-secondary); }}
 """,
     ]
     return "\n".join(parts)
