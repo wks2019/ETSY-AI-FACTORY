@@ -1,0 +1,222 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Goal Planner",
+    "slug": "goal-planner",
+    "collection": "Business Collection",
+    "subtitle": "Define · Do · Review",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["goal planner", "smart goal worksheet", "okr planner", "90 day goal planner", "habit tracker printable", "undated goal planner", "hyperlinked goal planner", "goal setting journal", "milestone planner", "accountability tracker", "quarterly goal planner", "action plan printable", "goodnotes goal planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Vision", "target": "vision" },
+    { "label": "Quarter", "target": "quarter" },
+    { "label": "Month", "target": "month" },
+    { "label": "Week", "target": "week" },
+    { "label": "Day", "target": "day" },
+    { "label": "Habits", "target": "habits" },
+    { "label": "Review", "target": "reflection" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Goal Planner" },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for your own personal or business goals", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies or distribute copies to clients", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "readme", "type": "readme", "layout": "prose", "title": "Read Me",
+      "subtitle": "Fewer goals, finished",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk. A5 and Half Letter suit a tablet or a bag, and print two-up on a full sheet."] },
+        { "heading": "Digital use", "ordered": true, "items": ["Open the PDF in GoodNotes, Notability, Noteshelf, Xodo or any app that imports PDFs", "Import as a document, not as an image", "Switch the app to read mode to tap links, and write mode to write", "Use the tabs to move between horizons", "Tap Contents in the footer to return to the index from anywhere"] },
+        { "heading": "Printing", "ordered": true, "items": ["Print at 100% scale and never select fit to page", "Use 100 to 120 gsm paper for double-sided printing", "Print the sections you will actually fill in"] },
+        { "heading": "Start here, in this order", "ordered": true, "items": ["Write the vision. One page, no more than five years out", "Choose three annual goals. Not seven", "Convert each into a SMART worksheet with a number and a date", "Break the nearest one into milestones, then into an action plan", "Name the obstacle before you meet it", "Review weekly. Reflect quarterly. Record what you finished"] },
+        { "heading": "Why three goals, and the page most people skip", "paragraphs": ["Goal planners fail because they invite you to list everything you want. Twelve goals is a wish list; three is a plan. The annual page has exactly three slots for that reason.", "The obstacle log is the page most people skip. Naming what will stop you, before it does, is the difference between a goal abandoned in March and one you finish."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Define and plan",
+      "elements": { "column_break": 16, "include_types": ["vision", "annual", "smart", "okr", "quarter", "month", "week", "day", "milestone", "action"] } },
+
+    { "id": "index-execute", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Execute and review",
+      "elements": { "column_break": 16, "include_types": ["habits", "progress", "obstacle", "accountability", "motivation", "metrics", "reflection", "lessons", "celebration", "next", "notes", "resources"] } },
+
+    { "id": "vision", "type": "vision", "layout": "panels", "title": "Life Vision",
+      "subtitle": "Where this is all going",
+      "elements": { "chips": "annual", "panels": [
+        { "label": "What I Want To Be True In Five Years", "lines": 4 },
+        { "label": "Work And Money", "lines": 3 },
+        { "label": "Health And Energy", "lines": 3 },
+        { "label": "People And Relationships", "lines": 3 },
+        { "label": "What I Will Not Sacrifice For It", "lines": 3 }
+      ] } },
+
+    { "id": "annual", "type": "annual", "layout": "panels", "title": "Annual Goals",
+      "subtitle": "Three slots. That is the point",
+      "elements": { "chips": "smart", "panels": [
+        { "label": "Goal One", "lines": 3 },
+        { "label": "Goal Two", "lines": 3 },
+        { "label": "Goal Three", "lines": 3 },
+        { "label": "What I Am Choosing Not To Pursue", "lines": 4 },
+        { "label": "The One Thing That Decides The Year", "lines": 2 }
+      ] } },
+
+    { "id": "smart", "type": "smart", "layout": "panels",
+      "subtitle": "Specific, measurable, achievable, relevant, timed",
+      "repeat_labels": ["SMART Worksheet One", "SMART Worksheet Two", "SMART Worksheet Three", "SMART Worksheet Four"],
+      "elements": { "chips": "milestone", "panels": [
+        { "label": "Specific — What Exactly", "lines": 2 },
+        { "label": "Measurable — The Number", "lines": 2 },
+        { "label": "Achievable — Why It Is Realistic", "lines": 2 },
+        { "label": "Relevant — Why It Matters Now", "lines": 2 },
+        { "label": "Timed — The Date It Is Due", "lines": 1 },
+        { "label": "The First Action, This Week", "lines": 2 }
+      ] } },
+
+    { "id": "okr", "type": "okr", "layout": "record",
+      "subtitle": "Objective, key results, and a number against each",
+      "repeat_labels": ["OKR Planning One", "OKR Planning Two"],
+      "elements": { "rows": 14, "chips": "quarter",
+        "columns": ["Objective / Key Result", { "label": "Start", "numeric": true }, { "label": "Target", "numeric": true }, { "label": "Actual", "numeric": true }, "On Track"] } },
+
+    { "id": "quarter", "type": "quarter", "layout": "quarter",
+      "subtitle": "Ninety days is long enough to finish something",
+      "repeat_labels": ["Quarter One", "Quarter Two", "Quarter Three", "Quarter Four"],
+      "elements": { "months": ["First Month", "Second Month", "Third Month"], "lines": 7, "chips": "quarter",
+        "panels": [
+          { "label": "The Goal For These Ninety Days", "lines": 2 },
+          { "label": "The Number That Proves It", "lines": 2 },
+          { "label": "What I Am Pausing Until Next Quarter", "lines": 2 }
+        ] } },
+
+    { "id": "month", "type": "month", "layout": "month", "subtitle": "The month against the goal",
+      "repeat_labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "elements": { "rows": 6, "chips": "month" } },
+
+    { "id": "week", "type": "week", "layout": "week",
+      "subtitle": "Five days of work, one for the goal itself",
+      "repeat_labels": ["Week One", "Week Two", "Week Three", "Week Four", "Week Five"],
+      "elements": { "lines": 4, "chips": "month",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Weekend", "Time On The Goal Itself"] } },
+
+    { "id": "day", "type": "day", "layout": "day",
+      "subtitle": "One action that moves the goal, before anything else",
+      "repeat_labels": ["Day One", "Day Two", "Day Three", "Day Four", "Day Five", "Day Six", "Day Seven"],
+      "elements": { "hour_start": 7, "hour_end": 19, "chips": "week",
+        "panels": [
+          { "label": "The Action That Moves The Goal", "lines": 2 },
+          { "label": "Then Everything Else", "lines": 5 },
+          { "label": "What Got In The Way", "lines": 3 },
+          { "label": "Done Today, However Small", "lines": 3 }
+        ] } },
+
+    { "id": "milestone", "type": "milestone", "layout": "record",
+      "subtitle": "Checkpoints you can actually reach",
+      "repeat_labels": ["Milestones One", "Milestones Two"],
+      "elements": { "rows": 14, "chips": "action",
+        "columns": ["Milestone", "What Proves It Is Reached", "Target Date", "Actual", "Slipped By", "Done"] } },
+
+    { "id": "action", "type": "action", "layout": "record",
+      "subtitle": "Small enough to start today",
+      "repeat_labels": ["Action Plan One", "Action Plan Two", "Action Plan Three"],
+      "elements": { "rows": 16, "chips": "milestone",
+        "columns": ["Action", "For Which Goal", "Time Needed", "When", "Blocked By", "Done"] } },
+
+    { "id": "habits", "type": "habits", "layout": "tracker",
+      "subtitle": "The behaviour beneath the goal",
+      "repeat_labels": ["Habit Tracker One", "Habit Tracker Two", "Habit Tracker Three"],
+      "elements": { "columns": 31, "chips": "month",
+        "items": ["Worked on the goal", "Moved my body", "Slept enough", "Read or studied", "Planned tomorrow", "Said no to something", "Tracked the number", "No screens after nine", "Ate properly", "Reviewed the week"] } },
+
+    { "id": "progress", "type": "progress", "layout": "record",
+      "subtitle": "The number, week by week",
+      "repeat_labels": ["Progress One", "Progress Two"],
+      "elements": { "rows": 15, "chips": "metrics",
+        "columns": ["Week", "What I Measured", { "label": "Target", "numeric": true }, { "label": "Actual", "numeric": true }, { "label": "Gap", "numeric": true }, "Trend"] } },
+
+    { "id": "obstacle", "type": "obstacle", "layout": "record",
+      "subtitle": "Named before it arrives, not after",
+      "repeat_labels": ["Obstacle Log One", "Obstacle Log Two"],
+      "elements": { "rows": 14, "chips": "action",
+        "columns": ["What Could Stop This", "How Likely", "Early Warning Sign", "What I Will Do", "Happened", "Handled"] } },
+
+    { "id": "accountability", "type": "accountability", "layout": "record",
+      "subtitle": "Someone else knows, so it gets done",
+      "repeat_labels": ["Accountability One", "Accountability Two"],
+      "elements": { "rows": 14,
+        "columns": ["Who I Told", "What I Promised", "By When", "Check In On", "Reported", "Kept"] } },
+
+    { "id": "motivation", "type": "motivation", "layout": "notes",
+      "subtitle": "Why this mattered, on the days it does not feel like it",
+      "repeat_labels": ["Motivation Journal", "Motivation Journal"],
+      "elements": { "lines": 23, "chips": "vision" } },
+
+    { "id": "metrics", "type": "metrics", "layout": "record", "title": "Success Metrics",
+      "subtitle": "Everything you are measuring, in one place",
+      "elements": { "rows": 13, "chips": "progress",
+        "columns": ["Metric", "For Which Goal", { "label": "Baseline", "numeric": true }, { "label": "Target", "numeric": true }, { "label": "Current", "numeric": true }, "Reviewed"] } },
+
+    { "id": "reflection", "type": "reflection", "layout": "panels",
+      "subtitle": "Honest before optimistic",
+      "repeat_labels": ["Reflection One", "Reflection Two", "Reflection Three"],
+      "elements": { "chips": "lessons", "panels": [
+        { "label": "What I Said I Would Do", "lines": 3 },
+        { "label": "What I Actually Did", "lines": 3 },
+        { "label": "Where The Time Really Went", "lines": 3 },
+        { "label": "What I Am Avoiding", "lines": 3 },
+        { "label": "What Changes Next Period", "lines": 3 }
+      ] } },
+
+    { "id": "lessons", "type": "lessons", "layout": "panels",
+      "subtitle": "Written while they are still true",
+      "repeat_labels": ["Lessons Learned One", "Lessons Learned Two"],
+      "elements": { "chips": "next", "panels": [
+        { "label": "What Worked, And Why", "lines": 4 },
+        { "label": "What Did Not, And Why", "lines": 4 },
+        { "label": "What I Underestimated", "lines": 3 },
+        { "label": "What I Would Do Differently", "lines": 4 }
+      ] } },
+
+    { "id": "celebration", "type": "celebration", "layout": "record",
+      "subtitle": "Finished things, written down where you can see them",
+      "repeat_labels": ["Celebration Log One", "Celebration Log Two"],
+      "elements": { "rows": 15,
+        "columns": ["Date", "What I Finished", "How Long It Took", "Who Helped", "How I Marked It"] } },
+
+    { "id": "next", "type": "next", "layout": "panels", "title": "The Next Goal",
+      "subtitle": "Chosen from evidence, not enthusiasm",
+      "elements": { "chips": "smart", "panels": [
+        { "label": "What The Last Period Proved", "lines": 3 },
+        { "label": "The Next Goal", "lines": 3 },
+        { "label": "Why This One, And Why Now", "lines": 3 },
+        { "label": "What I Am Carrying Forward", "lines": 3 },
+        { "label": "What I Am Leaving Behind", "lines": 3 }
+      ] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "action" } },
+
+    { "id": "resources", "type": "resources", "layout": "record", "title": "Tools And Support",
+      "subtitle": "What helps, and who to ask",
+      "elements": { "rows": 15,
+        "columns": ["Tool Or Person", "How It Helps", "Which Goal", { "label": "Cost", "numeric": true }, "Keep"],
+        "notice": "Record what a tool is for and who to contact. Do not write passwords, card details or account credentials here — a planner is synced, printed and left on desks." } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Goal Planner",
+      "subtitle": "Undated · Reusable Every Year",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
