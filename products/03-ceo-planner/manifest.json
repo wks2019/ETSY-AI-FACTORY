@@ -1,0 +1,59 @@
+{
+  "$comment": "Build record for v1.0. Regenerated into dist/package on every build; this copy is the committed record.",
+  "product": "CEO Planner",
+  "slug": "ceo-planner",
+  "version": "1.0",
+  "edition": "Ultimate",
+  "collection": "Business Collection",
+  "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+  "generated": "2026-08-02",
+  "engine": "planner_engine 2.1",
+  "schema": "1.1",
+  "theme": "slate",
+  "sizes": [
+    { "size": "a4", "file": "ceo-planner-slate-a4.pdf", "pages": 78, "links": 2370, "bookmarks": 78 },
+    { "size": "a5", "file": "ceo-planner-slate-a5.pdf", "pages": 78, "links": 2370, "bookmarks": 78 },
+    { "size": "us_letter", "file": "ceo-planner-slate-us_letter.pdf", "pages": 78, "links": 2370, "bookmarks": 78 },
+    { "size": "half_letter", "file": "ceo-planner-slate-half_letter.pdf", "pages": 78, "links": 2370, "bookmarks": 78 }
+  ],
+  "previews": [
+    { "asset": "ceo-planner-cover.png", "role": "cover", "dpi": 300, "source": "a4 page 1" },
+    { "asset": "ceo-planner-listing-preview.jpg", "role": "listing", "panels": 12, "columns": 4, "source": "a4 pages 1-12" }
+  ],
+  "packaging": {
+    "structure": [
+      "PDF/ — four printable hyperlinked PDFs",
+      "Previews/ — cover PNG and listing preview JPG",
+      "Documentation/INSTRUCTIONS.md",
+      "Documentation/LICENCE.md",
+      "manifest.json"
+    ],
+    "zip": "ceo-planner-v1.0.zip",
+    "placeholders": 0
+  },
+  "fonts": {
+    "display": "Cormorant Garamond",
+    "body": "Inter",
+    "licence": "SIL Open Font License 1.1",
+    "embedding": "subset, Type0, live text"
+  },
+  "layouts_used": ["cover", "prose", "index", "month", "quarter", "week", "day", "agenda", "ledger", "record", "timeline", "tracker", "panels", "notes"],
+  "engine_modifications": "none",
+  "schema_modifications": "none",
+  "new_renderers": 0,
+  "verification": {
+    "page_parity": true,
+    "link_parity": true,
+    "bookmark_parity": true,
+    "schema_valid": true,
+    "literal_colours": 0,
+    "contrast_pairings_checked": 9,
+    "contrast_failures": 0
+  },
+  "outstanding": [
+    "Canva import verification — manual",
+    "Physical print test",
+    "SEO package",
+    "Mockups"
+  ]
+}

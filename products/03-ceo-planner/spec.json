@@ -1,0 +1,234 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "CEO Planner",
+    "slug": "ceo-planner",
+    "collection": "Business Collection",
+    "subtitle": "Strategy · Leadership · Execution",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["ceo planner", "executive planner", "founder planner", "okr planner", "kpi tracker printable", "business strategy planner", "leadership planner", "quarterly okr planner", "startup founder planner", "undated ceo planner", "hyperlinked business planner", "decision log printable", "goodnotes ceo planner"]
+  },
+  "design": { "theme": "slate", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Vision", "target": "vision" },
+    { "label": "Quarter", "target": "quarter" },
+    { "label": "Month", "target": "month" },
+    { "label": "Week", "target": "week" },
+    { "label": "Day", "target": "day" },
+    { "label": "Metrics", "target": "kpi" },
+    { "label": "Decide", "target": "decision" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "CEO Planner" },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner to run your own company or practice", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or lead"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies or distribute copies to a team", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "readme", "type": "readme", "layout": "prose", "title": "Read Me",
+      "subtitle": "How to run this planner",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk and the boardroom. A5 and Half Letter suit a tablet and travel, and print two-up on a full sheet."] },
+        { "heading": "Digital use", "ordered": true, "items": ["Open the PDF in GoodNotes, Notability, Noteshelf, Xodo or any app that imports PDFs", "Import as a document, not as an image", "Switch the app to read mode to tap links, and write mode to write", "Use the tabs to move between planning horizons", "Tap Contents in the footer to return to the index from anywhere"] },
+        { "heading": "Printing", "ordered": true, "items": ["Print at 100% scale and never select fit to page", "Use 100 to 120 gsm paper for double-sided printing", "Print only the sections you use — the index lists every page"] },
+        { "heading": "The operating rhythm", "paragraphs": ["Set the vision once. Set no more than three annual objectives. Convert each into quarterly key results with a number attached. Review the metrics weekly, not monthly — a quarter is lost one week at a time.", "The daily page exists to protect two hours of strategic work. If a week passes with none, the business is running you."] },
+        { "heading": "What this planner deliberately does not do", "paragraphs": ["It does not calculate. A spreadsheet is better at arithmetic and worse at thinking. Writing a number by hand forces you to look at it, which is the entire point of a review page."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Planning horizons",
+      "elements": { "column_break": 16, "include_types": ["vision", "annual", "okr", "quarter", "month", "week", "day"] } },
+
+    { "id": "index-operations", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Operations and review",
+      "elements": { "column_break": 16, "include_types": ["matrix", "decision", "meeting", "leadership", "roadmap", "kpi", "revenue", "expenses", "team", "delegation", "client", "ideas", "habits", "learning", "review", "notes", "resources"] } },
+
+    { "id": "vision", "type": "vision", "layout": "panels", "title": "The Vision",
+      "subtitle": "Where this company is going, and why",
+      "elements": { "chips": "annual", "panels": [
+        { "label": "What This Company Exists To Do", "lines": 3 },
+        { "label": "Where It Will Be In Three Years", "lines": 4 },
+        { "label": "Who We Serve, And Who We Do Not", "lines": 3 },
+        { "label": "What We Will Never Compromise", "lines": 3 },
+        { "label": "How I Will Know We Arrived", "lines": 3 }
+      ] } },
+
+    { "id": "annual", "type": "annual", "layout": "panels", "title": "Annual Objectives",
+      "subtitle": "Three at most, or none of them happen",
+      "elements": { "chips": "okr", "panels": [
+        { "label": "Objective One", "lines": 3 },
+        { "label": "Objective Two", "lines": 3 },
+        { "label": "Objective Three", "lines": 3 },
+        { "label": "Explicitly Not Doing This Year", "lines": 4 },
+        { "label": "The Constraint That Decides All", "lines": 2 }
+      ] } },
+
+    { "id": "okr", "type": "okr", "layout": "record",
+      "subtitle": "Objective, key results, and the number attached to each",
+      "repeat_labels": ["OKRs Quarter One", "OKRs Quarter Two", "OKRs Quarter Three", "OKRs Quarter Four"],
+      "elements": { "rows": 14, "chips": "quarter",
+        "columns": ["Objective / Key Result", "Owner", { "label": "Target", "numeric": true }, { "label": "Actual", "numeric": true }, "On Track"] } },
+
+    { "id": "quarter", "type": "quarter", "layout": "quarter",
+      "subtitle": "Ninety days, one priority",
+      "repeat_labels": ["Quarter One", "Quarter Two", "Quarter Three", "Quarter Four"],
+      "elements": { "months": ["First Month", "Second Month", "Third Month"], "lines": 7, "chips": "quarter",
+        "panels": [
+          { "label": "The One Priority This Quarter", "lines": 2 },
+          { "label": "The Number That Proves It Worked", "lines": 2 },
+          { "label": "What Gets Deferred To Make Room", "lines": 2 }
+        ] } },
+
+    { "id": "month", "type": "month", "layout": "month", "subtitle": "Strategy for the month",
+      "repeat_labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "elements": { "rows": 6, "chips": "month" } },
+
+    { "id": "week", "type": "week", "layout": "week",
+      "subtitle": "Executive week — five days, the numbers, and the business itself",
+      "repeat_labels": ["Week One", "Week Two", "Week Three", "Week Four", "Week Five"],
+      "elements": { "lines": 4, "chips": "month",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "This Week's Numbers", "Working On The Business"] } },
+
+    { "id": "day", "type": "day", "layout": "day",
+      "subtitle": "Protect the strategic hours",
+      "repeat_labels": ["Day One", "Day Two", "Day Three", "Day Four", "Day Five", "Day Six", "Day Seven"],
+      "elements": { "hour_start": 7, "hour_end": 19, "chips": "week",
+        "panels": [
+          { "label": "The Decision Only I Can Make Today", "lines": 2 },
+          { "label": "Strategic Work — Two Hours", "lines": 3 },
+          { "label": "People To Unblock", "lines": 4 },
+          { "label": "Delegated, Not Done By Me", "lines": 4 }
+        ] } },
+
+    { "id": "matrix", "type": "matrix", "layout": "panels", "title": "Priority Matrix",
+      "subtitle": "Urgency is not importance",
+      "elements": { "chips": "week", "panels": [
+        { "label": "Important And Urgent — Do Now", "lines": 4 },
+        { "label": "Important Not Urgent — Schedule", "lines": 5 },
+        { "label": "Urgent Not Important — Delegate", "lines": 4 },
+        { "label": "Neither — Delete It", "lines": 3 }
+      ] } },
+
+    { "id": "decision", "type": "decision", "layout": "record",
+      "subtitle": "What was decided, on what basis, and when to revisit it",
+      "repeat_labels": ["Decision Log One", "Decision Log Two"],
+      "elements": { "rows": 15,
+        "columns": ["Date", "The Decision", "What I Believed At The Time", "Alternative Rejected", "Revisit On"] } },
+
+    { "id": "meeting", "type": "meeting", "layout": "agenda",
+      "subtitle": "Executive meeting — decisions and owners",
+      "repeat_labels": ["Meeting One", "Meeting Two", "Meeting Three", "Meeting Four"],
+      "elements": { "lines": 6, "rows": 7,
+        "panels": [
+          { "label": "Attending", "lines": 2 },
+          { "label": "Decision This Meeting Must Make", "lines": 2 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "Done"] } },
+
+    { "id": "leadership", "type": "leadership", "layout": "notes",
+      "subtitle": "People, culture, and the conversations that matter",
+      "repeat_labels": ["Leadership Notes", "One To One Notes"],
+      "elements": { "lines": 23, "chips": "team" } },
+
+    { "id": "roadmap", "type": "roadmap", "layout": "timeline",
+      "subtitle": "Twelve weeks, owner, and what done looks like",
+      "repeat_labels": ["Roadmap One", "Roadmap Two", "Roadmap Three", "Roadmap Four"],
+      "elements": {
+        "periods": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10", "W11", "W12"],
+        "items": ["Milestone one", "Milestone two", "Milestone three", "Milestone four", "Milestone five", "Milestone six"],
+        "panels": [
+          { "label": "Initiative And Owner", "lines": 2 },
+          { "label": "What Done Looks Like", "lines": 2 },
+          { "label": "Dependency That Could Sink It", "lines": 2 }
+        ] } },
+
+    { "id": "kpi", "type": "kpi", "layout": "record",
+      "subtitle": "The numbers that describe the health of the business",
+      "repeat_labels": ["KPI Dashboard One", "KPI Dashboard Two"],
+      "elements": { "rows": 14, "chips": "quarter",
+        "columns": ["Metric", { "label": "Target", "numeric": true }, { "label": "Month One", "numeric": true }, { "label": "Month Two", "numeric": true }, { "label": "Month Three", "numeric": true }, "Trend"] } },
+
+    { "id": "revenue", "type": "revenue", "layout": "ledger",
+      "subtitle": "Where the money came from",
+      "repeat_labels": ["Revenue One", "Revenue Two", "Revenue Three"],
+      "elements": { "rows": 16, "totals": true, "chips": "month",
+        "columns": ["Date", "Client Or Source", "Product Or Service", { "label": "Invoiced", "numeric": true }, { "label": "Received", "numeric": true }, "Status"] } },
+
+    { "id": "expenses", "type": "expenses", "layout": "ledger",
+      "subtitle": "Where it went",
+      "repeat_labels": ["Expense Summary One", "Expense Summary Two"],
+      "elements": { "rows": 16, "totals": true, "chips": "month",
+        "columns": ["Date", "Description", "Category", { "label": "Amount", "numeric": true }, { "label": "Tax", "numeric": true }, "Receipt"] } },
+
+    { "id": "team", "type": "team", "layout": "record",
+      "subtitle": "Who is thriving, who is stuck, who is ready for more",
+      "repeat_labels": ["Team Review One", "Team Review Two"],
+      "elements": { "rows": 14,
+        "columns": ["Name", "Role", "Doing Well", "Needs Support", "Ready For", "Next One To One"] } },
+
+    { "id": "delegation", "type": "delegation", "layout": "record",
+      "subtitle": "If it is on this page it is not on your desk",
+      "repeat_labels": ["Delegation One", "Delegation Two"],
+      "elements": { "rows": 15,
+        "columns": ["Task Or Decision", "Handed To", "Authority Given", "By When", "Checked In", "Closed"] } },
+
+    { "id": "client", "type": "client", "layout": "record",
+      "subtitle": "Relationships, not contacts",
+      "repeat_labels": ["Client Notes One", "Client Notes Two"],
+      "elements": { "rows": 14,
+        "columns": ["Client", "Key Contact", "What Matters To Them", { "label": "Value", "numeric": true }, "Last Spoke", "Next Step"] } },
+
+    { "id": "ideas", "type": "ideas", "layout": "notes",
+      "subtitle": "Capture now, judge later",
+      "repeat_labels": ["Business Ideas", "Opportunities"],
+      "elements": { "lines": 23, "chips": "quarter" } },
+
+    { "id": "habits", "type": "habits", "layout": "tracker",
+      "subtitle": "The routines that keep a leader effective",
+      "repeat_labels": ["Executive Habits", "Personal Habits"],
+      "elements": { "columns": 31, "chips": "month",
+        "items": ["Numbers reviewed", "Two hours strategic work", "One to one held", "Something delegated", "Inbox closed by six", "Read or studied", "Movement", "Slept seven hours", "No decision made while tired", "Finished on time"] } },
+
+    { "id": "learning", "type": "learning", "layout": "record",
+      "subtitle": "What you read and what you actually did about it",
+      "repeat_labels": ["Reading Log", "Learning Log"],
+      "elements": { "rows": 14,
+        "columns": ["Title Or Source", "Type", "The One Idea Worth Keeping", "Applied To", "Date"] } },
+
+    { "id": "review", "type": "review", "layout": "panels",
+      "subtitle": "Honest before optimistic",
+      "repeat_labels": ["Quarter Review", "Year Review"],
+      "elements": { "chips": "quarter", "panels": [
+        { "label": "What We Said We Would Do", "lines": 3 },
+        { "label": "What Actually Happened", "lines": 3 },
+        { "label": "The Number, And Whether We Hit It", "lines": 2 },
+        { "label": "What I Got Wrong", "lines": 3 },
+        { "label": "What Changes Next Quarter", "lines": 3 },
+        { "label": "Worth Recognising In The Team", "lines": 2 }
+      ] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "month" } },
+
+    { "id": "resources", "type": "resources", "layout": "record", "title": "Tools And Advisors",
+      "subtitle": "What you pay for, and who you call",
+      "elements": { "rows": 15,
+        "columns": ["Tool Or Advisor", "What They Do", { "label": "Monthly Cost", "numeric": true }, "Renews Or Reviewed", "Keep"],
+        "notice": "Record what a tool or advisor is for and when it renews. Do not write passwords, card details or banking credentials here — a planner is synced, printed and left on desks." } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "CEO Planner",
+      "subtitle": "Undated · Reusable Every Year",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
