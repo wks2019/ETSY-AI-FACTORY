@@ -1,0 +1,252 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Meeting Planner",
+    "slug": "meeting-planner",
+    "collection": "Business Collection",
+    "subtitle": "Prepare · Decide · Follow Up",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["meeting planner", "meeting minutes printable", "meeting agenda template", "action item tracker", "one to one meeting notes", "board meeting minutes", "undated meeting planner", "hyperlinked meeting planner", "team meeting notes", "meeting notes printable", "decision log printable", "manager meeting planner", "goodnotes meeting planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Year", "target": "year" },
+    { "label": "Month", "target": "month" },
+    { "label": "Week", "target": "week" },
+    { "label": "Agenda", "target": "agenda" },
+    { "label": "Actions", "target": "action" },
+    { "label": "Decisions", "target": "decision" },
+    { "label": "Review", "target": "kpi" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Meeting Planner" },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for meetings you run or attend", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies or distribute copies to a team", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "readme", "type": "readme", "layout": "prose", "title": "Read Me",
+      "subtitle": "Meetings that end with something decided",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk and the meeting room. A5 and Half Letter suit a tablet carried between rooms, and print two-up on a full sheet."] },
+        { "heading": "Digital use", "ordered": true, "items": ["Open the PDF in GoodNotes, Notability, Noteshelf, Xodo or any app that imports PDFs", "Import as a document, not as an image", "Switch the app to read mode to tap links, and write mode to write", "Use the tabs to move between agendas, actions and decisions", "Tap Contents in the footer to return to the index from anywhere"] },
+        { "heading": "Printing", "ordered": true, "items": ["Print at 100% scale and never select fit to page", "Use 100 to 120 gsm paper for double-sided printing", "Print the meeting types you actually hold — most people need three or four"] },
+        { "heading": "The three questions", "paragraphs": ["Before: what decision must this meeting produce? If there is no answer, send an email instead.", "During: who owes what, by when? An action without an owner and a date is a wish.", "After: did it happen? The action tracker is the only page that carries across meetings, and it is the page that makes the rest worth keeping."] },
+        { "heading": "Why the action tracker is separate", "paragraphs": ["Most meeting templates bury actions at the foot of the notes page for that meeting. A week later nobody re-reads twelve notes pages to find what was owed. The tracker collects every action from every meeting in one place, which is the whole reason this planner is more than a stack of note sheets."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Plan and prepare",
+      "elements": { "column_break": 16, "include_types": ["dashboard", "year", "quarter", "month", "week", "prep", "agenda", "attendee", "recurring"] } },
+
+    { "id": "index-record", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Record and follow up",
+      "elements": { "column_break": 16, "include_types": ["notes", "discussion", "decision", "action", "followup", "project", "client", "one2one", "board", "brainstorm", "workshop", "training", "video", "kpi", "communication", "open", "resources"] } },
+
+    { "id": "dashboard", "type": "dashboard", "layout": "record", "title": "Meeting Dashboard",
+      "subtitle": "Every meeting you hold, in one view",
+      "elements": { "rows": 15, "chips": "recurring",
+        "columns": ["Meeting", "Purpose", "How Often", "Who Attends", "Owner", "Next"] } },
+
+    { "id": "year", "type": "year", "layout": "year", "title": "The Meeting Year",
+      "subtitle": "Board, review and planning dates set in advance",
+      "elements": { "weekday_labels": ["Q1", "Q2", "Q3", "Q4"], "rows": 3, "chips": "quarter" } },
+
+    { "id": "quarter", "type": "quarter", "layout": "quarter",
+      "subtitle": "What must be decided this quarter, and where",
+      "repeat_labels": ["Quarter One", "Quarter Two", "Quarter Three", "Quarter Four"],
+      "elements": { "months": ["First Month", "Second Month", "Third Month"], "lines": 7, "chips": "quarter",
+        "panels": [
+          { "label": "Decisions Due This Quarter", "lines": 3 },
+          { "label": "Meetings To Cancel Or Merge", "lines": 2 }
+        ] } },
+
+    { "id": "month", "type": "month", "layout": "month", "subtitle": "The month's meeting calendar",
+      "repeat_labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "elements": { "rows": 6, "chips": "month" } },
+
+    { "id": "week", "type": "week", "layout": "week",
+      "subtitle": "The week's schedule, and the time left to do the work",
+      "repeat_labels": ["Week One", "Week Two", "Week Three", "Week Four", "Week Five"],
+      "elements": { "lines": 4, "chips": "month",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Meeting-Free Time", "Actions Due This Week"] } },
+
+    { "id": "prep", "type": "prep", "layout": "record",
+      "subtitle": "Done before the invitation goes out",
+      "repeat_labels": ["Preparation One", "Preparation Two"],
+      "elements": { "rows": 14, "chips": "agenda",
+        "columns": ["Step", "Who Does It", "By When", "Done"] } },
+
+    { "id": "agenda", "type": "agenda", "layout": "agenda",
+      "subtitle": "The decision this meeting must produce",
+      "repeat_labels": ["Agenda One", "Agenda Two", "Agenda Three", "Agenda Four", "Agenda Five", "Agenda Six"],
+      "elements": { "lines": 6, "rows": 7,
+        "panels": [
+          { "label": "Date, Time And Place", "lines": 1 },
+          { "label": "Attending", "lines": 2 },
+          { "label": "Decision This Meeting Must Make", "lines": 2 },
+          { "label": "Read Before Attending", "lines": 2 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "Done"] } },
+
+    { "id": "attendee", "type": "attendee", "layout": "record",
+      "subtitle": "Who was there, who sent apologies, who needs the notes",
+      "repeat_labels": ["Attendees One", "Attendees Two"],
+      "elements": { "rows": 15,
+        "columns": ["Name", "Role", "Present", "Apologies", "Send Notes", "Contact"] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes",
+      "subtitle": "Open space for the meeting itself",
+      "repeat_labels": ["Meeting Notes", "Meeting Notes", "Meeting Notes"],
+      "elements": { "lines": 23, "chips": "agenda" } },
+
+    { "id": "discussion", "type": "discussion", "layout": "record",
+      "subtitle": "What was raised, by whom, and where it landed",
+      "repeat_labels": ["Discussion Log One", "Discussion Log Two"],
+      "elements": { "rows": 14, "chips": "decision",
+        "columns": ["Topic", "Raised By", "The Argument For", "The Argument Against", "Outcome"] } },
+
+    { "id": "decision", "type": "decision", "layout": "record",
+      "subtitle": "What was decided, on what basis, and by whom",
+      "repeat_labels": ["Decision Log One", "Decision Log Two"],
+      "elements": { "rows": 15, "chips": "action",
+        "columns": ["Date", "The Decision", "Made By", "What We Believed", "Revisit On"] } },
+
+    { "id": "action", "type": "action", "layout": "record",
+      "subtitle": "Every action from every meeting, in one place",
+      "repeat_labels": ["Action Tracker One", "Action Tracker Two", "Action Tracker Three"],
+      "elements": { "rows": 16, "chips": "followup",
+        "columns": ["Action", "From Which Meeting", "Owner", "Due", "Status", "Closed"] } },
+
+    { "id": "followup", "type": "followup", "layout": "record",
+      "subtitle": "What still needs chasing, and when you will chase it",
+      "repeat_labels": ["Follow Up One", "Follow Up Two"],
+      "elements": { "rows": 15, "chips": "action",
+        "columns": ["Owed By Whom", "What Is Owed", "Promised", "Chased On", "Chase Again", "Received"] } },
+
+    { "id": "project", "type": "project", "layout": "agenda",
+      "subtitle": "Project meeting — status, blockers, next steps",
+      "repeat_labels": ["Project Meeting One", "Project Meeting Two"],
+      "elements": { "lines": 6, "rows": 7,
+        "panels": [
+          { "label": "Project And Phase", "lines": 1 },
+          { "label": "On Track, Or Not, And Why", "lines": 3 },
+          { "label": "Blocked By", "lines": 2 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "Done"] } },
+
+    { "id": "client", "type": "client", "layout": "agenda",
+      "subtitle": "Client meeting — what they said, what you promised",
+      "repeat_labels": ["Client Meeting One", "Client Meeting Two"],
+      "elements": { "lines": 6, "rows": 6,
+        "panels": [
+          { "label": "Client And Attendees", "lines": 2 },
+          { "label": "What They Actually Want", "lines": 3 },
+          { "label": "What We Committed To", "lines": 3 }
+        ],
+        "action_columns": ["Commitment Made", "Owner", "By When", "Done"] } },
+
+    { "id": "one2one", "type": "one2one", "layout": "agenda",
+      "subtitle": "One to one — theirs first, yours second",
+      "repeat_labels": ["One To One", "One To One", "One To One"],
+      "elements": { "lines": 4, "rows": 5,
+        "panels": [
+          { "label": "Their Agenda, Discussed First", "lines": 3 },
+          { "label": "Going Well", "lines": 2 },
+          { "label": "Stuck On, Or Worried About", "lines": 2 },
+          { "label": "What I Committed To Do", "lines": 2 }
+        ],
+        "action_columns": ["Action", "Owner", "By When", "Done"] } },
+
+    { "id": "board", "type": "board", "layout": "agenda",
+      "subtitle": "Board meeting — resolutions and the record",
+      "repeat_labels": ["Board Meeting One", "Board Meeting Two"],
+      "elements": { "lines": 6, "rows": 7,
+        "panels": [
+          { "label": "Date, Place And Chair", "lines": 1 },
+          { "label": "Present And Quorum", "lines": 2 },
+          { "label": "Apologies", "lines": 1 },
+          { "label": "Papers Circulated In Advance", "lines": 2 }
+        ],
+        "action_columns": ["Resolution Or Action", "Proposed By", "Carried", "By When"] } },
+
+    { "id": "brainstorm", "type": "brainstorm", "layout": "notes",
+      "subtitle": "Capture everything, judge nothing until the end",
+      "repeat_labels": ["Brainstorm One", "Brainstorm Two"],
+      "elements": { "lines": 23, "chips": "decision" } },
+
+    { "id": "workshop", "type": "workshop", "layout": "panels",
+      "subtitle": "Structured session — output, not discussion",
+      "repeat_labels": ["Workshop One", "Workshop Two"],
+      "elements": { "chips": "action", "panels": [
+        { "label": "Session Goal", "lines": 2 },
+        { "label": "Participants And Groups", "lines": 2 },
+        { "label": "Exercises And Timings", "lines": 4 },
+        { "label": "What The Room Produced", "lines": 5 },
+        { "label": "Agreed Next Steps", "lines": 4 }
+      ] } },
+
+    { "id": "training", "type": "training", "layout": "panels",
+      "subtitle": "Training session — what was taught and what stuck",
+      "repeat_labels": ["Training One", "Training Two"],
+      "elements": { "chips": "action", "panels": [
+        { "label": "Topic And Trainer", "lines": 2 },
+        { "label": "Learning Objectives", "lines": 3 },
+        { "label": "Key Points", "lines": 6 },
+        { "label": "Questions Left Unanswered", "lines": 3 },
+        { "label": "What I Will Apply, And When", "lines": 3 }
+      ] } },
+
+    { "id": "video", "type": "video", "layout": "agenda",
+      "subtitle": "Remote meeting — who spoke, what was shared",
+      "repeat_labels": ["Video Call One", "Video Call Two"],
+      "elements": { "lines": 6, "rows": 6,
+        "panels": [
+          { "label": "Platform, Link And Recording", "lines": 2 },
+          { "label": "Attending, And Who Was Silent", "lines": 3 },
+          { "label": "Shared In Chat Or Screen", "lines": 2 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "Done"] } },
+
+    { "id": "recurring", "type": "recurring", "layout": "record",
+      "subtitle": "Standing meetings, and whether they still earn their slot",
+      "repeat_labels": ["Recurring One", "Recurring Two"],
+      "elements": { "rows": 14, "chips": "dashboard",
+        "columns": ["Meeting", "How Often", "Attendees", { "label": "Hours Per Month", "numeric": true }, "Still Needed", "Last Reviewed"] } },
+
+    { "id": "kpi", "type": "kpi", "layout": "record", "title": "Meeting Review",
+      "subtitle": "What your meetings actually cost, and return",
+      "elements": { "rows": 13, "chips": "recurring",
+        "columns": ["Measure", { "label": "Target", "numeric": true }, { "label": "Last Month", "numeric": true }, { "label": "This Month", "numeric": true }, "Trend", "Action"] } },
+
+    { "id": "communication", "type": "communication", "layout": "record",
+      "subtitle": "Who was told what, and when",
+      "repeat_labels": ["Communication Log One", "Communication Log Two"],
+      "elements": { "rows": 15, "chips": "attendee",
+        "columns": ["Date", "Audience", "What Was Sent", "Channel", "Sent By", "Acknowledged"] } },
+
+    { "id": "open", "type": "open", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "agenda" } },
+
+    { "id": "resources", "type": "resources", "layout": "record", "title": "Tools And Rooms",
+      "subtitle": "What you book and what you use",
+      "elements": { "rows": 15,
+        "columns": ["Tool Or Room", "What It Is For", "Capacity", "Booked Through", { "label": "Cost", "numeric": true }, "Keep"],
+        "notice": "Record what a tool or room is for and how it is booked. Do not write passwords, meeting PINs or dial-in codes here — a planner is synced, printed and left on desks." } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Meeting Planner",
+      "subtitle": "Undated · Reusable Every Year",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
