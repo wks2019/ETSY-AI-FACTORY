@@ -1,0 +1,61 @@
+{
+  "$comment": "Build record for v1.0. Regenerated into dist/package on every build; this copy is the committed record.",
+  "product": "Meeting Planner",
+  "slug": "meeting-planner",
+  "version": "1.0",
+  "edition": "Ultimate",
+  "collection": "Business Collection",
+  "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+  "generated": "2026-08-02",
+  "engine": "planner_engine 2.1",
+  "schema": "1.1",
+  "theme": "neutral",
+  "sizes": [
+    { "size": "a4", "file": "meeting-planner-a4.pdf", "pages": 77, "links": 2132, "bookmarks": 77 },
+    { "size": "a5", "file": "meeting-planner-a5.pdf", "pages": 77, "links": 2132, "bookmarks": 77 },
+    { "size": "us_letter", "file": "meeting-planner-us_letter.pdf", "pages": 77, "links": 2132, "bookmarks": 77 },
+    { "size": "half_letter", "file": "meeting-planner-half_letter.pdf", "pages": 77, "links": 2132, "bookmarks": 77 }
+  ],
+  "previews": [
+    { "asset": "meeting-planner-cover.png", "role": "cover", "dpi": 300, "source": "a4 page 1" },
+    { "asset": "meeting-planner-listing-preview.jpg", "role": "listing", "panels": 12, "columns": 4, "source": "a4 pages 1-12" }
+  ],
+  "packaging": {
+    "structure": [
+      "PDF/ — four printable hyperlinked PDFs",
+      "Previews/ — cover PNG and listing preview JPG",
+      "Documentation/INSTRUCTIONS.md",
+      "Documentation/LICENCE.md",
+      "manifest.json"
+    ],
+    "zip": "meeting-planner-v1.0.zip",
+    "placeholders": 0
+  },
+  "fonts": {
+    "display": "Cormorant Garamond",
+    "body": "Inter",
+    "licence": "SIL Open Font License 1.1",
+    "embedding": "subset, Type0, live text"
+  },
+  "layouts_used": ["cover", "prose", "index", "record", "year", "quarter", "month", "week", "agenda", "notes", "panels"],
+  "engine_modifications": "none",
+  "schema_modifications": "none",
+  "new_renderers": 0,
+  "blockers_found": 1,
+  "blockers_resolved_at": "spec level — one-to-one page trimmed for US Letter height",
+  "verification": {
+    "page_parity": true,
+    "link_parity": true,
+    "bookmark_parity": true,
+    "schema_valid": true,
+    "literal_colours": 0,
+    "contrast_pairings_checked": 9,
+    "contrast_failures": 0
+  },
+  "outstanding": [
+    "Canva import verification — manual",
+    "Physical print test",
+    "SEO package",
+    "Mockups"
+  ]
+}
