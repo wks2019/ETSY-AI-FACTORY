@@ -1,0 +1,54 @@
+{
+  "$comment": "Build record for v1.0. Regenerated into dist/package on every build; this copy is the committed record.",
+  "product": "Business Productivity Planner",
+  "slug": "business-productivity-planner",
+  "version": "1.0",
+  "collection": "Business Collection",
+  "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+  "generated": "2026-08-02",
+  "engine": "planner_engine 2.0",
+  "schema": "1.1",
+  "theme": "neutral",
+  "sizes": [
+    { "size": "a4", "file": "business-productivity-planner-a4.pdf", "pages": 58, "links": 1880, "bookmarks": 58 },
+    { "size": "a5", "file": "business-productivity-planner-a5.pdf", "pages": 58, "links": 1880, "bookmarks": 58 },
+    { "size": "us_letter", "file": "business-productivity-planner-us_letter.pdf", "pages": 58, "links": 1880, "bookmarks": 58 },
+    { "size": "half_letter", "file": "business-productivity-planner-half_letter.pdf", "pages": 58, "links": 1880, "bookmarks": 58 }
+  ],
+  "previews": [
+    { "asset": "business-productivity-planner-cover.png", "role": "cover", "dpi": 300, "source": "a4 page 1" },
+    { "asset": "business-productivity-planner-listing-preview.jpg", "role": "listing", "panels": 12, "columns": 4, "source": "a4 pages 1-12" }
+  ],
+  "packaging": {
+    "structure": [
+      "PDF/ — four printable hyperlinked PDFs",
+      "Previews/ — cover PNG and listing preview JPG",
+      "Documentation/INSTRUCTIONS.md",
+      "Documentation/LICENCE.md",
+      "manifest.json"
+    ],
+    "zip": "business-productivity-planner-v1.0.zip",
+    "placeholders": 0
+  },
+  "fonts": {
+    "display": "Cormorant Garamond",
+    "body": "Inter",
+    "licence": "SIL Open Font License 1.1",
+    "embedding": "subset, Type0, live text"
+  },
+  "verification": {
+    "page_parity": true,
+    "link_parity": true,
+    "bookmark_parity": true,
+    "schema_valid": true,
+    "literal_colours": 0,
+    "contrast_pairings_checked": 9,
+    "contrast_failures": 0
+  },
+  "outstanding": [
+    "Canva import verification — manual",
+    "Physical print test of new page types",
+    "SEO package",
+    "Mockups"
+  ]
+}

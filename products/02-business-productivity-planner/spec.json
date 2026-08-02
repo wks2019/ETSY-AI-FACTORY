@@ -1,0 +1,201 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Business Productivity Planner",
+    "slug": "business-productivity-planner",
+    "collection": "Business Collection",
+    "subtitle": "Undated · Hyperlinked · Four Sizes",
+    "edition": "Standard",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": [
+      "business planner", "small business planner", "undated business planner",
+      "hyperlinked business planner", "printable business planner",
+      "goodnotes business planner", "freelancer planner", "consultant planner",
+      "quarterly planner", "meeting notes planner", "expense tracker printable",
+      "productivity planner", "entrepreneur planner"
+    ]
+  },
+  "design": {
+    "theme": "neutral",
+    "fonts": { "display": "Cormorant Garamond", "body": "Inter" }
+  },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": {
+    "tabs": [
+      { "label": "Index", "target": "index" },
+      { "label": "Year", "target": "year" },
+      { "label": "Quarter", "target": "quarter" },
+      { "label": "Month", "target": "month" },
+      { "label": "Week", "target": "week" },
+      { "label": "Day", "target": "day" },
+      { "label": "Projects", "target": "project" },
+      { "label": "Money", "target": "expenses" }
+    ]
+  },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover",
+      "title": "Business Productivity Planner" },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": [
+          "Use this planner for your own business or professional practice",
+          "Print unlimited copies for your own use",
+          "Annotate digitally on any device you own",
+          "Use it inside a business you own or work for" ] },
+        { "heading": "You may not", "items": [
+          "Resell, share or redistribute the files in any form",
+          "Sell printed copies",
+          "Include the files in another product or bundle",
+          "Claim the design as your own" ] },
+        { "heading": "Fonts", "paragraphs": [
+          "Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work." ] }
+      ] } },
+
+    { "id": "readme", "type": "readme", "layout": "prose", "title": "Read Me",
+      "subtitle": "Set up in under a minute",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": [
+          "Four sizes are included and all four contain identical pages. A4 and US Letter suit desk use and printing. A5 and Half Letter suit tablets and pocket binders, and print two-up on a full sheet." ] },
+        { "heading": "Digital planning", "ordered": true, "items": [
+          "Open the PDF in GoodNotes, Notability, Noteshelf, Xodo or any app that imports PDFs",
+          "Import as a document, not as an image",
+          "Switch the app to read mode to tap links, and write mode to write",
+          "Tap the tabs at the top of any page to move between sections",
+          "Tap Contents in the footer to return to the index from anywhere" ] },
+        { "heading": "Printing", "ordered": true, "items": [
+          "Print at 100% scale and never select fit to page",
+          "Use 100 to 120 gsm paper for double-sided printing",
+          "Print only the sections you use — the index lists every page" ] },
+        { "heading": "Editing in Canva", "ordered": true, "items": [
+          "Choose Create a design, then Import file, and select the PDF",
+          "Text stays editable. Both fonts are available in Canva",
+          "Check spacing after import before you export" ] },
+        { "heading": "How this planner is meant to be used", "paragraphs": [
+          "Start at the year page and set no more than three objectives. Break each one into a quarter. Pull the quarter into months, the month into weeks, and only then into days. Most planners fail because they start at the day. Finish each quarter on a review page before you plan the next one." ] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Every page in this planner",
+      "elements": { "include_types": ["year","quarter","month","week","day","meeting","project","goals","habits","expenses","notes","contacts","resources","review"] } },
+
+    { "id": "year", "type": "year", "layout": "year", "title": "The Year",
+      "subtitle": "Four quarters, three objectives",
+      "elements": { "weekday_labels": ["Q1","Q2","Q3","Q4"], "rows": 3, "chips": "quarter" } },
+
+    { "id": "quarter", "type": "quarter", "layout": "quarter",
+      "subtitle": "Three months, one objective",
+      "repeat_labels": ["Quarter One","Quarter Two","Quarter Three","Quarter Four"],
+      "elements": { "months": ["First Month","Second Month","Third Month"], "lines": 7,
+        "chips": "quarter",
+        "panels": [
+          { "label": "Objective For This Quarter", "lines": 2 },
+          { "label": "How Success Will Be Measured", "lines": 2 },
+          { "label": "What I Will Not Do This Quarter", "lines": 2 } ] } },
+
+    { "id": "month", "type": "month", "layout": "month", "subtitle": "The month at a glance",
+      "repeat_labels": ["January","February","March","April","May","June","July","August","September","October","November","December"],
+      "elements": { "rows": 6, "chips": "month" } },
+
+    { "id": "week", "type": "week", "layout": "week",
+      "subtitle": "Five working days, two for the business itself",
+      "repeat_labels": ["Week One","Week Two","Week Three","Week Four","Week Five"],
+      "elements": { "lines": 4, "chips": "month",
+        "day_labels": ["Monday","Tuesday","Wednesday","Thursday","Friday","Weekend","Working On The Business"] } },
+
+    { "id": "day", "type": "day", "layout": "day",
+      "subtitle": "Schedule, priorities, follow-ups",
+      "repeat_labels": ["Day One","Day Two","Day Three","Day Four","Day Five","Day Six","Day Seven"],
+      "elements": { "hour_start": 7, "hour_end": 19, "chips": "week",
+        "panels": [
+          { "label": "The One Thing That Must Happen", "lines": 2 },
+          { "label": "Then These", "lines": 5 },
+          { "label": "Waiting On Someone Else", "lines": 4 },
+          { "label": "Captured For Later", "lines": 4 } ] } },
+
+    { "id": "meeting", "type": "meeting", "layout": "agenda",
+      "subtitle": "What was decided and who owes what",
+      "repeat_labels": ["Meeting One","Meeting Two","Meeting Three","Meeting Four"],
+      "elements": { "lines": 6, "rows": 7,
+        "panels": [
+          { "label": "Who Was There", "lines": 2 },
+          { "label": "Purpose Of This Meeting", "lines": 2 } ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "Done"] } },
+
+    { "id": "project", "type": "project", "layout": "timeline",
+      "subtitle": "Twelve weeks, start to finish",
+      "repeat_labels": ["Project One","Project Two","Project Three","Project Four"],
+      "elements": {
+        "periods": ["W1","W2","W3","W4","W5","W6","W7","W8","W9","W10","W11","W12"],
+        "items": ["Stage one","Stage two","Stage three","Stage four","Stage five","Stage six"],
+        "panels": [
+          { "label": "Project And Client", "lines": 2 },
+          { "label": "What Done Looks Like", "lines": 2 },
+          { "label": "Blocked By", "lines": 2 } ] } },
+
+    { "id": "goals", "type": "goals", "layout": "panels",
+      "subtitle": "One goal, broken until it is small enough to start",
+      "repeat_labels": ["Goal One","Goal Two"],
+      "elements": { "chips": "quarter",
+        "panels": [
+          { "label": "The Goal", "lines": 2 },
+          { "label": "Why It Matters To The Business", "lines": 3 },
+          { "label": "Milestones", "lines": 6 },
+          { "label": "The First Action, Today", "lines": 2 },
+          { "label": "What Could Stop This", "lines": 3 } ] } },
+
+    { "id": "habits", "type": "habits", "layout": "tracker",
+      "subtitle": "The routines that keep the business running",
+      "repeat_labels": ["Business Habits","Personal Habits"],
+      "elements": { "columns": 31, "chips": "month",
+        "items": ["Inbox to zero","Invoices sent","Follow-ups chased","Two hours deep work",
+                  "Numbers checked","Content published","Client contact","Learning",
+                  "Movement","Finished before seven"] } },
+
+    { "id": "expenses", "type": "expenses", "layout": "ledger",
+      "subtitle": "Record it now, not in April",
+      "repeat_labels": ["Expenses One","Expenses Two","Expenses Three"],
+      "elements": { "rows": 17, "totals": true, "chips": "month",
+        "columns": ["Date", "Description", "Category",
+                    { "label": "Amount", "numeric": true },
+                    { "label": "Tax", "numeric": true }, "Receipt"] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes",
+      "subtitle": "Open space",
+      "repeat_labels": ["Ideas","Notes","Notes","Brain Dump"],
+      "elements": { "lines": 23, "chips": "month" } },
+
+    { "id": "contacts", "type": "contacts", "layout": "record",
+      "subtitle": "Clients, suppliers, people who matter",
+      "repeat_labels": ["Contacts One","Contacts Two"],
+      "elements": { "rows": 17,
+        "columns": ["Name", "Company", "Contact", "How We Met", "Last Spoke"] } },
+
+    { "id": "resources", "type": "resources", "layout": "record",
+      "title": "Tools And Subscriptions",
+      "subtitle": "What you pay for and whether it earns its place",
+      "elements": { "rows": 17,
+        "columns": ["Tool", "What It Does", { "label": "Monthly Cost", "numeric": true }, "Renews", "Keep"],
+        "notice": "Record what a tool is for and when it renews. Do not write passwords, card details or banking credentials here — a planner is synced, printed and left on desks." } },
+
+    { "id": "review", "type": "review", "layout": "panels",
+      "subtitle": "Look back before you plan forward",
+      "repeat_labels": ["Quarter Review","Year Review"],
+      "elements": { "chips": "quarter",
+        "panels": [
+          { "label": "What Actually Got Done", "lines": 4 },
+          { "label": "What Did Not, And Why", "lines": 4 },
+          { "label": "What Made Money", "lines": 3 },
+          { "label": "What I Will Stop Doing", "lines": 3 },
+          { "label": "One Thing Worth Recognising", "lines": 2 } ] } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover",
+      "title": "Business Productivity Planner",
+      "subtitle": "Undated · Reusable Every Year",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
