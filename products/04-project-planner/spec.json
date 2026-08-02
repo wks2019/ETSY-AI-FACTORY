@@ -1,0 +1,296 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Project Planner",
+    "slug": "project-planner",
+    "collection": "Business Collection",
+    "subtitle": "Scope · Schedule · Deliver",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["project planner", "project management planner", "gantt chart printable", "risk register template", "milestone tracker printable", "undated project planner", "hyperlinked project planner", "project manager planner", "consultant project planner", "freelance project planner", "work breakdown structure", "sprint planner printable", "goodnotes project planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Scope", "target": "scope" },
+    { "label": "Tasks", "target": "task" },
+    { "label": "Timeline", "target": "timeline" },
+    { "label": "Risks", "target": "risk" },
+    { "label": "Budget", "target": "budget" },
+    { "label": "Meetings", "target": "meeting" },
+    { "label": "Review", "target": "review" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Project Planner" },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner on your own projects, at work or for clients", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies or distribute copies to a team", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "readme", "type": "readme", "layout": "prose", "title": "Read Me",
+      "subtitle": "One project, front to back",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk and the wall. A5 and Half Letter suit a tablet and a site visit, and print two-up on a full sheet."] },
+        { "heading": "Digital use", "ordered": true, "items": ["Open the PDF in GoodNotes, Notability, Noteshelf, Xodo or any app that imports PDFs", "Import as a document, not as an image", "Switch the app to read mode to tap links, and write mode to write", "Use the tabs to move between phases of the project", "Tap Contents in the footer to return to the index from anywhere"] },
+        { "heading": "Printing", "ordered": true, "items": ["Print at 100% scale and never select fit to page", "Use 100 to 120 gsm paper for double-sided printing", "Print only the sections this project needs — a small project will not use all of them"] },
+        { "heading": "The order to work in", "ordered": true, "items": ["Charter first — why this project exists and who decides", "Scope next, including what is explicitly out", "Break the work down before estimating anything", "Set milestones, then build the timeline backwards from the deadline", "Register the risks before the first task, not after the first problem", "Review weekly. Close with lessons learned while they are still true"] },
+        { "heading": "One planner, one project", "paragraphs": ["This planner covers a single project properly rather than twenty projects badly. If you run several at once, print or duplicate the file per project — the sections are designed to be filled completely, not sampled."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Define and plan",
+      "elements": { "column_break": 16, "include_types": ["overview", "charter", "objectives", "criteria", "stakeholder", "scope", "requirements", "wbs", "milestone", "timeline", "gantt", "task", "matrix", "sprint", "kanban"] } },
+
+    { "id": "index-delivery", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Deliver and review",
+      "elements": { "column_break": 16, "include_types": ["meeting", "action", "risk", "issue", "budget", "expenses", "resource", "team", "communication", "decision", "change", "deliverable", "dashboard", "progress", "lessons", "notes", "resources"] } },
+
+    { "id": "overview", "type": "overview", "layout": "panels", "title": "Project Overview",
+      "subtitle": "The whole project on one page",
+      "elements": { "chips": "charter", "panels": [
+        { "label": "Project Name And Client", "lines": 2 },
+        { "label": "What This Project Delivers", "lines": 3 },
+        { "label": "Start And Finish Dates", "lines": 2 },
+        { "label": "Project Lead And Sponsor", "lines": 2 },
+        { "label": "Budget And Headline Numbers", "lines": 2 },
+        { "label": "Current Status", "lines": 2 }
+      ] } },
+
+    { "id": "charter", "type": "charter", "layout": "panels", "title": "Project Charter",
+      "subtitle": "Why this project exists and who decides",
+      "elements": { "chips": "objectives", "panels": [
+        { "label": "The Problem This Solves", "lines": 3 },
+        { "label": "Why Now", "lines": 2 },
+        { "label": "Who Authorised It", "lines": 2 },
+        { "label": "Who Decides When We Disagree", "lines": 2 },
+        { "label": "What Happens If We Do Nothing", "lines": 3 }
+      ] } },
+
+    { "id": "objectives", "type": "objectives", "layout": "panels", "title": "Objectives",
+      "subtitle": "Three at most, or none of them happen",
+      "elements": { "chips": "criteria", "panels": [
+        { "label": "Objective One", "lines": 3 },
+        { "label": "Objective Two", "lines": 3 },
+        { "label": "Objective Three", "lines": 3 },
+        { "label": "Explicitly Not An Objective", "lines": 3 }
+      ] } },
+
+    { "id": "criteria", "type": "criteria", "layout": "record", "title": "Success Criteria",
+      "subtitle": "How anyone will know this worked",
+      "elements": { "rows": 13, "chips": "objectives",
+        "columns": ["Criterion", "How It Is Measured", { "label": "Target", "numeric": true }, "Verified By", "Met"] } },
+
+    { "id": "stakeholder", "type": "stakeholder", "layout": "record",
+      "subtitle": "Who cares, how much, and what they need to hear",
+      "repeat_labels": ["Stakeholder Register One", "Stakeholder Register Two"],
+      "elements": { "rows": 14,
+        "columns": ["Name", "Role", "Interest", "Influence", "What They Need", "Contact"] } },
+
+    { "id": "scope", "type": "scope", "layout": "panels", "title": "Project Scope",
+      "subtitle": "The boundary, drawn on purpose",
+      "elements": { "chips": "requirements", "panels": [
+        { "label": "In Scope", "lines": 6 },
+        { "label": "Out Of Scope", "lines": 5 },
+        { "label": "Assumptions We Are Making", "lines": 4 },
+        { "label": "Constraints We Cannot Move", "lines": 4 }
+      ] } },
+
+    { "id": "requirements", "type": "requirements", "layout": "record",
+      "subtitle": "What must be true for this to be finished",
+      "repeat_labels": ["Requirements One", "Requirements Two"],
+      "elements": { "rows": 15,
+        "columns": ["Ref", "Requirement", "Raised By", "Priority", "Accepted"] } },
+
+    { "id": "wbs", "type": "wbs", "layout": "record",
+      "subtitle": "Break it down until each piece has one owner",
+      "repeat_labels": ["Work Breakdown One", "Work Breakdown Two"],
+      "elements": { "rows": 15, "chips": "milestone",
+        "columns": ["Ref", "Phase", "Deliverable", "Owner", { "label": "Estimate", "numeric": true }, "Depends On"] } },
+
+    { "id": "milestone", "type": "milestone", "layout": "record",
+      "subtitle": "The dates that actually matter",
+      "repeat_labels": ["Milestones One", "Milestones Two"],
+      "elements": { "rows": 13, "chips": "timeline",
+        "columns": ["Milestone", "What Proves It Is Done", "Owner", "Planned", "Actual", "Slip"] } },
+
+    { "id": "timeline", "type": "timeline", "layout": "timeline",
+      "subtitle": "Twelve weeks, shaded by hand",
+      "repeat_labels": ["Timeline One", "Timeline Two"],
+      "elements": {
+        "periods": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10", "W11", "W12"],
+        "items": ["Phase one", "Phase two", "Phase three", "Phase four", "Phase five", "Phase six"],
+        "panels": [
+          { "label": "Critical Path", "lines": 2 },
+          { "label": "Float We Actually Have", "lines": 2 }
+        ] } },
+
+    { "id": "gantt", "type": "gantt", "layout": "timeline",
+      "subtitle": "Task level, week by week",
+      "repeat_labels": ["Gantt One", "Gantt Two"],
+      "elements": {
+        "periods": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10", "W11", "W12"],
+        "items": ["Task one", "Task two", "Task three", "Task four", "Task five", "Task six", "Task seven", "Task eight"],
+        "panels": [
+          { "label": "Owner Per Row", "lines": 3 }
+        ] } },
+
+    { "id": "task", "type": "task", "layout": "record",
+      "subtitle": "Every task has an owner and a date, or it is not a task",
+      "repeat_labels": ["Task Planner One", "Task Planner Two", "Task Planner Three", "Task Planner Four"],
+      "elements": { "rows": 16, "chips": "milestone",
+        "columns": ["Task", "Owner", "Priority", "Due", "Blocked By", "Done"] } },
+
+    { "id": "matrix", "type": "matrix", "layout": "panels", "title": "Priority Matrix",
+      "subtitle": "Urgency is not importance",
+      "elements": { "chips": "task", "panels": [
+        { "label": "Important And Urgent — Do Now", "lines": 4 },
+        { "label": "Important Not Urgent — Schedule", "lines": 5 },
+        { "label": "Urgent Not Important — Delegate", "lines": 4 },
+        { "label": "Neither — Delete It", "lines": 3 }
+      ] } },
+
+    { "id": "sprint", "type": "sprint", "layout": "panels",
+      "subtitle": "What this cycle commits to, and what it does not",
+      "repeat_labels": ["Sprint One", "Sprint Two"],
+      "elements": { "chips": "kanban", "panels": [
+        { "label": "Sprint Goal", "lines": 2 },
+        { "label": "Committed This Sprint", "lines": 6 },
+        { "label": "Capacity Available", "lines": 2 },
+        { "label": "Pulled Out Or Deferred", "lines": 3 },
+        { "label": "Carried Into Next Sprint", "lines": 3 }
+      ] } },
+
+    { "id": "kanban", "type": "kanban", "layout": "quarter",
+      "subtitle": "Limit what is in progress",
+      "repeat_labels": ["Kanban One", "Kanban Two", "Kanban Three"],
+      "elements": { "months": ["To Do", "In Progress", "Done"], "lines": 9, "chips": "task",
+        "panels": [
+          { "label": "Work In Progress Limit", "lines": 1 },
+          { "label": "Blocked, And By Whom", "lines": 3 }
+        ] } },
+
+    { "id": "meeting", "type": "meeting", "layout": "agenda",
+      "subtitle": "Decisions and owners, not minutes",
+      "repeat_labels": ["Meeting One", "Meeting Two", "Meeting Three", "Meeting Four"],
+      "elements": { "lines": 6, "rows": 7,
+        "panels": [
+          { "label": "Attending", "lines": 2 },
+          { "label": "Decision This Meeting Must Make", "lines": 2 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "Done"] } },
+
+    { "id": "action", "type": "action", "layout": "record",
+      "subtitle": "Everything agreed, in one place",
+      "repeat_labels": ["Action Items One", "Action Items Two"],
+      "elements": { "rows": 16, "chips": "meeting",
+        "columns": ["Action", "Raised", "Owner", "Due", "Status", "Closed"] } },
+
+    { "id": "risk", "type": "risk", "layout": "record",
+      "subtitle": "Registered before the first task, not after the first problem",
+      "repeat_labels": ["Risk Register One", "Risk Register Two"],
+      "elements": { "rows": 14, "chips": "issue",
+        "columns": ["Risk", "Likelihood", "Impact", "Owner", "Mitigation", "Review On"] } },
+
+    { "id": "issue", "type": "issue", "layout": "record",
+      "subtitle": "A risk that happened",
+      "repeat_labels": ["Issue Log One", "Issue Log Two"],
+      "elements": { "rows": 14, "chips": "risk",
+        "columns": ["Date", "Issue", "Impact", "Owner", "Resolution", "Closed"] } },
+
+    { "id": "budget", "type": "budget", "layout": "ledger",
+      "subtitle": "Planned against actual, line by line",
+      "repeat_labels": ["Budget One", "Budget Two"],
+      "elements": { "rows": 15, "totals": true, "chips": "expenses",
+        "columns": ["Line Item", "Category", { "label": "Planned", "numeric": true }, { "label": "Actual", "numeric": true }, { "label": "Variance", "numeric": true }, "Approved"] } },
+
+    { "id": "expenses", "type": "expenses", "layout": "ledger",
+      "subtitle": "What was actually spent",
+      "repeat_labels": ["Expenses One", "Expenses Two"],
+      "elements": { "rows": 16, "totals": true, "chips": "budget",
+        "columns": ["Date", "Description", "Category", { "label": "Amount", "numeric": true }, { "label": "Tax", "numeric": true }, "Receipt"] } },
+
+    { "id": "resource", "type": "resource", "layout": "record",
+      "subtitle": "People, tools, and what they cost",
+      "repeat_labels": ["Resource Plan One", "Resource Plan Two"],
+      "elements": { "rows": 14,
+        "columns": ["Resource", "Type", "Needed From", "Needed Until", { "label": "Cost", "numeric": true }, "Confirmed"] } },
+
+    { "id": "team", "type": "team", "layout": "record",
+      "subtitle": "Who is doing what, and how much of them we have",
+      "repeat_labels": ["Team Plan One", "Team Plan Two"],
+      "elements": { "rows": 14,
+        "columns": ["Name", "Role On Project", "Responsible For", { "label": "Days Allocated", "numeric": true }, "Available From", "Notes"] } },
+
+    { "id": "communication", "type": "communication", "layout": "record", "title": "Communication Plan",
+      "subtitle": "Who hears what, how often, from whom",
+      "elements": { "rows": 14, "chips": "stakeholder",
+        "columns": ["Audience", "What They Receive", "How Often", "Channel", "Sent By"] } },
+
+    { "id": "decision", "type": "decision", "layout": "record",
+      "subtitle": "What was decided, on what basis, and by whom",
+      "repeat_labels": ["Decision Log One", "Decision Log Two"],
+      "elements": { "rows": 15,
+        "columns": ["Date", "The Decision", "Made By", "What We Believed", "Alternative Rejected"] } },
+
+    { "id": "change", "type": "change", "layout": "record",
+      "subtitle": "Scope moves. Record it or it becomes creep",
+      "repeat_labels": ["Change Log One", "Change Log Two"],
+      "elements": { "rows": 14, "chips": "scope",
+        "columns": ["Date", "Change Requested", "Requested By", "Effect On Cost", "Effect On Date", "Approved"] } },
+
+    { "id": "deliverable", "type": "deliverable", "layout": "record",
+      "subtitle": "Handed over, accepted, and signed off",
+      "repeat_labels": ["Deliverables One", "Deliverables Two"],
+      "elements": { "rows": 15, "chips": "criteria",
+        "columns": ["Deliverable", "Owner", "Due", "Handed Over", "Accepted By", "Signed Off"] } },
+
+    { "id": "dashboard", "type": "dashboard", "layout": "record", "title": "Project Dashboard",
+      "subtitle": "The numbers that describe project health",
+      "elements": { "rows": 13, "chips": "progress",
+        "columns": ["Measure", { "label": "Target", "numeric": true }, { "label": "Last Week", "numeric": true }, { "label": "This Week", "numeric": true }, "Trend", "Status"] } },
+
+    { "id": "progress", "type": "progress", "layout": "panels",
+      "subtitle": "Weekly, honest, and short",
+      "repeat_labels": ["Week One", "Week Two", "Week Three", "Week Four", "Week Five"],
+      "elements": { "chips": "dashboard", "panels": [
+        { "label": "Completed This Week", "lines": 4 },
+        { "label": "Slipped, And Why", "lines": 3 },
+        { "label": "Blocked, And By Whom", "lines": 3 },
+        { "label": "Next Week's Focus", "lines": 3 },
+        { "label": "Still On Track For The Date", "lines": 2 }
+      ] } },
+
+    { "id": "lessons", "type": "lessons", "layout": "panels",
+      "subtitle": "Written while they are still true",
+      "repeat_labels": ["Lessons Learned", "Retrospective"],
+      "elements": { "chips": "progress", "panels": [
+        { "label": "What Worked, And Why", "lines": 4 },
+        { "label": "What Did Not, And Why", "lines": 4 },
+        { "label": "What We Underestimated", "lines": 3 },
+        { "label": "What We Would Do Differently", "lines": 4 },
+        { "label": "Carry Into The Next Project", "lines": 3 }
+      ] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes", "Sketches And Ideas"],
+      "elements": { "lines": 23, "chips": "task" } },
+
+    { "id": "resources", "type": "resources", "layout": "record", "title": "Tools And Suppliers",
+      "subtitle": "What you use and who you call",
+      "elements": { "rows": 15,
+        "columns": ["Tool Or Supplier", "What They Provide", "Contact", { "label": "Cost", "numeric": true }, "Renews", "Keep"],
+        "notice": "Record what a tool or supplier is for and when it renews. Do not write passwords, card details or client credentials here — a planner is synced, printed and left on desks." } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Project Planner",
+      "subtitle": "Undated · Reusable On Every Project",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
