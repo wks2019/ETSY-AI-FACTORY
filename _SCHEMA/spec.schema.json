@@ -1,0 +1,237 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/wks2019/ETSY-AI-FACTORY/_SCHEMA/spec.schema.json",
+  "title": "AIDPF Product Specification",
+  "description": "Validates every product specification. Colour values are prohibited anywhere in a spec; products reference semantic tokens resolved from _SCHEMA/themes.json.",
+  "type": "object",
+  "required": ["schema", "product", "pages"],
+  "additionalProperties": false,
+
+  "properties": {
+    "schema": {
+      "type": "string",
+      "pattern": "^1\\.[0-9]+$",
+      "description": "Specification schema version."
+    },
+    "language": { "type": "string", "default": "en" },
+
+    "product": {
+      "type": "object",
+      "required": ["name", "slug", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "collection": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "edition": { "type": "string", "enum": ["Essential", "Standard", "Ultimate", "Bundle"] },
+        "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$" },
+        "author": { "type": "string" },
+        "standard": { "type": "string", "description": "Product standard this spec conforms to." },
+        "keywords": { "type": "array", "items": { "type": "string" }, "maxItems": 13 }
+      }
+    },
+
+    "design": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "theme": {
+          "type": "string",
+          "description": "Theme name resolved from _SCHEMA/themes.json.",
+          "default": "neutral"
+        },
+        "token_overrides": {
+          "type": "object",
+          "description": "Per-product token rebinding. Must target existing tokens only.",
+          "additionalProperties": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+        },
+        "fonts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "display": { "type": "string", "enum": ["Cormorant Garamond"] },
+            "body": { "type": "string", "enum": ["Inter"] }
+          }
+        }
+      }
+    },
+
+    "sizes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "enum": ["a4", "a5", "us_letter", "half_letter"] },
+      "default": ["a4", "a5", "us_letter", "half_letter"]
+    },
+
+    "navigation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tabs": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": ["label", "target"],
+            "additionalProperties": false,
+            "properties": {
+              "label": { "type": "string", "maxLength": 12 },
+              "target": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/page" }
+    }
+  },
+
+  "definitions": {
+    "page": {
+      "type": "object",
+      "required": ["id", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Unique. Becomes the PDF anchor and link target."
+        },
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "type": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Semantic page kind. Drives index grouping and tab state."
+        },
+        "layout": {
+          "type": "string",
+          "enum": [
+            "cover", "prose", "index", "year", "month", "quarter",
+            "week", "day", "agenda", "ledger", "record", "timeline",
+            "tracker", "panels", "notes"
+          ],
+          "description": "Renderer function. Defaults to `type` when omitted."
+        },
+        "theme": { "type": "string", "description": "Per-page theme override." },
+        "repeat_labels": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Generates one page per label. Ids are suffixed -01, -02."
+        },
+        "elements": { "$ref": "#/definitions/elements" },
+        "links": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "object",
+                "required": ["target"],
+                "additionalProperties": false,
+                "properties": {
+                  "target": { "type": "string" },
+                  "label": { "type": "string" }
+                }
+              }
+            ]
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Not rendered. Author intent, source, revision reason."
+        },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "min_lines": { "type": "integer", "minimum": 1 },
+            "max_lines": { "type": "integer", "minimum": 1 },
+            "expected_columns": { "type": "integer", "minimum": 1 },
+            "expected_rows": { "type": "integer", "minimum": 1 },
+            "must_link_to": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+
+    "elements": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "eyebrow": { "type": "string" },
+        "lines": { "type": "integer", "minimum": 1, "maximum": 40 },
+        "rows": { "type": "integer", "minimum": 1, "maximum": 40 },
+        "columns": {
+          "oneOf": [
+            { "type": "integer", "minimum": 1, "maximum": 40 },
+            { "type": "array", "items": { "$ref": "#/definitions/column" } }
+          ]
+        },
+        "items": { "type": "array", "items": { "type": "string" } },
+        "panels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label"],
+            "additionalProperties": false,
+            "properties": {
+              "label": { "type": "string", "maxLength": 40 },
+              "lines": { "type": "integer", "minimum": 1, "maximum": 20 }
+            }
+          }
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "heading": { "type": "string" },
+              "paragraphs": { "type": "array", "items": { "type": "string" } },
+              "items": { "type": "array", "items": { "type": "string" } },
+              "ordered": { "type": "boolean" }
+            }
+          }
+        },
+        "months": { "type": "array", "items": { "type": "string" }, "maxItems": 4 },
+        "periods": { "type": "array", "items": { "type": "string" }, "maxItems": 16 },
+        "weekday_labels": { "type": "array", "items": { "type": "string" }, "maxItems": 7 },
+        "day_labels": { "type": "array", "items": { "type": "string" }, "maxItems": 7 },
+        "action_columns": { "type": "array", "items": { "$ref": "#/definitions/column" } },
+        "hour_start": { "type": "integer", "minimum": 0, "maximum": 23 },
+        "hour_end": { "type": "integer", "minimum": 0, "maximum": 23 },
+        "totals": { "type": "boolean" },
+        "chips": { "type": "string", "description": "Page type to generate chip links for." },
+        "include_types": { "type": "array", "items": { "type": "string" } },
+        "column_break": { "type": "integer", "minimum": 1 },
+        "notice": { "type": "string" }
+      }
+    },
+
+    "column": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "required": ["label"],
+          "additionalProperties": false,
+          "properties": {
+            "label": { "type": "string" },
+            "numeric": {
+              "type": "boolean",
+              "description": "Right-aligns with tabular figures."
+            }
+          }
+        }
+      ]
+    }
+  }
+}

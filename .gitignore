@@ -1,10 +1,20 @@
 # Build output
 dist/
 build/
+exports/
+previews/
+mockups/
 *.pdf
 *.png
 *.jpg
 *.jpeg
+*.zip
+
+# Fonts — downloaded on demand by _ENGINE/assets.py, never committed.
+# OFL permits embedding in a PDF; shipping the font file is redistribution.
+_ENGINE/fonts/
+*.ttf
+*.otf
 
 # Python
 __pycache__/
