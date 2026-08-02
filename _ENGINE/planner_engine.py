@@ -1,7 +1,7 @@
 """
 planner_engine.py
 ETSY-AI-FACTORY / _ENGINE
-Version: 2.0
+Version: 2.1
 
 Rendering orchestrator.
 
@@ -151,6 +151,16 @@ def verify(results, spec: dict, pages, theme) -> None:
     problems: list[str] = []
     expected = len(pages)
 
+    # Equal page counts can still hide a defect. Content that overflows at a
+    # smaller size is clipped rather than pushed onto a new page, and the only
+    # visible symptom is a missing link. Product 001 lost one index row this
+    # way before spacing was scaled with the page.
+    link_counts = {r.links for r in results}
+    if len(link_counts) != 1:
+        problems.append(
+            f"link count differs across sizes: {sorted(link_counts)} \u2014 "
+            "content is being clipped at the smaller size")
+
     counts = {r.pages for r in results}
     if len(counts) != 1:
         problems.append(f"page count differs across sizes: {sorted(counts)}")
@@ -202,7 +212,7 @@ def main() -> int:
                         help="validate the spec and exit without rendering")
     args = parser.parse_args()
 
-    print("ETSY-AI-FACTORY / planner_engine 2.0\n")
+    print("ETSY-AI-FACTORY / planner_engine 2.1\n")
     try:
         if args.validate_only:
             spec = load_spec(args.spec)
