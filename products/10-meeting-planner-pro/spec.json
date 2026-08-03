@@ -1,0 +1,270 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Meeting Planner Pro",
+    "slug": "meeting-planner-pro",
+    "collection": "Business Collection",
+    "subtitle": "Undated · Cadence, Ownership, Follow-Through",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["meeting planner", "action items tracker", "raci chart printable", "deadline tracker printable", "team meeting log", "daily meeting planner", "meeting follow up planner", "manager meeting planner", "undated meeting planner", "hyperlinked meeting planner", "meeting accountability", "one to one meeting notes", "goodnotes meeting planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Weekly", "target": "weekly" },
+    { "label": "Daily", "target": "daily" },
+    { "label": "Agenda", "target": "agenda" },
+    { "label": "Actions", "target": "action" },
+    { "label": "Deadlines", "target": "deadline" },
+    { "label": "Team", "target": "team" },
+    { "label": "Review", "target": "review" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Meeting Planner Pro" },
+
+    { "id": "welcome", "type": "welcome", "layout": "prose", "title": "Welcome",
+      "subtitle": "The meeting is not the work",
+      "elements": { "blocks": [
+        { "heading": "What this planner is for", "paragraphs": ["Most meeting templates end when the meeting ends. This one is built around what happens afterwards: who owes what, by when, and whether it arrived. The agenda pages exist to feed the trackers, not the other way round."] },
+        { "heading": "The three things it holds", "items": ["A cadence — the daily, weekly and monthly rhythm of meetings you actually hold", "Ownership — every action attached to one name, and a responsibility chart when more than one person is involved", "Follow-through — deadlines, chases, and a weekly review that asks whether last week's actions closed"] },
+        { "heading": "How to use it honestly", "paragraphs": ["The Action Items Tracker and the Deadline Tracker are the only pages that matter after the first fortnight. If those two are current, the planner is working. If they are blank while the notes pages are full, you are recording meetings rather than running them."] },
+        { "heading": "One rule worth keeping", "paragraphs": ["An action with no owner and no date is not an action. It is a topic that came up. Write it in the notes and leave the tracker alone."] }
+      ] } },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for meetings you run or attend", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies or distribute copies to a team", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "instructions", "type": "instructions", "layout": "prose", "title": "Instructions",
+      "subtitle": "Set up in twenty minutes",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk and the meeting room. A5 and Half Letter suit a tablet carried between rooms, and print two-up on a full sheet."] },
+        { "heading": "Set up once", "ordered": true, "items": ["Read the Meeting Planning Guide", "Fill the Annual Meeting Overview with the dates already fixed", "List your standing meetings on a Monthly Meeting Planner page", "Open one Action Items Tracker page and keep it open from now on"] },
+        { "heading": "Every meeting", "ordered": true, "items": ["Write the objective on a Meeting Objectives page before sending the invitation", "Run the agenda page, capturing actions as they are agreed", "Move every action to the Action Items Tracker before you leave the room", "Put any date-bound item on the Deadline Tracker as well"] },
+        { "heading": "Digital use", "ordered": true, "items": ["Import the PDF as a document, not as an image", "Switch to read mode to tap links, write mode to write", "Use the Actions and Deadlines tabs to reach the trackers from any page"] }
+      ] } },
+
+    { "id": "guide", "type": "guide", "layout": "prose", "title": "Meeting Planning Guide",
+      "subtitle": "Six rules that shorten meetings",
+      "elements": { "chips": "objectives", "blocks": [
+        { "heading": "Every meeting needs a decision or it needs cancelling", "paragraphs": ["If you cannot write the decision the meeting must produce, the meeting is a status update and belongs in writing. The Meeting Objectives page exists to force that sentence before the invitation goes out."] },
+        { "heading": "Invite the people who decide, copy the people who care", "paragraphs": ["Six attendees is a meeting. Twelve is an audience. Everyone else receives the notes."] },
+        { "heading": "Actions are assigned in the room, not afterwards", "items": ["One owner per action — shared ownership is no ownership", "A date, not \"soon\"", "Read the actions aloud before closing", "Anything with a hard date goes on the Deadline Tracker too"] },
+        { "heading": "Use the responsibility chart when more than two people are involved", "paragraphs": ["Responsible, accountable, consulted, informed. Most missed deliverables are two people each believing the other was responsible. The chart costs five minutes and settles it."] },
+        { "heading": "Chase before the deadline, not after", "paragraphs": ["The Follow-up Planner has a Chase On column that sits ahead of the due date. Chasing afterwards is not follow-up, it is accounting for a failure."] },
+        { "heading": "Review the meetings themselves once a week", "paragraphs": ["The Weekly Review asks how many actions closed, not how many meetings were held. A calendar full of meetings and a tracker full of open items is the pattern this planner is designed to expose."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Cadence and preparation",
+      "links": ["index-record", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["guide", "annual", "monthly", "weekly", "daily", "objectives", "agenda", "attendee", "prep"] } },
+
+    { "id": "index-record", "type": "index", "layout": "index", "title": "Contents — Record",
+      "subtitle": "Capturing, assigning and chasing",
+      "links": ["index", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["topics", "mnotes", "decision", "action", "raci", "deadline", "followup", "client", "team", "one2one", "project", "brainstorm"] } },
+
+    { "id": "index-review", "type": "index", "layout": "index", "title": "Contents — Review",
+      "subtitle": "Reflecting and measuring",
+      "links": ["index", "index-record"],
+      "elements": { "column_break": 16, "include_types": ["reflection", "review", "dashboard", "notes"] } },
+
+    { "id": "annual", "type": "annual", "layout": "year", "title": "Annual Meeting Overview",
+      "subtitle": "Board, review and planning dates fixed in advance",
+      "elements": { "weekday_labels": ["Q1", "Q2", "Q3", "Q4"], "rows": 3, "chips": "monthly" } },
+
+    { "id": "monthly", "type": "monthly", "layout": "month",
+      "subtitle": "The month's meeting calendar",
+      "repeat_labels": ["Monthly Meeting Planner One", "Monthly Meeting Planner Two", "Monthly Meeting Planner Three"],
+      "elements": { "rows": 6, "chips": "weekly" } },
+
+    { "id": "weekly", "type": "weekly", "layout": "week",
+      "subtitle": "The week's meetings, and the time left to do the work",
+      "repeat_labels": ["Weekly Meeting Schedule One", "Weekly Meeting Schedule Two", "Weekly Meeting Schedule Three"],
+      "elements": { "lines": 4, "chips": "daily",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Meeting-Free Time", "Actions Due This Week"] } },
+
+    { "id": "daily", "type": "daily", "layout": "panels",
+      "subtitle": "Filled the evening before, in four minutes",
+      "repeat_labels": ["Daily Meeting Planner One", "Daily Meeting Planner Two", "Daily Meeting Planner Three", "Daily Meeting Planner Four", "Daily Meeting Planner Five"],
+      "elements": { "chips": "agenda", "panels": [
+        { "label": "Meetings Today, With Times", "lines": 4 },
+        { "label": "What I Must Prepare Before Each", "lines": 3 },
+        { "label": "Actions I Owe Today", "lines": 3 },
+        { "label": "The Meeting I Could Decline", "lines": 2 },
+        { "label": "Protected Time For Actual Work", "lines": 2 }
+      ] } },
+
+    { "id": "objectives", "type": "objectives", "layout": "panels",
+      "subtitle": "Written before the invitation goes out",
+      "repeat_labels": ["Meeting Objectives One", "Meeting Objectives Two", "Meeting Objectives Three"],
+      "elements": { "chips": "agenda", "panels": [
+        { "label": "The Decision This Meeting Must Produce", "lines": 2 },
+        { "label": "Why It Cannot Be An Email", "lines": 2 },
+        { "label": "Who Must Be There To Decide", "lines": 3 },
+        { "label": "What Success Looks Like At The End", "lines": 3 },
+        { "label": "Length, And What Justifies It", "lines": 2 }
+      ] } },
+
+    { "id": "agenda", "type": "agenda", "layout": "agenda",
+      "subtitle": "The running sheet — actions captured as they are agreed",
+      "repeat_labels": ["Meeting Agenda One", "Meeting Agenda Two", "Meeting Agenda Three"],
+      "elements": { "lines": 4, "rows": 6, "chips": "action",
+        "panels": [
+          { "label": "Date, Time And Place", "lines": 1 },
+          { "label": "Attending", "lines": 2 },
+          { "label": "Objective, From The Objectives Page", "lines": 2 },
+          { "label": "Read Before Attending", "lines": 2 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "On Tracker"] } },
+
+    { "id": "attendee", "type": "attendee", "layout": "record",
+      "subtitle": "Who was there, who sent apologies, who needs the notes",
+      "repeat_labels": ["Attendee List One", "Attendee List Two"],
+      "elements": { "rows": 15, "chips": "raci",
+        "columns": ["Name", "Role", "Present", "Apologies", "Send Notes", "Contact"] } },
+
+    { "id": "prep", "type": "prep", "layout": "record",
+      "subtitle": "Done before the invitation goes out",
+      "repeat_labels": ["Preparation Checklist One", "Preparation Checklist Two"],
+      "elements": { "rows": 14, "chips": "objectives",
+        "columns": ["Step", "Who Does It", "By When", "Done"] } },
+
+    { "id": "topics", "type": "topics", "layout": "record",
+      "subtitle": "What was raised, by whom, and where it landed",
+      "repeat_labels": ["Discussion Topics One", "Discussion Topics Two"],
+      "elements": { "rows": 14, "chips": "decision",
+        "columns": ["Topic", "Raised By", "The Case For", "The Case Against", "Where It Landed"] } },
+
+    { "id": "mnotes", "type": "mnotes", "layout": "notes",
+      "subtitle": "Open space for the meeting itself",
+      "repeat_labels": ["Notes Pages One", "Notes Pages Two"],
+      "elements": { "lines": 23, "chips": "action" } },
+
+    { "id": "decision", "type": "decision", "layout": "record",
+      "subtitle": "What was decided, on what basis, and by whom",
+      "repeat_labels": ["Decision Log One", "Decision Log Two"],
+      "elements": { "rows": 15, "chips": "action",
+        "columns": ["Date", "The Decision", "Made By", "What We Believed At The Time", "Revisit On"] } },
+
+    { "id": "action", "type": "action", "layout": "record",
+      "subtitle": "Every action from every meeting, in one place",
+      "repeat_labels": ["Action Items Tracker One", "Action Items Tracker Two", "Action Items Tracker Three"],
+      "elements": { "rows": 16, "chips": "deadline",
+        "columns": ["Action", "From Which Meeting", "Owner", "Due", "Status", "Closed"] } },
+
+    { "id": "raci", "type": "raci", "layout": "record",
+      "subtitle": "Responsible · Accountable · Consulted · Informed",
+      "repeat_labels": ["Responsibility Assignment One", "Responsibility Assignment Two", "Responsibility Assignment Three"],
+      "elements": { "rows": 15, "chips": "action",
+        "columns": ["Deliverable", "Responsible", "Accountable", "Consulted", "Informed", "Agreed On"],
+        "notice": "One name in the Accountable column. If two names appear there, the deliverable has no owner and will slip." } },
+
+    { "id": "deadline", "type": "deadline", "layout": "record",
+      "subtitle": "Anything with a hard date, regardless of which meeting produced it",
+      "repeat_labels": ["Deadline Tracker One", "Deadline Tracker Two", "Deadline Tracker Three"],
+      "elements": { "rows": 16, "chips": "followup",
+        "columns": ["Deliverable", "Owner", "Hard Deadline", "Chase On", "Risk", "Delivered"] } },
+
+    { "id": "followup", "type": "followup", "layout": "record",
+      "subtitle": "Chased before the deadline, not after",
+      "repeat_labels": ["Follow-up Planner One", "Follow-up Planner Two"],
+      "elements": { "rows": 15, "chips": "action",
+        "columns": ["Owed By Whom", "What Is Owed", "Promised", "Chased On", "Chase Again", "Received"] } },
+
+    { "id": "client", "type": "client", "layout": "agenda",
+      "subtitle": "What they said, what you promised",
+      "repeat_labels": ["Client Meeting Log One", "Client Meeting Log Two"],
+      "elements": { "lines": 5, "rows": 6, "chips": "deadline",
+        "panels": [
+          { "label": "Client And Attendees", "lines": 2 },
+          { "label": "What They Actually Want", "lines": 3 },
+          { "label": "What We Committed To", "lines": 3 }
+        ],
+        "action_columns": ["Commitment Made", "Owner", "By When", "On Tracker"] } },
+
+    { "id": "team", "type": "team", "layout": "agenda",
+      "subtitle": "The standing team meeting — short, and it closes actions",
+      "repeat_labels": ["Team Meeting Log One", "Team Meeting Log Two", "Team Meeting Log Three", "Team Meeting Log Four"],
+      "elements": { "lines": 5, "rows": 7, "chips": "action",
+        "panels": [
+          { "label": "Date, And Who Is Missing", "lines": 2 },
+          { "label": "Last Week's Actions — Closed Or Not", "lines": 3 },
+          { "label": "Blockers Raised", "lines": 3 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "On Tracker"] } },
+
+    { "id": "one2one", "type": "one2one", "layout": "agenda",
+      "subtitle": "Theirs first, yours second",
+      "repeat_labels": ["One-to-One One", "One-to-One Two"],
+      "elements": { "lines": 4, "rows": 5, "chips": "action",
+        "panels": [
+          { "label": "Their Agenda, Discussed First", "lines": 3 },
+          { "label": "Going Well", "lines": 2 },
+          { "label": "Stuck On, Or Worried About", "lines": 2 },
+          { "label": "What I Committed To Do", "lines": 2 }
+        ],
+        "action_columns": ["Action", "Owner", "By When", "Done"] } },
+
+    { "id": "project", "type": "project", "layout": "agenda",
+      "subtitle": "Status, blockers, next steps",
+      "repeat_labels": ["Project Meeting Notes One", "Project Meeting Notes Two"],
+      "elements": { "lines": 5, "rows": 7, "chips": "raci",
+        "panels": [
+          { "label": "Project And Phase", "lines": 1 },
+          { "label": "On Track, Or Not, And Why", "lines": 3 },
+          { "label": "Blocked By", "lines": 2 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "On Tracker"] } },
+
+    { "id": "brainstorm", "type": "brainstorm", "layout": "notes",
+      "subtitle": "Capture everything, judge nothing until the end",
+      "repeat_labels": ["Brainstorm Session One", "Brainstorm Session Two"],
+      "elements": { "lines": 23, "chips": "decision" } },
+
+    { "id": "reflection", "type": "reflection", "layout": "panels",
+      "subtitle": "Three minutes after a meeting that mattered",
+      "repeat_labels": ["Reflection One", "Reflection Two", "Reflection Three"],
+      "elements": { "chips": "review", "panels": [
+        { "label": "Did It Produce The Decision", "lines": 2 },
+        { "label": "Who Did Not Speak, And Should Have", "lines": 3 },
+        { "label": "What Made It Longer Than Needed", "lines": 3 },
+        { "label": "One Change For The Next One", "lines": 2 }
+      ] } },
+
+    { "id": "review", "type": "review", "layout": "panels",
+      "subtitle": "Actions closed, not meetings held",
+      "repeat_labels": ["Weekly Review One", "Weekly Review Two", "Weekly Review Three"],
+      "elements": { "chips": "dashboard", "panels": [
+        { "label": "Actions Opened Against Actions Closed", "lines": 2 },
+        { "label": "Overdue, And Who Owns Them", "lines": 3 },
+        { "label": "Hours Spent In Meetings This Week", "lines": 2 },
+        { "label": "The Meeting That Was Not Worth It", "lines": 3 },
+        { "label": "What I Cancel Or Shorten Next Week", "lines": 3 }
+      ] } },
+
+    { "id": "dashboard", "type": "dashboard", "layout": "record",
+      "subtitle": "Thirteen weeks. Meetings held against actions closed",
+      "repeat_labels": ["Progress Dashboard One", "Progress Dashboard Two"],
+      "elements": { "rows": 13, "chips": "review",
+        "columns": ["Week", { "label": "Meetings", "numeric": true }, { "label": "Hours", "numeric": true }, { "label": "Actions Opened", "numeric": true }, { "label": "Closed", "numeric": true }, { "label": "Overdue", "numeric": true }, "Verdict"] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "action" } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Meeting Planner Pro",
+      "subtitle": "Undated · Cadence, Ownership, Follow-Through",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
