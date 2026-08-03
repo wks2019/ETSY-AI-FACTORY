@@ -1,0 +1,46 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Goal Achievement Planner",
+    "slug": "goal-achievement-planner",
+    "subtitle": "Undated · Assess · Prioritise · Review",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "012",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 70,
+    "sizes": 4,
+    "internal_links": 1660
+  },
+  "positioning": {
+    "unit_of_planning": "the decision to pursue a goal at all",
+    "scope": "assessment, prioritisation, risk and review cadence",
+    "one_line": "Starts before the goal: score twelve life areas, cut nine candidates down to three on impact against effort, assess the risk to each while you still have options, then review weekly and monthly on a fixed cadence."
+  },
+  "audience": {
+    "primary": ["People who set goals every January and abandon them by March", "Coaches and their clients", "Career changers", "Anyone running more goals than evenings"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "Life Areas Assessment — twelve areas scored one to ten before any goal is written",
+    "Gap Analysis — the lowest scores, and what would actually move them",
+    "Priority Matrix on impact against effort, ending in three survivors",
+    "Risk Assessment scored for likelihood and impact, with a mitigation threshold",
+    "Habit Alignment — every habit answers to a goal or is not counted as progress",
+    "Weekly Review and Monthly Review as separate fixed-cadence pages",
+    "Thirteen-week Progress Dashboard across three goals plus habits",
+    "Four sizes, verified page and link parity",
+    "Undated — reusable every year"
+  ],
+  "differs_from": {
+    "005-goal-planner": "SEVERE OVERLAP — SAME CATEGORY. 06 is horizon-based: vision, annual, SMART, OKR, quarter, twelve month calendars, five weeks, seven hour-gridded days, plus habits, obstacles, lessons and celebration. This product is selection-based: assess, prioritise, risk, align, review. 06 answers how to plan a goal you have chosen; this answers which goal to choose and whether it survives contact with your life. Both must not be listed with similar titles or first lines."
+  },
+  "catalogue_warning": "Third shadow product built after an overlap was flagged (see also 10-meeting-planner-pro). The shop now holds three pairs competing in the same categories. Recommend resolving all three together rather than one at a time: decide for each pair whether to retitle, delist the original, or merge.",
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$comment": "Build record for v1.0. Regenerated into dist/package on every build; this copy is the committed record. Directory number is build order, collection_number is catalogue position — the two diverged at product 08.",
+  "product": "Goal Achievement Planner",
+  "slug": "goal-achievement-planner",
+  "version": "1.0",
+  "edition": "Ultimate",
+  "collection": "Business Productivity Bundle",
+  "collection_number": "012",
+  "directory": "products/11-goal-achievement-planner",
+  "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+  "generated": "2026-08-03",
+  "engine": "planner_engine 2.1",
+  "schema": "1.1",
+  "theme": "neutral",
+  "sizes": [
+    { "size": "a4", "file": "goal-achievement-planner-a4.pdf", "pages": 70, "links": 1660, "bookmarks": 70 },
+    { "size": "a5", "file": "goal-achievement-planner-a5.pdf", "pages": 70, "links": 1660, "bookmarks": 70 },
+    { "size": "us_letter", "file": "goal-achievement-planner-us_letter.pdf", "pages": 70, "links": 1660, "bookmarks": 70 },
+    { "size": "half_letter", "file": "goal-achievement-planner-half_letter.pdf", "pages": 70, "links": 1660, "bookmarks": 70 }
+  ],
+  "fonts": {
+    "display": "Cormorant Garamond",
+    "body": "Inter",
+    "licence": "SIL Open Font License 1.1",
+    "embedding": "subset, Type0, live text"
+  },
+  "layouts_used": ["cover", "prose", "index", "panels", "week", "record", "tracker", "notes"],
+  "engine_modifications": "none",
+  "schema_modifications": "none",
+  "new_renderers": 0,
+  "blockers_found": 0,
+  "verification": {
+    "page_parity": true,
+    "link_parity": true,
+    "bookmark_parity": true,
+    "schema_valid": true,
+    "literal_colours": 0,
+    "contrast_pairings_checked": 9,
+    "contrast_failures": 0,
+    "dead_link_targets": 0,
+    "unresolved_pdf_destinations": 0,
+    "named_destinations": 70,
+    "archive_extraction_test": "passed",
+    "passed_first_build": true
+  },
+  "outstanding": [
+    "CATALOGUE RISK — overlaps products/06-goal-planner. Third shadow product in the catalogue. Resolve the whole set before listing any of them.",
+    "Canva import verification — manual",
+    "Physical print test",
+    "SEO package, keyword-separated from 06",
+    "Mockups"
+  ]
+}
