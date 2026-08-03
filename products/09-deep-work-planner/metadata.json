@@ -1,0 +1,51 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Deep Work Planner",
+    "slug": "deep-work-planner",
+    "subtitle": "Undated · Work That Takes Weeks",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "010",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 70,
+    "sizes": 4,
+    "internal_links": 1754
+  },
+  "positioning": {
+    "unit_of_planning": "the deep-work project, run across thirteen weeks",
+    "scope": "one body of hard work — named, scheduled, logged, and reviewed to completion",
+    "cycles_included": 4,
+    "one_line": "For work that takes months: one project, a defended weekly hour target, a session log that records output rather than effort, and thirteen weeks of evidence."
+  },
+  "audience": {
+    "primary": ["Writers and authors", "PhD and postgraduate researchers", "Software developers", "Consultants building IP", "Course creators", "Anyone with a long project and a full calendar"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "One project, thirteen weeks — the planner has an arc, not just pages",
+    "Weekly band allocation rather than a daily hour grid",
+    "Session log records what was produced, not how long you sat",
+    "Flow State Tracker across fourteen sessions — conditions, not feelings",
+    "Distraction Elimination Tracker records countermeasures and whether they held",
+    "Interruptions logged by source and frequency per week, not as single events",
+    "Completion Review run at each milestone",
+    "Progress Dashboard: target hours against actual, thirteen weeks",
+    "Four sizes, verified page and link parity",
+    "Undated — reusable for the next project"
+  ],
+  "differs_from": {
+    "009-focus-planner": "CLOSEST NEIGHBOUR. 009 plans a single session and what protects it; this plans a project across thirteen weeks. Shared page names run at different granularity throughout. Listing copy must state this.",
+    "005-goal-planner": "Any goal, including ones needing no deep work; this is specifically for work requiring long uninterrupted blocks",
+    "006-weekly-productivity-planner": "General weekly output; this defends hours for one project only",
+    "007-daily-productivity-planner": "Plans a whole day of mixed work; this plans one project's hours",
+    "008-time-blocking-planner": "Allocates every slot in the calendar; this allocates only the deep bands"
+  },
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended"
+  }
+}
