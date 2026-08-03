@@ -1,0 +1,51 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Focus Planner",
+    "slug": "focus-planner",
+    "subtitle": "Undated · One Thing At A Time",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "009",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 70,
+    "sizes": 4,
+    "internal_links": 1884
+  },
+  "positioning": {
+    "unit_of_planning": "the focus session",
+    "scope": "attention — what gets it, what steals it, what restores it",
+    "cycles_included": 5,
+    "one_line": "A planner for the block of time itself: planned before it starts, logged after it ends, and reviewed until the pattern is visible."
+  },
+  "audience": {
+    "primary": ["Knowledge workers", "Writers", "Developers", "Students", "Freelancers", "Consultants", "People who work in an interrupt-heavy environment"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "A session plan filled before the block, not a to-do list",
+    "Deep Focus Log with depth rating and stated output",
+    "Distraction and interruption logged separately — internal versus external",
+    "A written Recovery Plan for the moment attention breaks",
+    "Break planning treated as part of the work, not the reward",
+    "Energy tracked hour by hour so hard work is scheduled where energy already is",
+    "Thirteen-week Progress Dashboard — the pattern only appears at that length",
+    "Four sizes, verified page and link parity",
+    "Undated — reusable indefinitely"
+  ],
+  "differs_from": {
+    "001-business-productivity-planner": "Runs a business; focus is one section",
+    "005-goal-planner": "The goal is the unit; this plans the hour that serves it",
+    "006-weekly-productivity-planner": "The week is the unit; this is the block inside the day",
+    "007-daily-productivity-planner": "Plans the whole day; this plans a single session and what protects it",
+    "008-time-blocking-planner": "The calendar slot is the unit — allocation. This is what happens inside the slot",
+    "010-deep-work-planner": "Longer-horizon deep work projects; this is session-level execution"
+  },
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended"
+  }
+}
