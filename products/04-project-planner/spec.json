@@ -22,7 +22,7 @@
     { "label": "Risks", "target": "risk" },
     { "label": "Budget", "target": "budget" },
     { "label": "Meetings", "target": "meeting" },
-    { "label": "Review", "target": "review" }
+    { "label": "Review", "target": "progress" }
   ] },
   "pages": [
     { "id": "cover", "type": "cover", "layout": "cover", "title": "Project Planner" },

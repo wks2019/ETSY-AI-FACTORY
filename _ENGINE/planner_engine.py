@@ -44,6 +44,22 @@ def validate_spec(spec: dict) -> None:
             location = " / ".join(str(p) for p in exc.absolute_path) or "root"
             raise BuildError(f"Spec invalid at {location}: {exc.message}") from None
 
+    # Tab targets resolve against page *type*, not id (layout_renderer.nav).
+    # An unresolved target silently degrades to a dead '#target' anchor on
+    # every page — the schema cannot catch it, and page and link parity both
+    # still pass. Product 04 shipped with a dead 'review' tab this way.
+    page_types = {page.get("type") for page in spec.get("pages", [])}
+    dead = [
+        tab.get("target")
+        for tab in spec.get("navigation", {}).get("tabs", [])
+        if tab.get("target") not in page_types
+    ]
+    if dead:
+        raise BuildError(
+            "navigation tab target(s) match no page type: "
+            + ", ".join(sorted(str(t) for t in dead))
+        )
+
     overrides = spec.get("design", {}).get("token_overrides", {})
     probe = json.loads(json.dumps(spec))
     probe.get("design", {}).pop("token_overrides", None)
