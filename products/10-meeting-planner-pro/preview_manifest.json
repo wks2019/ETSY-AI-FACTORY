@@ -1,0 +1,46 @@
+{
+  "$comment": "Preview and listing asset manifest. Generated assets live in dist/ and are gitignored.",
+  "product": "Meeting Planner Pro",
+  "slug": "meeting-planner-pro",
+  "version": "1.0",
+  "generated": "2026-08-03",
+  "assets": [
+    {
+      "file": "meeting-planner-pro-cover.png",
+      "role": "cover",
+      "format": "PNG",
+      "dpi": 300,
+      "source": "a4 page 1",
+      "listing_position": 1
+    },
+    {
+      "file": "meeting-planner-pro-listing-preview.jpg",
+      "role": "listing preview",
+      "format": "JPEG",
+      "quality": 90,
+      "panels": 12,
+      "columns": 4,
+      "source": "a4 pages 1-12",
+      "listing_position": 2
+    }
+  ],
+  "mockups_required": [
+    { "context": "desk", "shows": "printed action items tracker partly filled, pen resting on it", "listing_position": 3 },
+    { "context": "tablet", "shows": "agenda page open in an annotation app during a call", "listing_position": 4 },
+    { "context": "flat lay", "shows": "daily planner, RACI chart and deadline tracker printed together", "listing_position": 5 },
+    { "context": "detail", "shows": "responsibility assignment chart at full size", "listing_position": 6 },
+    { "context": "thumbnail", "shows": "cover, readable at small size and clearly distinct from product 05", "listing_position": 7 }
+  ],
+  "mockup_rules": {
+    "honesty": "Every mockup must show the actual product. A mockup implying content the buyer will not receive is prohibited — systems/BRAND_SYSTEM.md 13",
+    "differentiation": "Mockups must not reuse or resemble those of products/05-meeting-planner",
+    "lighting": "natural, soft, single direction",
+    "props": "maximum two, both plausible",
+    "people": "hands only, no faces"
+  },
+  "status": {
+    "cover": "generated",
+    "listing_preview": "generated",
+    "mockups": "not started"
+  }
+}

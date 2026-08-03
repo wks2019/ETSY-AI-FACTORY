@@ -1,0 +1,46 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Meeting Planner Pro",
+    "slug": "meeting-planner-pro",
+    "subtitle": "Undated · Cadence, Ownership, Follow-Through",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "011",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 70,
+    "sizes": 4,
+    "internal_links": 1724
+  },
+  "positioning": {
+    "unit_of_planning": "the action a meeting produces",
+    "scope": "meeting cadence, ownership and follow-through",
+    "one_line": "For managers whose problem is not running meetings but closing what comes out of them: a daily and weekly meeting cadence, a RACI chart, a deadline tracker, and a weekly review that counts actions closed rather than meetings held."
+  },
+  "audience": {
+    "primary": ["Team leads and line managers", "Project and delivery managers", "Agency account managers", "Operations managers", "Anyone chairing recurring meetings that produce commitments"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "Daily Meeting Planner — the day's meetings, prep, and the one you could decline",
+    "Responsibility Assignment chart — responsible, accountable, consulted, informed",
+    "Deadline Tracker with a Chase On column ahead of the due date",
+    "Team Meeting Log that opens with last week's actions, closed or not",
+    "Meeting Objectives page completed before the invitation goes out",
+    "Weekly Review measured in actions closed, not meetings held",
+    "Progress Dashboard — thirteen weeks of meetings, hours, opened, closed, overdue",
+    "Four sizes, verified page and link parity",
+    "Undated — reusable every year"
+  ],
+  "differs_from": {
+    "004-meeting-planner": "SEVERE OVERLAP — SAME CATEGORY. 05 is a template library organised by meeting type: board, workshop, training, video call, communication log, recurring-meeting audit, room and tool register. This product is organised around follow-through: daily cadence, RACI, deadlines, chases, and a review that counts closure. 05 is broader by meeting type; this is deeper on accountability. Both must not be listed with similar titles or first lines."
+  },
+  "catalogue_warning": "This product was built on explicit instruction after the overlap with products/05-meeting-planner was flagged. Before listing, decide one of: (a) retitle both and differentiate the first two lines of each description, (b) delist 05 and treat this as its replacement, or (c) merge the two into a single larger product. Listing both as-is will split search traffic and invite duplicate-purchase complaints.",
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended"
+  }
+}
