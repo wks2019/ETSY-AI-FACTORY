@@ -6,15 +6,15 @@
   "edition": "Ultimate",
   "collection": "Business Collection",
   "standard": "BUSINESS_PLANNER_STANDARD 1.0",
-  "generated": "2026-08-02",
+  "generated": "2026-08-03",
   "engine": "planner_engine 2.1",
   "schema": "1.1",
   "theme": "neutral",
   "sizes": [
-    { "size": "a4", "file": "project-planner-a4.pdf", "pages": 70, "links": 1428, "bookmarks": 70 },
-    { "size": "a5", "file": "project-planner-a5.pdf", "pages": 70, "links": 1428, "bookmarks": 70 },
-    { "size": "us_letter", "file": "project-planner-us_letter.pdf", "pages": 70, "links": 1428, "bookmarks": 70 },
-    { "size": "half_letter", "file": "project-planner-half_letter.pdf", "pages": 70, "links": 1428, "bookmarks": 70 }
+    { "size": "a4", "file": "project-planner-a4.pdf", "pages": 70, "links": 1564, "bookmarks": 70 },
+    { "size": "a5", "file": "project-planner-a5.pdf", "pages": 70, "links": 1564, "bookmarks": 70 },
+    { "size": "us_letter", "file": "project-planner-us_letter.pdf", "pages": 70, "links": 1564, "bookmarks": 70 },
+    { "size": "half_letter", "file": "project-planner-half_letter.pdf", "pages": 70, "links": 1564, "bookmarks": 70 }
   ],
   "previews": [
     { "asset": "project-planner-cover.png", "role": "cover", "dpi": 300, "source": "a4 page 1" },
@@ -52,6 +52,15 @@
     "contrast_failures": 0,
     "passed_first_build": true
   },
+  "revisions": [
+    {
+      "date": "2026-08-03",
+      "change": "navigation tab 'Review' retargeted from 'review' (matched no page type, rendered a dead anchor) to 'progress'",
+      "links_before": 1428,
+      "links_after": 1564,
+      "found_by": "spec audit 03-06; check now enforced in planner_engine.validate_spec"
+    }
+  ],
   "outstanding": [
     "Canva import verification — manual",
     "Physical print test",
