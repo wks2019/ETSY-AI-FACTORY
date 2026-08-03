@@ -1,0 +1,290 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Goal Achievement Planner",
+    "slug": "goal-achievement-planner",
+    "collection": "Business Collection",
+    "subtitle": "Undated · Assess · Prioritise · Review",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["goal achievement planner", "life areas assessment", "wheel of life printable", "goal priority matrix", "risk assessment planner", "habit alignment tracker", "weekly goal review", "monthly goal review", "goal progress dashboard", "undated goal planner", "hyperlinked goal planner", "smart goals worksheet", "goodnotes goal planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Areas", "target": "lifeareas" },
+    { "label": "SMART", "target": "smart" },
+    { "label": "Priority", "target": "matrix" },
+    { "label": "Actions", "target": "action" },
+    { "label": "Risk", "target": "risk" },
+    { "label": "Habits", "target": "habit" },
+    { "label": "Review", "target": "review" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Goal Achievement Planner" },
+
+    { "id": "welcome", "type": "welcome", "layout": "prose", "title": "Welcome",
+      "subtitle": "Most goals fail before they are written",
+      "elements": { "blocks": [
+        { "heading": "The problem is selection, not effort", "paragraphs": ["People rarely abandon goals because they lacked discipline. They abandon goals they should never have chosen: goals set in an area of life that was already fine, goals that competed with three others, goals whose obvious risk was never named."] },
+        { "heading": "So this planner starts before the goal", "items": ["Score the twelve areas of your life and find the gap", "Prioritise, so three goals survive and nine wait", "Assess the risk to each one while you still have options", "Align your habits to the goals they actually serve", "Review weekly and monthly, on a fixed cadence"] },
+        { "heading": "What it is not", "paragraphs": ["It is not a vision board and it will not tell you what to want. It gives you a scored picture of where you are, a method for choosing between competing goals, and a review rhythm that catches drift in weeks rather than quarters."] },
+        { "heading": "The honest bit", "paragraphs": ["The Weekly Review is the page that makes the rest work, and it is the page everyone skips. Twenty minutes, same day each week. If you will not do that, buy a notebook instead and save your money."] }
+      ] } },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for your own personal or business goals", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies or distribute copies to clients", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "instructions", "type": "instructions", "layout": "prose", "title": "Instructions",
+      "subtitle": "One evening to set up, twenty minutes a week to run",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk. A5 and Half Letter suit a tablet or a bag, and print two-up on a full sheet."] },
+        { "heading": "Set up once", "ordered": true, "items": ["Score all twelve life areas on the assessment page, honestly and quickly", "Fill the gap analysis page for the three lowest scores", "Write the vision, then draft more goals than you intend to keep", "Run the Priority Matrix and cut to three", "Write a SMART worksheet for each survivor", "Assess the risk to each goal before writing a single action"] },
+        { "heading": "Every week", "ordered": true, "items": ["Weekly Review — twenty minutes, same day", "Update the Progress Tracker and the habit alignment page", "Set the coming week's goal actions"] },
+        { "heading": "Every month", "ordered": true, "items": ["Monthly Review — what the four weeks actually produced", "Re-score any life area that has moved", "One line on the Progress Dashboard"] },
+        { "heading": "Digital use", "ordered": true, "items": ["Import the PDF as a document, not as an image", "Switch to read mode to tap links, write mode to write", "Use the Review tab to reach the weekly review from any page"] }
+      ] } },
+
+    { "id": "guide", "type": "guide", "layout": "prose", "title": "Goal Setting Guide",
+      "subtitle": "Six rules, and the reasoning behind each",
+      "elements": { "chips": "lifeareas", "blocks": [
+        { "heading": "Assess before you aspire", "paragraphs": ["A goal set in an area already scoring eight out of ten produces small returns. The same effort in an area scoring three changes your life. Score first; choose second."] },
+        { "heading": "Three goals, and the rest wait", "paragraphs": ["Goals compete for the same finite evenings. Four goals do not run at eighty per cent each — two of them stall entirely while you feel busy. The Priority Matrix exists to make the cut deliberate rather than accidental."] },
+        { "heading": "A goal without a number is a wish", "items": ["Write the number and the date on the SMART page", "Write where the number is today, not only where you want it", "If you cannot measure it, measure the behaviour beneath it"] },
+        { "heading": "Name the risk while you still have options", "paragraphs": ["Every goal has a foreseeable failure. Illness, a busy quarter at work, running out of money, losing interest in week six. Scored for likelihood and impact in advance, most of these have a cheap mitigation. Discovered in month three, they end the goal."] },
+        { "heading": "Habits serve goals or they are hobbies", "paragraphs": ["The Habit Alignment page asks which goal each habit feeds. Habits that serve nothing are fine — but they should not be counted as progress."] },
+        { "heading": "Review weekly, not when you remember", "paragraphs": ["Drift is invisible day to day and obvious across four weeks. A fixed weekly slot catches it early enough to correct; a review whenever you feel like it catches it in the post-mortem."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Assess and define",
+      "links": ["index-execute", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["guide", "lifeareas", "lifegap", "vision", "smart", "annual", "quarterly", "monthly", "weekly", "daily"] } },
+
+    { "id": "index-execute", "type": "index", "layout": "index", "title": "Contents — Execute",
+      "subtitle": "Prioritising, planning and protecting",
+      "links": ["index", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["matrix", "milestone", "action", "habit", "resource", "obstacle", "risk", "accountability"] } },
+
+    { "id": "index-review", "type": "index", "layout": "index", "title": "Contents — Review",
+      "subtitle": "Measuring, reviewing and recording",
+      "links": ["index", "index-execute"],
+      "elements": { "column_break": 16, "include_types": ["progress", "metrics", "motivation", "achievement", "reflection", "review", "monthlyreview", "dashboard", "notes"] } },
+
+    { "id": "lifeareas", "type": "lifeareas", "layout": "tracker",
+      "subtitle": "Score each area one to ten. Quickly, and honestly",
+      "repeat_labels": ["Life Areas Assessment One", "Life Areas Assessment Two"],
+      "elements": { "columns": 10, "chips": "lifegap",
+        "items": ["Career or business", "Money", "Health and fitness", "Rest and sleep", "Family", "Friendships", "Romance", "Learning and skill", "Creativity", "Home and environment", "Contribution", "Fun and play"] } },
+
+    { "id": "lifegap", "type": "lifegap", "layout": "record", "title": "Gap Analysis",
+      "subtitle": "The three lowest scores, and what would move them",
+      "elements": { "rows": 12, "chips": "vision",
+        "columns": ["Life Area", { "label": "Now", "numeric": true }, { "label": "Wanted", "numeric": true }, { "label": "Gap", "numeric": true }, "One Change That Would Move It", "Worth A Goal"] } },
+
+    { "id": "vision", "type": "vision", "layout": "panels",
+      "subtitle": "Where the low scores are meant to end up",
+      "repeat_labels": ["Vision Planning One", "Vision Planning Two"],
+      "elements": { "chips": "smart", "panels": [
+        { "label": "What I Want True In Three Years", "lines": 4 },
+        { "label": "Which Life Areas That Depends On", "lines": 3 },
+        { "label": "What Has To Change First", "lines": 3 },
+        { "label": "What I Will Not Sacrifice For It", "lines": 3 }
+      ] } },
+
+    { "id": "smart", "type": "smart", "layout": "panels",
+      "subtitle": "Specific, measurable, achievable, relevant, timed",
+      "repeat_labels": ["SMART Goals Planner One", "SMART Goals Planner Two", "SMART Goals Planner Three"],
+      "elements": { "chips": "risk", "panels": [
+        { "label": "Specific — What Exactly", "lines": 2 },
+        { "label": "Measurable — Number Now, Number Wanted", "lines": 2 },
+        { "label": "Achievable — Evidence It Is Realistic", "lines": 2 },
+        { "label": "Relevant — Which Life Area It Serves", "lines": 2 },
+        { "label": "Timed — The Date It Is Due", "lines": 1 },
+        { "label": "The First Action, This Week", "lines": 2 }
+      ] } },
+
+    { "id": "annual", "type": "annual", "layout": "panels",
+      "subtitle": "Three that survived the matrix",
+      "repeat_labels": ["Annual Goals One", "Annual Goals Two"],
+      "elements": { "chips": "quarterly", "panels": [
+        { "label": "Goal One, And Its Number", "lines": 3 },
+        { "label": "Goal Two, And Its Number", "lines": 3 },
+        { "label": "Goal Three, And Its Number", "lines": 3 },
+        { "label": "Waiting Until Next Year", "lines": 3 },
+        { "label": "The One That Decides The Year", "lines": 2 }
+      ] } },
+
+    { "id": "quarterly", "type": "quarterly", "layout": "panels",
+      "subtitle": "Ninety days is long enough to finish something",
+      "repeat_labels": ["Quarterly Goals One", "Quarterly Goals Two", "Quarterly Goals Three"],
+      "elements": { "chips": "monthly", "panels": [
+        { "label": "The Goal For These Ninety Days", "lines": 2 },
+        { "label": "The Number At The Start", "lines": 2 },
+        { "label": "The Number That Ends It", "lines": 2 },
+        { "label": "Milestones At Thirty And Sixty Days", "lines": 3 },
+        { "label": "Paused Until Next Quarter", "lines": 3 }
+      ] } },
+
+    { "id": "monthly", "type": "monthly", "layout": "panels",
+      "subtitle": "What this month must produce",
+      "repeat_labels": ["Monthly Goals One", "Monthly Goals Two", "Monthly Goals Three"],
+      "elements": { "chips": "weekly", "panels": [
+        { "label": "This Month's Target Against The Goal", "lines": 3 },
+        { "label": "The Four Weekly Steps", "lines": 4 },
+        { "label": "What Is Already Booked Against My Time", "lines": 3 },
+        { "label": "The Habit That Matters Most This Month", "lines": 2 }
+      ] } },
+
+    { "id": "weekly", "type": "weekly", "layout": "week",
+      "subtitle": "Five days of life, and the time that belongs to the goal",
+      "repeat_labels": ["Weekly Goals One", "Weekly Goals Two", "Weekly Goals Three"],
+      "elements": { "lines": 4, "chips": "daily",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Weekend", "Time On The Goal Itself"] } },
+
+    { "id": "daily", "type": "daily", "layout": "panels",
+      "subtitle": "One action that moves the goal, before anything else",
+      "repeat_labels": ["Daily Goals One", "Daily Goals Two", "Daily Goals Three"],
+      "elements": { "chips": "action", "panels": [
+        { "label": "The Action That Moves The Goal", "lines": 2 },
+        { "label": "When It Happens Today", "lines": 2 },
+        { "label": "Then Everything Else", "lines": 4 },
+        { "label": "Habits To Tick Today", "lines": 3 },
+        { "label": "Done Today, However Small", "lines": 3 }
+      ] } },
+
+    { "id": "matrix", "type": "matrix", "layout": "panels",
+      "subtitle": "Impact against effort. Three survive",
+      "repeat_labels": ["Priority Matrix One", "Priority Matrix Two", "Priority Matrix Three"],
+      "elements": { "chips": "annual", "panels": [
+        { "label": "High Impact, Low Effort — Start Now", "lines": 4 },
+        { "label": "High Impact, High Effort — Choose One", "lines": 4 },
+        { "label": "Low Impact, Low Effort — Only If Spare", "lines": 3 },
+        { "label": "Low Impact, High Effort — Cut", "lines": 3 },
+        { "label": "The Three I Am Keeping", "lines": 3 }
+      ] } },
+
+    { "id": "milestone", "type": "milestone", "layout": "record",
+      "subtitle": "Checkpoints with something that proves them",
+      "repeat_labels": ["Milestone Planner One", "Milestone Planner Two"],
+      "elements": { "rows": 14, "chips": "action",
+        "columns": ["Milestone", "For Which Goal", "What Proves It Is Reached", "Target Date", "Actual", "Done"] } },
+
+    { "id": "action", "type": "action", "layout": "record",
+      "subtitle": "Small enough to start today",
+      "repeat_labels": ["Action Plan One", "Action Plan Two"],
+      "elements": { "rows": 16, "chips": "milestone",
+        "columns": ["Action", "For Which Goal", "Time Needed", "When", "Blocked By", "Done"] } },
+
+    { "id": "habit", "type": "habit", "layout": "record",
+      "subtitle": "Every habit answers to a goal, or it is a hobby",
+      "repeat_labels": ["Habit Alignment One", "Habit Alignment Two", "Habit Alignment Three"],
+      "elements": { "rows": 15, "chips": "progress",
+        "columns": ["Habit", "Which Goal It Serves", "How Often", { "label": "Weeks Held", "numeric": true }, "Evidence It Helps", "Keep"],
+        "notice": "A habit that serves no goal is not a problem. It is only a problem when it is counted as progress." } },
+
+    { "id": "resource", "type": "resource", "layout": "record",
+      "subtitle": "What each goal needs, and whether you have it",
+      "repeat_labels": ["Resource Planner One", "Resource Planner Two"],
+      "elements": { "rows": 15, "chips": "risk",
+        "columns": ["What Is Needed", "For Which Goal", "Money, Time Or People", "Have It", "How I Get It", "By When"],
+        "notice": "Record what a tool or person is for. Do not write passwords, card details or account credentials here — a planner is synced, printed and left on desks." } },
+
+    { "id": "obstacle", "type": "obstacle", "layout": "record",
+      "subtitle": "Named before it arrives, not after",
+      "repeat_labels": ["Obstacle Planning One", "Obstacle Planning Two"],
+      "elements": { "rows": 14, "chips": "risk",
+        "columns": ["What Could Stop This", "Early Warning Sign", "What I Will Do", "Happened", "Handled"] } },
+
+    { "id": "risk", "type": "risk", "layout": "record",
+      "subtitle": "Likelihood times impact. Score it while you still have options",
+      "repeat_labels": ["Risk Assessment One", "Risk Assessment Two", "Risk Assessment Three"],
+      "elements": { "rows": 15, "chips": "obstacle",
+        "columns": ["Risk To The Goal", { "label": "Likely 1-5", "numeric": true }, { "label": "Impact 1-5", "numeric": true }, { "label": "Score", "numeric": true }, "Mitigation", "Review On"],
+        "notice": "Anything scoring twelve or above needs a mitigation written today, not a note to think about it." } },
+
+    { "id": "accountability", "type": "accountability", "layout": "record",
+      "subtitle": "Someone else knows, so it gets done",
+      "repeat_labels": ["Accountability Tracker One", "Accountability Tracker Two"],
+      "elements": { "rows": 14, "chips": "review",
+        "columns": ["Who I Told", "What I Promised", "By When", "Check In On", "Reported", "Kept"] } },
+
+    { "id": "progress", "type": "progress", "layout": "record",
+      "subtitle": "The number, week by week",
+      "repeat_labels": ["Progress Tracker One", "Progress Tracker Two"],
+      "elements": { "rows": 15, "chips": "metrics",
+        "columns": ["Week", "What I Measured", { "label": "Target", "numeric": true }, { "label": "Actual", "numeric": true }, { "label": "Gap", "numeric": true }, "Trend"] } },
+
+    { "id": "metrics", "type": "metrics", "layout": "record",
+      "subtitle": "Everything you are measuring, in one place",
+      "repeat_labels": ["Success Metrics One", "Success Metrics Two"],
+      "elements": { "rows": 14, "chips": "dashboard",
+        "columns": ["Metric", "For Which Goal", { "label": "Baseline", "numeric": true }, { "label": "Target", "numeric": true }, { "label": "Current", "numeric": true }, "Reviewed"] } },
+
+    { "id": "motivation", "type": "motivation", "layout": "notes",
+      "subtitle": "Why this mattered, on the days it does not feel like it",
+      "repeat_labels": ["Motivation Log One", "Motivation Log Two"],
+      "elements": { "lines": 23, "chips": "vision" } },
+
+    { "id": "achievement", "type": "achievement", "layout": "record",
+      "subtitle": "Finished things, written where you can see them",
+      "repeat_labels": ["Achievement Journal One", "Achievement Journal Two"],
+      "elements": { "rows": 15, "chips": "motivation",
+        "columns": ["Date", "What I Finished", "Which Goal", "How Long It Took", "What It Cost Me", "How I Marked It"] } },
+
+    { "id": "reflection", "type": "reflection", "layout": "panels",
+      "subtitle": "Honest before optimistic",
+      "repeat_labels": ["Reflection One", "Reflection Two"],
+      "elements": { "chips": "review", "panels": [
+        { "label": "What I Said I Would Do", "lines": 3 },
+        { "label": "What I Actually Did", "lines": 3 },
+        { "label": "Where The Time Really Went", "lines": 3 },
+        { "label": "What I Am Avoiding", "lines": 3 }
+      ] } },
+
+    { "id": "review", "type": "review", "layout": "panels",
+      "subtitle": "Twenty minutes, same day every week",
+      "repeat_labels": ["Weekly Review One", "Weekly Review Two", "Weekly Review Three"],
+      "elements": { "chips": "monthlyreview", "panels": [
+        { "label": "The Number, Last Week Against This", "lines": 2 },
+        { "label": "Actions Planned Against Actions Done", "lines": 2 },
+        { "label": "Habits Held, And The One That Slipped", "lines": 3 },
+        { "label": "Any Risk That Moved Closer", "lines": 2 },
+        { "label": "The Three Actions For Next Week", "lines": 3 }
+      ] } },
+
+    { "id": "monthlyreview", "type": "monthlyreview", "layout": "panels",
+      "subtitle": "What four weeks actually produced",
+      "repeat_labels": ["Monthly Review One", "Monthly Review Two"],
+      "elements": { "chips": "dashboard", "panels": [
+        { "label": "Distance Covered This Month", "lines": 3 },
+        { "label": "On Track, Behind, Or Finished", "lines": 2 },
+        { "label": "Life Areas That Moved, Up Or Down", "lines": 3 },
+        { "label": "What I Am Changing Structurally", "lines": 3 },
+        { "label": "Next Month's Target", "lines": 2 }
+      ] } },
+
+    { "id": "dashboard", "type": "dashboard", "layout": "record",
+      "subtitle": "Thirteen weeks. The whole picture on one page",
+      "repeat_labels": ["Progress Dashboard One", "Progress Dashboard Two", "Progress Dashboard Three"],
+      "elements": { "rows": 13, "chips": "metrics",
+        "columns": ["Week", { "label": "Goal One", "numeric": true }, { "label": "Goal Two", "numeric": true }, { "label": "Goal Three", "numeric": true }, { "label": "Habits Held", "numeric": true }, "Reviewed", "Verdict"] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "action" } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Goal Achievement Planner",
+      "subtitle": "Undated · Assess · Prioritise · Review",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
