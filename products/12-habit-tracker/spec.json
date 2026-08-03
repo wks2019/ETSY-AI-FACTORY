@@ -1,0 +1,283 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Habit Tracker",
+    "slug": "habit-tracker",
+    "collection": "Business Collection",
+    "subtitle": "Undated · Sixty-Six Days To Automatic",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["habit tracker printable", "66 day habit tracker", "30 day challenge printable", "habit stacking planner", "atomic habits tracker", "streak tracker printable", "consistency calendar", "undated habit tracker", "hyperlinked habit tracker", "morning routine tracker", "cue routine reward", "monthly habit tracker", "goodnotes habit tracker"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Assess", "target": "assessment" },
+    { "label": "Daily", "target": "daily" },
+    { "label": "Monthly", "target": "monthly" },
+    { "label": "Streaks", "target": "streak" },
+    { "label": "Triggers", "target": "trigger" },
+    { "label": "Stacking", "target": "stacking" },
+    { "label": "Review", "target": "review" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Habit Tracker" },
+
+    { "id": "welcome", "type": "welcome", "layout": "prose", "title": "Welcome",
+      "subtitle": "Consistency is a design problem, not a character test",
+      "elements": { "blocks": [
+        { "heading": "Why habits fail", "paragraphs": ["Almost nobody fails at habits because they lack willpower on day one. They fail because the habit had no fixed cue, no obvious place in the day, and no record of whether it happened. By week three the memory of the streak is unreliable and the habit quietly stops."] },
+        { "heading": "What this tracker does about it", "items": ["Assesses the habits you already have, good and bad, before adding more", "Attaches each new habit to an existing one — stacking, not scheduling", "Identifies the cue that starts it and the reward that ends it", "Records the streak in ink so the count is not a memory", "Analyses the misses, because two misses in a row is where habits die"] },
+        { "heading": "Sixty-six days, not twenty-one", "paragraphs": ["Twenty-one days is a myth traceable to a plastic surgeon's observation about patients adjusting to a new face. The measured median for a habit becoming automatic is closer to sixty-six days, with wide variance by difficulty. The builder pages are sized accordingly."] },
+        { "heading": "Start with three", "paragraphs": ["Three habits, tracked properly, beat ten tracked for a fortnight. The assessment page exists to stop you starting with ten."] }
+      ] } },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this tracker for your own habits", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies or distribute copies to clients", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "instructions", "type": "instructions", "layout": "prose", "title": "Instructions",
+      "subtitle": "One evening to set up, thirty seconds a day to run",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk. A5 and Half Letter suit a tablet or a bag, and print two-up on a full sheet."] },
+        { "heading": "Set up once", "ordered": true, "items": ["Run the Habit Assessment on the habits you already have", "Pick one keystone habit and no more than two others", "Sort them into categories so you can see where your life is thin", "Fill a Cue, Routine, Reward page for each", "Attach each to an existing habit on the Stacking page"] },
+        { "heading": "Every day", "ordered": true, "items": ["Tick the Daily Habit Tracker — thirty seconds, same time", "Mark the streak on the Streak Tracker", "If you missed one, write why on the Missed Habit Analysis page the same day"] },
+        { "heading": "Every week and month", "ordered": true, "items": ["Weekly Review — which held, which slipped, and the trigger behind it", "Monthly Review — success rate and whether the habit is becoming automatic", "One line on the Progress Dashboard"] },
+        { "heading": "Digital use", "ordered": true, "items": ["Import the PDF as a document, not as an image", "Switch to read mode to tap links, write mode to write", "Use the Daily tab to reach today's tracker from any page"] }
+      ] } },
+
+    { "id": "guide", "type": "guide", "layout": "prose", "title": "Habit Building Guide",
+      "subtitle": "Six rules, and why each one holds",
+      "elements": { "chips": "assessment", "blocks": [
+        { "heading": "Make it obvious, or it will not happen", "paragraphs": ["A habit with no fixed cue depends on remembering, and remembering depends on a good day. Attach it to something that already happens without fail — the kettle boiling, the laptop closing, the alarm going off."] },
+        { "heading": "Stack, do not schedule", "paragraphs": ["\"After I pour my coffee, I write three lines\" survives a chaotic week. \"At 07:30 I write\" does not survive a single early meeting."] },
+        { "heading": "Shrink it until it is embarrassing", "items": ["Two minutes is a starting size, not a failure", "The goal for the first fortnight is attendance, not performance", "Scale up only after fourteen unbroken days", "A habit you can do tired is a habit you keep"] },
+        { "heading": "Never miss twice", "paragraphs": ["One missed day is noise. Two missed days is the new pattern forming. The Missed Habit Analysis page exists for the day after, and it is the highest-value page in this tracker."] },
+        { "heading": "Keystone habits pull others behind them", "paragraphs": ["Sleep, movement and a planned morning tend to drag several other habits with them at no extra cost. Start with one of those rather than with the habit you feel guiltiest about."] },
+        { "heading": "Track the rate, not the feeling", "paragraphs": ["A habit held nineteen days out of thirty feels like failure and is a sixty-three per cent success rate against a baseline of zero. The Success Rate pages exist to correct that distortion."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Assess and design",
+      "links": ["index-track", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["guide", "assessment", "keystone", "categories", "morning", "evening"] } },
+
+    { "id": "index-track", "type": "index", "layout": "index", "title": "Contents — Track",
+      "subtitle": "Daily, monthly and long-form tracking",
+      "links": ["index", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["daily", "weekly", "monthly", "annual", "challenge", "builder", "streak", "consistency", "successrate"] } },
+
+    { "id": "index-review", "type": "index", "layout": "index", "title": "Contents — Analyse",
+      "subtitle": "Triggers, misses and review",
+      "links": ["index", "index-track"],
+      "elements": { "column_break": 16, "include_types": ["trigger", "crr", "stacking", "accountability", "reward", "obstacle", "missed", "reflection", "review", "monthlyreview", "dashboard", "notes"] } },
+
+    { "id": "assessment", "type": "assessment", "layout": "tracker",
+      "subtitle": "Score each area of your current routine, one to ten",
+      "repeat_labels": ["Habit Assessment One", "Habit Assessment Two"],
+      "elements": { "columns": 10, "chips": "keystone",
+        "items": ["Sleep and wake time", "Movement", "Eating", "Water", "Screen use", "Reading or study", "Money habits", "Tidiness of space", "Planning the day", "Time with people", "Deep work", "Winding down"] } },
+
+    { "id": "keystone", "type": "keystone", "layout": "panels",
+      "subtitle": "One habit that drags the others behind it",
+      "repeat_labels": ["Keystone Habits One", "Keystone Habits Two"],
+      "elements": { "chips": "crr", "panels": [
+        { "label": "The Keystone Habit I Am Choosing", "lines": 2 },
+        { "label": "What It Pulls Along With It", "lines": 4 },
+        { "label": "Evidence It Has Worked Before", "lines": 3 },
+        { "label": "The Smallest Version I Can Do Tired", "lines": 2 },
+        { "label": "Two Others, And No More", "lines": 3 }
+      ] } },
+
+    { "id": "categories", "type": "categories", "layout": "record",
+      "subtitle": "Where your routine is strong, and where it is empty",
+      "repeat_labels": ["Habit Categories One", "Habit Categories Two"],
+      "elements": { "rows": 15, "chips": "assessment",
+        "columns": ["Category", "Habits I Already Have", { "label": "How Many", "numeric": true }, "What Is Missing", "Priority"] } },
+
+    { "id": "morning", "type": "morning", "layout": "panels",
+      "subtitle": "The first hour, decided in advance",
+      "repeat_labels": ["Morning Habits One", "Morning Habits Two"],
+      "elements": { "chips": "stacking", "panels": [
+        { "label": "Wake Time, And What Happens First", "lines": 2 },
+        { "label": "The Sequence, In Order", "lines": 5 },
+        { "label": "What I Do Not Touch Until It Is Done", "lines": 2 },
+        { "label": "How Long It Actually Takes", "lines": 2 },
+        { "label": "The Short Version For Bad Mornings", "lines": 3 }
+      ] } },
+
+    { "id": "evening", "type": "evening", "layout": "panels",
+      "subtitle": "The last hour decides tomorrow's first",
+      "repeat_labels": ["Evening Habits One", "Evening Habits Two"],
+      "elements": { "chips": "stacking", "panels": [
+        { "label": "The Cue That Starts The Wind Down", "lines": 2 },
+        { "label": "The Sequence, In Order", "lines": 5 },
+        { "label": "Screens Off At", "lines": 1 },
+        { "label": "Prepared Tonight For Tomorrow", "lines": 3 },
+        { "label": "Target Sleep Time", "lines": 2 }
+      ] } },
+
+    { "id": "daily", "type": "daily", "layout": "panels",
+      "subtitle": "Thirty seconds, same time every day",
+      "repeat_labels": ["Daily Habit Tracker One", "Daily Habit Tracker Two", "Daily Habit Tracker Three"],
+      "elements": { "chips": "weekly", "panels": [
+        { "label": "Morning Habits, Ticked", "lines": 4 },
+        { "label": "Daytime Habits, Ticked", "lines": 4 },
+        { "label": "Evening Habits, Ticked", "lines": 4 },
+        { "label": "Missed Today, And Why", "lines": 3 },
+        { "label": "Streak Count", "lines": 1 }
+      ] } },
+
+    { "id": "weekly", "type": "weekly", "layout": "tracker",
+      "subtitle": "Seven days. One row per habit",
+      "repeat_labels": ["Weekly Habit Tracker One", "Weekly Habit Tracker Two", "Weekly Habit Tracker Three", "Weekly Habit Tracker Four"],
+      "elements": { "columns": 7, "chips": "monthly",
+        "items": ["Habit one", "Habit two", "Habit three", "Habit four", "Habit five", "Habit six", "Habit seven", "Habit eight", "Habit nine", "Habit ten", "Habit eleven", "Habit twelve"] } },
+
+    { "id": "monthly", "type": "monthly", "layout": "tracker",
+      "subtitle": "Thirty-one days. The page most people photograph",
+      "repeat_labels": ["Monthly Habit Tracker One", "Monthly Habit Tracker Two", "Monthly Habit Tracker Three", "Monthly Habit Tracker Four"],
+      "elements": { "columns": 31, "chips": "successrate",
+        "items": ["Habit one", "Habit two", "Habit three", "Habit four", "Habit five", "Habit six", "Habit seven", "Habit eight", "Habit nine", "Habit ten"] } },
+
+    { "id": "annual", "type": "annual", "layout": "tracker",
+      "subtitle": "Twelve months, one row per habit. The long view",
+      "repeat_labels": ["Annual Habit Overview One", "Annual Habit Overview Two"],
+      "elements": { "columns": 12, "chips": "dashboard",
+        "items": ["Habit one", "Habit two", "Habit three", "Habit four", "Habit five", "Habit six", "Habit seven", "Habit eight", "Habit nine", "Habit ten", "Habit eleven", "Habit twelve"] } },
+
+    { "id": "challenge", "type": "challenge", "layout": "tracker",
+      "subtitle": "One habit. Thirty days. Shade each day you show up",
+      "repeat_labels": ["30-Day Challenge One", "30-Day Challenge Two"],
+      "elements": { "columns": 30, "chips": "builder",
+        "items": ["The habit", "Did the minimum version", "Did the full version", "Felt easier than yesterday", "Wanted to skip", "Skipped"] } },
+
+    { "id": "builder", "type": "builder", "layout": "tracker",
+      "subtitle": "Sixty-six days is the measured median. Days one to thirty-three",
+      "repeat_labels": ["66-Day Habit Builder One", "66-Day Habit Builder Two"],
+      "elements": { "columns": 33, "chips": "streak",
+        "items": ["The habit", "Done", "Needed reminding", "Felt automatic", "Skipped"] } },
+
+    { "id": "streak", "type": "streak", "layout": "record",
+      "subtitle": "The count in ink, so it is not a memory",
+      "repeat_labels": ["Habit Streak Tracker One", "Habit Streak Tracker Two"],
+      "elements": { "rows": 15, "chips": "missed",
+        "columns": ["Habit", "Started On", { "label": "Current Streak", "numeric": true }, { "label": "Best Streak", "numeric": true }, "Last Broken On", "Why It Broke"] } },
+
+    { "id": "consistency", "type": "consistency", "layout": "tracker",
+      "subtitle": "One habit, one year. Twelve rows of thirty-one days",
+      "repeat_labels": ["Consistency Calendar One", "Consistency Calendar Two"],
+      "elements": { "columns": 31, "chips": "successrate",
+        "items": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] } },
+
+    { "id": "successrate", "type": "successrate", "layout": "record",
+      "subtitle": "Nineteen days out of thirty is sixty-three per cent, not failure",
+      "repeat_labels": ["Success Rate Dashboard One", "Success Rate Dashboard Two"],
+      "elements": { "rows": 14, "chips": "dashboard",
+        "columns": ["Habit", "Period", { "label": "Days Possible", "numeric": true }, { "label": "Days Done", "numeric": true }, { "label": "Rate %", "numeric": true }, "Better Or Worse"] } },
+
+    { "id": "trigger", "type": "trigger", "layout": "record",
+      "subtitle": "What starts it, and what starts the bad one",
+      "repeat_labels": ["Trigger Identification One", "Trigger Identification Two", "Trigger Identification Three"],
+      "elements": { "rows": 15, "chips": "crr",
+        "columns": ["Habit", "Good Or Bad", "What Sets It Off", "Time Or Place", "Who I Am With", "How I Change It"] } },
+
+    { "id": "crr", "type": "crr", "layout": "panels",
+      "subtitle": "Cue, routine, reward — written for one habit at a time",
+      "repeat_labels": ["Cue Routine Reward One", "Cue Routine Reward Two", "Cue Routine Reward Three"],
+      "elements": { "chips": "stacking", "panels": [
+        { "label": "The Habit", "lines": 1 },
+        { "label": "Cue — What Starts It, Every Time", "lines": 2 },
+        { "label": "Routine — Exactly What I Do", "lines": 3 },
+        { "label": "Reward — What I Get, Immediately", "lines": 2 },
+        { "label": "Craving — Why I Would Repeat It", "lines": 2 },
+        { "label": "How I Make The Cue Impossible To Miss", "lines": 2 }
+      ] } },
+
+    { "id": "stacking", "type": "stacking", "layout": "record",
+      "subtitle": "After I do X, I will do Y. Attach, do not schedule",
+      "repeat_labels": ["Habit Stacking Planner One", "Habit Stacking Planner Two", "Habit Stacking Planner Three"],
+      "elements": { "rows": 15, "chips": "trigger",
+        "columns": ["After I Already Do This", "I Will Do This", "Where", { "label": "Minutes", "numeric": true }, "Held For Days", "Working"],
+        "notice": "The anchor must be something that already happens without fail. Anchoring to a habit you are also still building is how both of them collapse." } },
+
+    { "id": "accountability", "type": "accountability", "layout": "record",
+      "subtitle": "Someone else knows, so it gets done",
+      "repeat_labels": ["Accountability Tracker One", "Accountability Tracker Two"],
+      "elements": { "rows": 14, "chips": "reward",
+        "columns": ["Who I Told", "Which Habit", "How They Check", "How Often", "Last Checked", "Kept"] } },
+
+    { "id": "reward", "type": "reward", "layout": "record",
+      "subtitle": "Rewards that do not undo the habit",
+      "repeat_labels": ["Reward Planner One", "Reward Planner Two"],
+      "elements": { "rows": 14, "chips": "streak",
+        "columns": ["Milestone", "Which Habit", "The Reward", { "label": "Cost", "numeric": true }, "Undermines The Habit", "Claimed"] } },
+
+    { "id": "obstacle", "type": "obstacle", "layout": "record",
+      "subtitle": "Named before it arrives, not after",
+      "repeat_labels": ["Obstacle Log One", "Obstacle Log Two"],
+      "elements": { "rows": 14, "chips": "missed",
+        "columns": ["What Breaks This Habit", "How Often It Happens", "Early Warning", "My Plan For It", "Worked"] } },
+
+    { "id": "missed", "type": "missed", "layout": "record",
+      "subtitle": "Filled the day after. Never miss twice",
+      "repeat_labels": ["Missed Habit Analysis One", "Missed Habit Analysis Two"],
+      "elements": { "rows": 15, "chips": "obstacle",
+        "columns": ["Date", "Habit Missed", "What Was Different", "Cue Or Capacity", "Back On It", "Missed Twice"],
+        "notice": "One missed day is noise. Two in a row is a new pattern. If the last column is ticked, rebuild the cue before adding anything else." } },
+
+    { "id": "reflection", "type": "reflection", "layout": "panels",
+      "subtitle": "Two minutes at the end of the day",
+      "repeat_labels": ["Reflection One", "Reflection Two"],
+      "elements": { "chips": "review", "panels": [
+        { "label": "Which Habit Felt Easiest Today", "lines": 2 },
+        { "label": "Which One I Had To Force", "lines": 3 },
+        { "label": "What Made The Difference", "lines": 3 },
+        { "label": "One Adjustment For Tomorrow", "lines": 2 }
+      ] } },
+
+    { "id": "review", "type": "review", "layout": "panels",
+      "subtitle": "Ten minutes, same day every week",
+      "repeat_labels": ["Weekly Review One", "Weekly Review Two", "Weekly Review Three"],
+      "elements": { "chips": "monthlyreview", "panels": [
+        { "label": "Days Held Out Of Seven, Per Habit", "lines": 3 },
+        { "label": "The Habit That Slipped, And The Trigger", "lines": 3 },
+        { "label": "Anything I Missed Twice", "lines": 2 },
+        { "label": "Cue Or Anchor To Change", "lines": 2 },
+        { "label": "Nothing New Until These Hold", "lines": 2 }
+      ] } },
+
+    { "id": "monthlyreview", "type": "monthlyreview", "layout": "panels",
+      "subtitle": "Is it becoming automatic, or still being forced",
+      "repeat_labels": ["Monthly Review One", "Monthly Review Two"],
+      "elements": { "chips": "dashboard", "panels": [
+        { "label": "Success Rate Per Habit This Month", "lines": 3 },
+        { "label": "Which Ones Now Run Without Thinking", "lines": 3 },
+        { "label": "Which To Retire Or Replace", "lines": 2 },
+        { "label": "Ready To Add One More", "lines": 2 },
+        { "label": "What The Assessment Would Score Now", "lines": 3 }
+      ] } },
+
+    { "id": "dashboard", "type": "dashboard", "layout": "record",
+      "subtitle": "Thirteen weeks. Rate, streak and whether it stuck",
+      "repeat_labels": ["Progress Dashboard One", "Progress Dashboard Two"],
+      "elements": { "rows": 13, "chips": "successrate",
+        "columns": ["Week", { "label": "Habits Tracked", "numeric": true }, { "label": "Days Held", "numeric": true }, { "label": "Rate %", "numeric": true }, { "label": "Longest Streak", "numeric": true }, "Missed Twice", "Verdict"] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "daily" } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Habit Tracker",
+      "subtitle": "Undated · Sixty-Six Days To Automatic",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}

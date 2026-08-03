@@ -1,0 +1,25 @@
+{
+  "$comment": "Preview and listing asset manifest. Generated assets live in dist/ and are gitignored.",
+  "product": "Habit Tracker",
+  "slug": "habit-tracker",
+  "version": "1.0",
+  "generated": "2026-08-03",
+  "assets": [
+    { "file": "habit-tracker-cover.png", "role": "cover", "format": "PNG", "dpi": 300, "source": "a4 page 1", "listing_position": 1 },
+    { "file": "habit-tracker-listing-preview.jpg", "role": "listing preview", "format": "JPEG", "quality": 90, "panels": 12, "columns": 4, "source": "a4 pages 1-12", "listing_position": 2 }
+  ],
+  "mockups_required": [
+    { "context": "desk", "shows": "printed monthly habit tracker partly shaded in", "listing_position": 3 },
+    { "context": "tablet", "shows": "66-day builder open in an annotation app", "listing_position": 4 },
+    { "context": "flat lay", "shows": "assessment, cue routine reward and stacking pages together", "listing_position": 5 },
+    { "context": "detail", "shows": "consistency calendar at full size", "listing_position": 6 },
+    { "context": "thumbnail", "shows": "cover, readable at small size", "listing_position": 7 }
+  ],
+  "mockup_rules": {
+    "honesty": "Every mockup must show the actual product. A mockup implying content the buyer will not receive is prohibited — systems/BRAND_SYSTEM.md 13",
+    "lighting": "natural, soft, single direction",
+    "props": "maximum two, both plausible",
+    "people": "hands only, no faces"
+  },
+  "status": { "cover": "generated", "listing_preview": "generated", "mockups": "not started" }
+}

@@ -1,0 +1,46 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Habit Tracker",
+    "slug": "habit-tracker",
+    "subtitle": "Undated · Sixty-Six Days To Automatic",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "013",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 70,
+    "sizes": 4,
+    "internal_links": 1674
+  },
+  "positioning": {
+    "unit_of_planning": "the individual habit, from cue to automatic",
+    "scope": "designing, tracking and repairing habits",
+    "one_line": "A habit system rather than a grid: assess what you already do, stack each new habit onto an existing one, track it for sixty-six days, and analyse the misses the day after they happen."
+  },
+  "audience": {
+    "primary": ["People who have abandoned habit apps", "Bullet journal users wanting a printable grid", "Anyone rebuilding a routine after a disruption", "Coaches working with clients on behaviour change"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "66-Day Habit Builder — sized to the measured median, not the twenty-one-day myth",
+    "Missed Habit Analysis — a never-miss-twice page filled the day after",
+    "Habit Stacking Planner with an explicit warning about anchoring to an unbuilt habit",
+    "Cue, Routine, Reward and Craving on one page per habit",
+    "Consistency Calendar — one habit across twelve months of thirty-one days",
+    "Success Rate pages that convert a streak into a percentage",
+    "Habit Assessment before any new habit is chosen",
+    "Four sizes, verified page and link parity",
+    "Undated — start on any day of any month"
+  ],
+  "differs_from": {
+    "005-goal-planner": "06 contains a three-page 31-day habit tracker as a supporting section beneath its goals. This is a standalone habit system: assessment, stacking, cue analysis, streak repair and long-form builders. Minor overlap, different product.",
+    "012-goal-achievement-planner": "11 has a Habit Alignment page asking which goal each habit serves. This asks how the habit is built and kept."
+  },
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended. Print the 66-day builder at A4 or US Letter; the grid is tight at Half Letter."
+  }
+}
