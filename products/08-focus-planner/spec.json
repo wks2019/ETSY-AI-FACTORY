@@ -1,0 +1,233 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Focus Planner",
+    "slug": "focus-planner",
+    "collection": "Business Collection",
+    "subtitle": "Undated · One Thing At A Time",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["focus planner", "deep work planner", "distraction tracker", "adhd focus planner", "productivity planner printable", "time blocking planner", "concentration planner", "undated focus planner", "focus session tracker", "attention planner", "hyperlinked focus planner", "goodnotes focus planner", "single tasking planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Priority", "target": "priority" },
+    { "label": "Today", "target": "today" },
+    { "label": "Blocks", "target": "block" },
+    { "label": "Session", "target": "session" },
+    { "label": "Track", "target": "distraction" },
+    { "label": "Energy", "target": "energy" },
+    { "label": "Review", "target": "review" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Focus Planner" },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for your own work and life", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "readme", "type": "readme", "layout": "prose", "title": "Read Me",
+      "subtitle": "Set up once, then protect the block",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk. A5 and Half Letter suit a tablet or a bag, and print two-up on a full sheet."] },
+        { "heading": "Digital use", "ordered": true, "items": ["Open the PDF in GoodNotes, Notability, Noteshelf, Xodo or any app that imports PDFs", "Import as a document, not as an image", "Switch the app to read mode to tap links, and write mode to write", "Use the Session tab to reach a blank session plan from anywhere", "Tap Contents in the footer to return to the index"] },
+        { "heading": "Printing", "ordered": true, "items": ["Print at 100% scale and never select fit to page", "Use 100 to 120 gsm paper for double-sided printing", "Print the daily set once and reprint it as needed — the pages are undated"] }
+      ] } },
+
+    { "id": "howto", "type": "howto", "layout": "prose", "title": "How To Use",
+      "subtitle": "The focus cycle, four steps",
+      "elements": { "blocks": [
+        { "heading": "Before the day — ten minutes", "ordered": true, "items": ["Read the current Priority Planner page", "Write Today's Focus — one sentence, not a list", "Set the three Most Important Tasks", "Block the day, hardest work into your best hours"] },
+        { "heading": "Before each block — two minutes", "ordered": true, "items": ["Fill a Focus Session Planner: the goal, the finish line, the length", "Clear the environment named on your Recovery Plan", "Start the clock and close this planner"] },
+        { "heading": "After each block — three minutes", "ordered": true, "items": ["Log the session in the Deep Focus Log while it is fresh", "Record anything that pulled you away in the Distraction Tracker", "Take the break you planned, before the next block, not instead of it"] },
+        { "heading": "End of week — twenty minutes", "paragraphs": ["Fill the Weekly Focus Review, then the Progress Dashboard. The dashboard is where the pattern appears: which hours actually held attention, and which interruptions are structural rather than accidental."] }
+      ] } },
+
+    { "id": "principles", "type": "principles", "layout": "prose", "title": "Focus Principles",
+      "subtitle": "Six rules this planner is built on",
+      "elements": { "chips": "priority", "blocks": [
+        { "heading": "One thing, finished", "paragraphs": ["Attention does not divide, it alternates — and every switch costs minutes you never see leave. This planner gives one focus per day and three tasks, because a list of ten is a list of none."] },
+        { "heading": "Protect the hours, not the intention", "paragraphs": ["Motivation is not a plan. A block on a page with a start time, an end time and a stated finish line is a plan."] },
+        { "heading": "Distraction is data", "paragraphs": ["Log what pulled you away and whether it came from inside or outside. Internal distraction is answered by rest. External distraction is answered by a boundary."] },
+        { "heading": "Breaks are part of the work", "items": ["A break taken on purpose ends when you decide", "A break taken by collapse ends when the day does", "Screen breaks are not breaks", "The break is planned before the block starts"] },
+        { "heading": "Energy sets the ceiling", "paragraphs": ["No system out-plans exhaustion. Track energy for two weeks and put the hardest work where the energy already is, rather than where the calendar happens to be empty."] },
+        { "heading": "Review or repeat", "paragraphs": ["Without the weekly review, a bad pattern simply runs again next week with a new set of pages."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Deciding what deserves focus",
+      "links": ["index-session", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["principles", "priority", "today", "mit", "block"] } },
+
+    { "id": "index-session", "type": "index", "layout": "index", "title": "Contents — Sessions",
+      "subtitle": "Running and protecting a session",
+      "links": ["index", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["session", "deeplog", "distraction", "interruption", "recovery", "energy", "breaks"] } },
+
+    { "id": "index-review", "type": "index", "layout": "index", "title": "Contents — Review",
+      "subtitle": "Reviewing and recording",
+      "links": ["index", "index-session"],
+      "elements": { "column_break": 16, "include_types": ["reflection", "dailynotes", "review", "dashboard", "future", "notes", "resources"] } },
+
+    { "id": "priority", "type": "priority", "layout": "panels",
+      "subtitle": "What deserves the best hours",
+      "repeat_labels": ["Priority Planner One", "Priority Planner Two", "Priority Planner Three"],
+      "elements": { "chips": "today", "panels": [
+        { "label": "The Work That Actually Moves Things", "lines": 4 },
+        { "label": "Urgent But Not Important", "lines": 3 },
+        { "label": "Important But Not Urgent", "lines": 4 },
+        { "label": "Deliberately Ignored This Period", "lines": 3 }
+      ] } },
+
+    { "id": "today", "type": "today", "layout": "panels",
+      "subtitle": "One sentence, written before the first block",
+      "repeat_labels": ["Today's Focus One", "Today's Focus Two", "Today's Focus Three", "Today's Focus Four", "Today's Focus Five", "Today's Focus Six"],
+      "elements": { "chips": "mit", "panels": [
+        { "label": "Today Is For", "lines": 2 },
+        { "label": "Done Looks Like", "lines": 3 },
+        { "label": "The Hardest Part, And When It Happens", "lines": 3 },
+        { "label": "What I Am Not Doing Today", "lines": 3 },
+        { "label": "First Move, Within Ten Minutes", "lines": 2 }
+      ] } },
+
+    { "id": "mit", "type": "mit", "layout": "panels",
+      "subtitle": "Three tasks. If only these get done, the day worked",
+      "repeat_labels": ["Most Important Tasks One", "Most Important Tasks Two", "Most Important Tasks Three", "Most Important Tasks Four", "Most Important Tasks Five", "Most Important Tasks Six"],
+      "elements": { "chips": "block", "panels": [
+        { "label": "One", "lines": 3 },
+        { "label": "Two", "lines": 3 },
+        { "label": "Three", "lines": 3 },
+        { "label": "Minutes Each Really Needs", "lines": 2 },
+        { "label": "Which One Slips If The Day Breaks", "lines": 2 }
+      ] } },
+
+    { "id": "block", "type": "block", "layout": "day",
+      "subtitle": "Hardest work into the best hours",
+      "repeat_labels": ["Time Blocking One", "Time Blocking Two", "Time Blocking Three", "Time Blocking Four", "Time Blocking Five", "Time Blocking Six"],
+      "elements": { "hour_start": 6, "hour_end": 21, "chips": "session", "panels": [
+        { "label": "Deep Blocks Booked Today", "lines": 3 },
+        { "label": "Shallow Work, Batched", "lines": 3 },
+        { "label": "Fixed Commitments I Cannot Move", "lines": 3 },
+        { "label": "Buffer For Overrun", "lines": 2 }
+      ] } },
+
+    { "id": "session", "type": "session", "layout": "panels",
+      "subtitle": "Filled in the two minutes before you start",
+      "repeat_labels": ["Focus Session One", "Focus Session Two", "Focus Session Three", "Focus Session Four", "Focus Session Five"],
+      "elements": { "chips": "deeplog", "panels": [
+        { "label": "Goal Of This Session", "lines": 2 },
+        { "label": "The Finish Line", "lines": 2 },
+        { "label": "Length, And What Ends It", "lines": 2 },
+        { "label": "Off, Closed Or Out Of Reach", "lines": 3 },
+        { "label": "If I Get Stuck, I Will", "lines": 2 },
+        { "label": "Break Booked For Afterwards", "lines": 2 }
+      ] } },
+
+    { "id": "deeplog", "type": "deeplog", "layout": "record",
+      "subtitle": "Logged while it is fresh, not at the end of the week",
+      "repeat_labels": ["Deep Focus Log One", "Deep Focus Log Two", "Deep Focus Log Three", "Deep Focus Log Four"],
+      "elements": { "rows": 14, "chips": "session",
+        "columns": ["Day", "Session Goal", "Start", "End", { "label": "Minutes", "numeric": true }, { "label": "Depth 1-5", "numeric": true }, "What Was Produced"] } },
+
+    { "id": "distraction", "type": "distraction", "layout": "record",
+      "subtitle": "Internal is answered by rest. External is answered by a boundary",
+      "repeat_labels": ["Distraction Tracker One", "Distraction Tracker Two", "Distraction Tracker Three"],
+      "elements": { "rows": 15, "chips": "recovery",
+        "columns": ["Time", "What Pulled Me Away", "Inside Or Outside", "What I Was Doing", { "label": "Minutes Lost", "numeric": true }, "How I Prevent It Next Time"] } },
+
+    { "id": "interruption", "type": "interruption", "layout": "record",
+      "subtitle": "Most interruptions are requests that could have waited",
+      "repeat_labels": ["Interruption Log One", "Interruption Log Two", "Interruption Log Three"],
+      "elements": { "rows": 15, "chips": "distraction",
+        "columns": ["Time", "Who Or What", "Genuinely Urgent", "Handled Now Or Later", { "label": "Minutes Lost", "numeric": true }, "Boundary To Set"] } },
+
+    { "id": "recovery", "type": "recovery", "layout": "panels",
+      "subtitle": "Written once, used every time attention breaks",
+      "repeat_labels": ["Recovery Plan One", "Recovery Plan Two"],
+      "elements": { "chips": "breaks", "panels": [
+        { "label": "Early Signs I Have Lost The Thread", "lines": 3 },
+        { "label": "Two Minute Reset That Works", "lines": 3 },
+        { "label": "When To Stop Instead Of Push", "lines": 3 },
+        { "label": "Environment Changes That Help", "lines": 3 },
+        { "label": "What I Do After A Broken Day", "lines": 3 }
+      ] } },
+
+    { "id": "energy", "type": "energy", "layout": "tracker",
+      "subtitle": "Seven days. Put the hard work where the energy already is",
+      "repeat_labels": ["Energy Tracker One", "Energy Tracker Two", "Energy Tracker Three"],
+      "elements": { "columns": 7, "chips": "breaks",
+        "items": ["Hours slept", "Energy on waking", "Energy at ten", "Energy at one", "Energy at three", "Energy at five", "Best focus hour", "Worst focus hour", "Caffeine after noon", "Screen hours before bed", "Movement taken", "Ate properly"] } },
+
+    { "id": "breaks", "type": "breaks", "layout": "record",
+      "subtitle": "Planned before the block, not after the collapse",
+      "repeat_labels": ["Break Planner One", "Break Planner Two"],
+      "elements": { "rows": 14, "chips": "energy",
+        "columns": ["Planned Time", "Break Type", { "label": "Minutes", "numeric": true }, "What I Actually Did", "Screen Free", "Felt Restored"] } },
+
+    { "id": "reflection", "type": "reflection", "layout": "panels",
+      "subtitle": "Five minutes at the end of the day",
+      "repeat_labels": ["Reflection One", "Reflection Two", "Reflection Three", "Reflection Four"],
+      "elements": { "chips": "review", "panels": [
+        { "label": "Where My Attention Actually Went", "lines": 4 },
+        { "label": "The Block That Worked, And Why", "lines": 3 },
+        { "label": "What Broke My Concentration Most", "lines": 3 },
+        { "label": "One Change For Tomorrow", "lines": 2 }
+      ] } },
+
+    { "id": "dailynotes", "type": "dailynotes", "layout": "notes",
+      "subtitle": "Capture it here so it stops interrupting you",
+      "repeat_labels": ["Daily Notes One", "Daily Notes Two", "Daily Notes Three"],
+      "elements": { "lines": 23, "chips": "today" } },
+
+    { "id": "review", "type": "review", "layout": "panels",
+      "subtitle": "Twenty minutes, once a week, honest",
+      "repeat_labels": ["Weekly Focus Review One", "Weekly Focus Review Two", "Weekly Focus Review Three", "Weekly Focus Review Four"],
+      "elements": { "chips": "dashboard", "panels": [
+        { "label": "Hours Of Real Focus This Week", "lines": 2 },
+        { "label": "The Week's Best Session, And Why", "lines": 3 },
+        { "label": "The Distraction That Kept Returning", "lines": 3 },
+        { "label": "Structural Fix, Not A Promise", "lines": 3 },
+        { "label": "What Focus Earned Me This Week", "lines": 3 }
+      ] } },
+
+    { "id": "dashboard", "type": "dashboard", "layout": "record",
+      "subtitle": "Thirteen weeks. The pattern only shows at this length",
+      "repeat_labels": ["Progress Dashboard One", "Progress Dashboard Two"],
+      "elements": { "rows": 13, "chips": "review",
+        "columns": ["Week", { "label": "Deep Hours", "numeric": true }, { "label": "Sessions", "numeric": true }, { "label": "MITs Done", "numeric": true }, { "label": "Distractions", "numeric": true }, "Best Block", "Verdict"] } },
+
+    { "id": "future", "type": "future", "layout": "panels",
+      "subtitle": "What deserves attention next, decided in advance",
+      "repeat_labels": ["Future Focus One", "Future Focus Two"],
+      "elements": { "chips": "priority", "panels": [
+        { "label": "The Next Thing Worth Deep Work", "lines": 3 },
+        { "label": "Skills The Work Will Need", "lines": 3 },
+        { "label": "What I Will Stop Doing To Make Room", "lines": 3 },
+        { "label": "Hours Per Week It Will Take", "lines": 2 },
+        { "label": "When It Starts", "lines": 2 }
+      ] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "today" } },
+
+    { "id": "resources", "type": "resources", "layout": "record", "title": "Tools And Environment",
+      "subtitle": "What protects your attention, and what costs it",
+      "elements": { "rows": 15,
+        "columns": ["Tool Or Setting", "What It Blocks Or Enables", "When I Use It", "Keep"],
+        "notice": "Record settings, apps and physical changes. Do not write passwords, card details or account credentials here — a planner is synced, printed and left on desks." } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Focus Planner",
+      "subtitle": "Undated · One Thing At A Time",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
