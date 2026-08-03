@@ -1,0 +1,22 @@
+# ETSY-AI-FACTORY — Python dependencies
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# SYSTEM DEPENDENCY — not installable via pip:
+#   poppler-utils   provides pdftoppm, used by _ENGINE/pdf_renderer.py to
+#                   rasterise the cover PNG and the 12-panel listing preview.
+#                   Debian/Ubuntu : sudo apt install poppler-utils
+#                   macOS         : brew install poppler
+#                   Without it, builds still succeed with --no-previews.
+#
+# WeasyPrint also needs Pango, Cairo and GDK-PixBuf. These ship with most
+# Linux distributions; on macOS: brew install pango libffi
+#
+# Versions are floored, not pinned. The engine uses stable public API only.
+# Pin exactly if a build must be reproducible across machines.
+
+weasyprint>=62.0      # HTML/CSS to PDF — the render engine
+jsonschema>=4.20.0    # spec.json validation against _SCHEMA/spec.schema.json
+pypdf>=4.0.0          # PDF metadata, page/link/bookmark inspection
+pillow>=10.0.0        # preview sheet composition

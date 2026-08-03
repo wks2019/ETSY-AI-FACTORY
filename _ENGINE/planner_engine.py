@@ -1,21 +1,8 @@
 """
 planner_engine.py
 ETSY-AI-FACTORY / _ENGINE
-Version: 2.1
 
-Rendering orchestrator.
-
-Reads a product specification and produces vector PDFs, preview images and
-the deliverable package for one product.
-
-This engine renders. It does not decide. Every design and commercial rule
-lives in the repository Markdown files and reaches this code only through
-the spec and the resolved theme. Do not add rules here.
-
-Usage:
-    python _ENGINE/planner_engine.py products/01-name/spec.json
-    python _ENGINE/planner_engine.py spec.json --theme dark --sizes a4
-    python _ENGINE/planner_engine.py spec.json --validate-only
+Version is defined once, in version.py. Do not restate it here.
 """
 
 from __future__ import annotations
@@ -32,6 +19,7 @@ import layout_renderer as layout  # noqa: E402
 import packager  # noqa: E402
 import pdf_renderer as renderer  # noqa: E402
 import tokens  # noqa: E402
+from version import ENGINE_STAMP  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_FILE = ROOT / "_SCHEMA" / "spec.schema.json"
@@ -41,13 +29,7 @@ class BuildError(RuntimeError):
     pass
 
 
-# ----------------------------------------------------------------------
-# SPEC LOADING
-# ----------------------------------------------------------------------
-
 def validate_spec(spec: dict) -> None:
-    """Validate against _SCHEMA/spec.schema.json, then against the rules the
-    schema cannot express."""
     try:
         import jsonschema
     except ImportError:
@@ -62,8 +44,6 @@ def validate_spec(spec: dict) -> None:
             location = " / ".join(str(p) for p in exc.absolute_path) or "root"
             raise BuildError(f"Spec invalid at {location}: {exc.message}") from None
 
-    # A hex value in a spec has bypassed the token system. The schema cannot
-    # catch this because it can appear under any key.
     overrides = spec.get("design", {}).get("token_overrides", {})
     probe = json.loads(json.dumps(spec))
     probe.get("design", {}).pop("token_overrides", None)
@@ -82,10 +62,6 @@ def load_spec(path: Path) -> dict:
     validate_spec(spec)
     return spec
 
-
-# ----------------------------------------------------------------------
-# BUILD
-# ----------------------------------------------------------------------
 
 def build(spec_path: Path, sizes=None, theme_name=None, previews=True,
           out_dir: Path | None = None) -> dict:
@@ -125,6 +101,11 @@ def build(spec_path: Path, sizes=None, theme_name=None, previews=True,
         print(f"  {size.label:<12} {result.pages:>3} pages  "
               f"{result.links:>5} links  {result.bookmarks:>3} bookmarks")
 
+    # Verification runs before anything shippable is written. Previously it
+    # ran last, so a failed build still left a complete, hash-stamped ZIP in
+    # dist/package — the exact file someone would upload by mistake.
+    verify(results, spec, pages, theme)
+
     cover = preview = None
     if previews:
         primary = results[0].path
@@ -138,27 +119,17 @@ def build(spec_path: Path, sizes=None, theme_name=None, previews=True,
 
     package = packager.build_package(out_dir / "package", spec, results, cover, preview,
                                      theme=theme)
-    verify(results, spec, pages, theme)
     return {"results": results, "package": package, "out_dir": out_dir, "theme": theme}
 
 
-# ----------------------------------------------------------------------
-# VERIFICATION
-# ----------------------------------------------------------------------
-
 def verify(results, spec: dict, pages, theme) -> None:
-    """Fail loudly on defects the Quality Engine would reject anyway."""
     problems: list[str] = []
     expected = len(pages)
 
-    # Equal page counts can still hide a defect. Content that overflows at a
-    # smaller size is clipped rather than pushed onto a new page, and the only
-    # visible symptom is a missing link. Product 001 lost one index row this
-    # way before spacing was scaled with the page.
     link_counts = {r.links for r in results}
     if len(link_counts) != 1:
         problems.append(
-            f"link count differs across sizes: {sorted(link_counts)} \u2014 "
+            f"link count differs across sizes: {sorted(link_counts)} — "
             "content is being clipped at the smaller size")
 
     counts = {r.pages for r in results}
@@ -197,10 +168,6 @@ def verify(results, spec: dict, pages, theme) -> None:
     print("  verify  : passed")
 
 
-# ----------------------------------------------------------------------
-# CLI
-# ----------------------------------------------------------------------
-
 def main() -> int:
     parser = argparse.ArgumentParser(description="ETSY-AI-FACTORY planner renderer")
     parser.add_argument("spec", type=Path, help="path to spec.json")
@@ -212,7 +179,7 @@ def main() -> int:
                         help="validate the spec and exit without rendering")
     args = parser.parse_args()
 
-    print("ETSY-AI-FACTORY / planner_engine 2.1\n")
+    print(f"ETSY-AI-FACTORY / {ENGINE_STAMP}\n")
     try:
         if args.validate_only:
             spec = load_spec(args.spec)
