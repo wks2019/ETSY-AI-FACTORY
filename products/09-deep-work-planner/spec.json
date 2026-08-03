@@ -1,0 +1,260 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Deep Work Planner",
+    "slug": "deep-work-planner",
+    "collection": "Business Collection",
+    "subtitle": "Undated · Work That Takes Weeks",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["deep work planner", "deep work journal", "flow state tracker", "focus project planner", "cal newport planner", "deep work session log", "undated deep work planner", "productivity planner printable", "concentration planner", "goodnotes deep work", "hyperlinked planner", "writer project planner", "research planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Goals", "target": "goals" },
+    { "label": "Weekly", "target": "weekly" },
+    { "label": "Daily", "target": "daily" },
+    { "label": "Prepare", "target": "prep" },
+    { "label": "Sessions", "target": "sessionlog" },
+    { "label": "Flow", "target": "flow" },
+    { "label": "Review", "target": "review" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Deep Work Planner" },
+
+    { "id": "welcome", "type": "welcome", "layout": "prose", "title": "Welcome",
+      "subtitle": "What this planner is for",
+      "elements": { "blocks": [
+        { "heading": "This is a project planner, not a day planner", "paragraphs": ["Some work cannot be finished in an afternoon. A book, a thesis, a codebase, a case, a course, a rebuild. Work of that size fails for one reason: it never gets a protected place in the week, so it is done in the gaps, and the gaps are never enough."] },
+        { "heading": "The unit here is the campaign", "paragraphs": ["You name one body of deep work. You commit a number of hours a week to it. You run it for thirteen weeks and you keep a record of what those hours actually produced. The planner is built around that arc, not around tomorrow."] },
+        { "heading": "What it asks of you", "items": ["One project at a time — a second project is the most common way the first one dies", "A weekly hour target you can defend, not one that flatters you", "A session log written at the end of every session, not from memory on Sunday", "Twenty minutes a week for the review"] },
+        { "heading": "What it does not do", "paragraphs": ["It will not make the work interesting on a bad day, and it will not manufacture hours your life does not contain. It will show you, in writing, where the hours went — which is the only thing that changes anything."] }
+      ] } },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for your own work and life", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "instructions", "type": "instructions", "layout": "prose", "title": "Instructions",
+      "subtitle": "Set up in an hour, then run it weekly",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk. A5 and Half Letter suit a tablet or a bag, and print two-up on a full sheet."] },
+        { "heading": "Set up once", "ordered": true, "items": ["Read the Deep Work Method page", "Name the project on a Deep Work Goals page and set the thirteen-week milestone", "Run the Priority Matrix to confirm nothing else deserves the hours more", "Fill the Focus Environment Checklist and make the changes before week one"] },
+        { "heading": "Every week", "ordered": true, "items": ["Weekly Planning: set the hour target and name the milestone for the week", "Time Blocking Planner: shade the bands where the deep hours will actually sit", "Run the sessions, logging each one as it ends", "Weekly Review, then one line on the Progress Dashboard"] },
+        { "heading": "Digital use", "ordered": true, "items": ["Import the PDF as a document, not as an image", "Switch to read mode to tap links, write mode to write", "Use the Sessions tab to reach the log from anywhere"] }
+      ] } },
+
+    { "id": "method", "type": "method", "layout": "prose", "title": "Deep Work Method",
+      "subtitle": "Five rules the structure is built on",
+      "elements": { "chips": "goals", "blocks": [
+        { "heading": "Depth is a capacity, not a mood", "paragraphs": ["The ability to hold a hard problem for three hours is trained, and it decays. Most people attempting deep work start at forty minutes and are disappointed. Start where you are and extend the block by fifteen minutes a fortnight."] },
+        { "heading": "Schedule the hours before the week starts", "paragraphs": ["Deep work placed in whatever time is left over receives whatever attention is left over. The Time Blocking Planner is filled on Sunday, not on Wednesday morning."] },
+        { "heading": "One project, thirteen weeks", "items": ["A second project halves the first and finishes neither", "Thirteen weeks is long enough to show a trend and short enough to stay real", "The milestone is written before week one, not discovered in week nine"] },
+        { "heading": "Record output, not hours", "paragraphs": ["Hours logged reward endurance. The session log asks what was produced, because four hours that moved nothing is information you need."] },
+        { "heading": "Shallow work is not the enemy", "paragraphs": ["Email, admin and meetings are the job too. They are only a problem when they are unbounded. Batch them, give them a slot, and stop treating them as a moral failure."] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Deciding and planning",
+      "links": ["index-execute", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["method", "goals", "matrix", "weekly", "daily", "mit"] } },
+
+    { "id": "index-execute", "type": "index", "layout": "index", "title": "Contents — Execution",
+      "subtitle": "Preparing, running and protecting the hours",
+      "links": ["index", "index-review"],
+      "elements": { "column_break": 16, "include_types": ["block", "prep", "environment", "sessionlog", "flow", "elimination", "interruption", "recovery", "energy", "breaks"] } },
+
+    { "id": "index-review", "type": "index", "layout": "index", "title": "Contents — Review",
+      "subtitle": "Reviewing and recording",
+      "links": ["index", "index-execute"],
+      "elements": { "column_break": 16, "include_types": ["completion", "reflection", "review", "dashboard", "notes"] } },
+
+    { "id": "goals", "type": "goals", "layout": "panels",
+      "subtitle": "One project. Written before week one",
+      "repeat_labels": ["Deep Work Goals One", "Deep Work Goals Two", "Deep Work Goals Three"],
+      "elements": { "chips": "matrix", "panels": [
+        { "label": "The Project, In One Sentence", "lines": 2 },
+        { "label": "Done At Thirteen Weeks Looks Like", "lines": 3 },
+        { "label": "Why This And Not Something Else", "lines": 3 },
+        { "label": "Hours Per Week I Can Actually Defend", "lines": 2 },
+        { "label": "The Milestone At Week Four", "lines": 2 },
+        { "label": "What I Give Up To Make Room", "lines": 3 }
+      ] } },
+
+    { "id": "matrix", "type": "matrix", "layout": "panels",
+      "subtitle": "Four quadrants. Deep work lives in the second",
+      "repeat_labels": ["Priority Matrix One", "Priority Matrix Two", "Priority Matrix Three"],
+      "elements": { "chips": "weekly", "panels": [
+        { "label": "Urgent And Important — Do Today", "lines": 4 },
+        { "label": "Important, Not Urgent — Deep Work", "lines": 5 },
+        { "label": "Urgent, Not Important — Batch It", "lines": 4 },
+        { "label": "Neither — Delete", "lines": 3 }
+      ] } },
+
+    { "id": "weekly", "type": "weekly", "layout": "week",
+      "subtitle": "Where the deep hours sit before the week begins",
+      "repeat_labels": ["Weekly Planning One", "Weekly Planning Two", "Weekly Planning Three", "Weekly Planning Four"],
+      "elements": { "lines": 4, "chips": "block",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] } },
+
+    { "id": "daily", "type": "daily", "layout": "panels",
+      "subtitle": "Written the night before, in five minutes",
+      "repeat_labels": ["Daily Planning One", "Daily Planning Two", "Daily Planning Three", "Daily Planning Four"],
+      "elements": { "chips": "mit", "panels": [
+        { "label": "Deep Block Today — Start And End", "lines": 2 },
+        { "label": "What That Block Is For", "lines": 3 },
+        { "label": "Shallow Work, Batched Into One Slot", "lines": 3 },
+        { "label": "What Could Steal It, And The Answer", "lines": 3 },
+        { "label": "First Sentence Or First Line Of Code", "lines": 2 }
+      ] } },
+
+    { "id": "mit", "type": "mit", "layout": "panels",
+      "subtitle": "Three per week, tied to the milestone",
+      "repeat_labels": ["MIT Planner One", "MIT Planner Two", "MIT Planner Three", "MIT Planner Four"],
+      "elements": { "chips": "weekly", "panels": [
+        { "label": "One — And The Session It Happens In", "lines": 3 },
+        { "label": "Two — And The Session It Happens In", "lines": 3 },
+        { "label": "Three — And The Session It Happens In", "lines": 3 },
+        { "label": "Which One Serves The Milestone Most", "lines": 2 },
+        { "label": "Carried Over From Last Week", "lines": 2 }
+      ] } },
+
+    { "id": "block", "type": "block", "layout": "timeline",
+      "subtitle": "Shade the bands. Deep work first, everything else around it",
+      "repeat_labels": ["Time Blocking One", "Time Blocking Two", "Time Blocking Three", "Time Blocking Four"],
+      "elements": { "chips": "prep",
+        "items": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "periods": ["06-08", "08-10", "10-12", "12-14", "14-16", "16-18", "18-20", "20-22"],
+        "panels": [
+          { "label": "Deep Hours Targeted This Week", "lines": 2 },
+          { "label": "Bands I Know I Am Sharpest In", "lines": 2 },
+          { "label": "Fixed Commitments Blocking Deep Time", "lines": 3 }
+        ] } },
+
+    { "id": "prep", "type": "prep", "layout": "panels",
+      "subtitle": "The same five minutes before every session",
+      "repeat_labels": ["Session Preparation One", "Session Preparation Two", "Session Preparation Three", "Session Preparation Four"],
+      "elements": { "chips": "sessionlog", "panels": [
+        { "label": "Where I Stopped Last Time", "lines": 2 },
+        { "label": "The One Question This Session Answers", "lines": 2 },
+        { "label": "Length, And The Signal That Ends It", "lines": 2 },
+        { "label": "Materials Open Before The Clock Starts", "lines": 3 },
+        { "label": "If I Stall For Ten Minutes, I Will", "lines": 2 },
+        { "label": "Where I Will Stop, So Restarting Is Easy", "lines": 2 }
+      ] } },
+
+    { "id": "environment", "type": "environment", "layout": "record",
+      "subtitle": "Fixed once, before week one",
+      "repeat_labels": ["Focus Environment Checklist One", "Focus Environment Checklist Two"],
+      "elements": { "rows": 16, "chips": "elimination",
+        "columns": ["Element", "How It Is Now", "Change To Make", "Done"],
+        "notice": "Cover the physical space, the device, and the people. Most failed deep work is an environment problem wearing a discipline costume." } },
+
+    { "id": "sessionlog", "type": "sessionlog", "layout": "record",
+      "subtitle": "Written as the session ends, never from memory",
+      "repeat_labels": ["Deep Work Session Log One", "Deep Work Session Log Two", "Deep Work Session Log Three", "Deep Work Session Log Four"],
+      "elements": { "rows": 14, "chips": "flow",
+        "columns": ["Date", "Milestone It Served", "Start", "End", { "label": "Minutes", "numeric": true }, { "label": "Flow 1-5", "numeric": true }, "What Was Produced"] } },
+
+    { "id": "flow", "type": "flow", "layout": "tracker",
+      "subtitle": "Fourteen sessions. Flow has conditions, and they repeat",
+      "repeat_labels": ["Flow State Tracker One", "Flow State Tracker Two", "Flow State Tracker Three"],
+      "elements": { "columns": 14, "chips": "sessionlog",
+        "items": ["Clear single goal", "Difficulty matched skill", "No device in reach", "Warm start from a stopping point", "Lost track of time", "Resistance in first ten minutes", "Interrupted once or more", "Ended by choice, not collapse", "Would repeat these conditions"] } },
+
+    { "id": "elimination", "type": "elimination", "layout": "record",
+      "subtitle": "Not a list of distractions — a record of what you did about them",
+      "repeat_labels": ["Distraction Elimination One", "Distraction Elimination Two", "Distraction Elimination Three"],
+      "elements": { "rows": 15, "chips": "environment",
+        "columns": ["Distraction Source", "Rule, Tool Or Change Applied", "Date Applied", { "label": "Weeks Held", "numeric": true }, "Still Working"] } },
+
+    { "id": "interruption", "type": "interruption", "layout": "record",
+      "subtitle": "Sources and frequency across weeks, not individual events",
+      "repeat_labels": ["Interruptions Log One", "Interruptions Log Two", "Interruptions Log Three"],
+      "elements": { "rows": 15, "chips": "recovery",
+        "columns": ["Source", "Usual Time Of Day", { "label": "Times Per Week", "numeric": true }, "Boundary Set", "Held Or Broken", "Next Step"] } },
+
+    { "id": "recovery", "type": "recovery", "layout": "panels",
+      "subtitle": "For the week that collapsed, not the hour that wobbled",
+      "repeat_labels": ["Recovery Plan One", "Recovery Plan Two"],
+      "elements": { "chips": "breaks", "panels": [
+        { "label": "What Actually Went Wrong This Week", "lines": 3 },
+        { "label": "Structural Or Circumstantial", "lines": 2 },
+        { "label": "The Smallest Session That Restarts It", "lines": 2 },
+        { "label": "When That Session Happens", "lines": 2 },
+        { "label": "What I Change Before Next Week", "lines": 3 }
+      ] } },
+
+    { "id": "energy", "type": "energy", "layout": "tracker",
+      "subtitle": "Thirteen weeks. Deep hours rise and fall with something",
+      "repeat_labels": ["Energy Level Tracker One", "Energy Level Tracker Two", "Energy Level Tracker Three"],
+      "elements": { "columns": 13, "chips": "breaks",
+        "items": ["Average sleep", "Energy Monday", "Energy midweek", "Energy Friday", "Deep hours achieved", "Sessions cancelled", "Exercise days", "Days off screens", "Illness or stress", "Week rated good"] } },
+
+    { "id": "breaks", "type": "breaks", "layout": "panels",
+      "subtitle": "The protocol, decided once",
+      "repeat_labels": ["Break Schedule One", "Break Schedule Two"],
+      "elements": { "chips": "energy", "panels": [
+        { "label": "Break Length After A Ninety Minute Block", "lines": 2 },
+        { "label": "What The Break Is — Three Options", "lines": 3 },
+        { "label": "What The Break Is Never", "lines": 2 },
+        { "label": "The Full Stop At The End Of The Day", "lines": 3 },
+        { "label": "One Day A Week With No Deep Work", "lines": 2 }
+      ] } },
+
+    { "id": "completion", "type": "completion", "layout": "panels",
+      "subtitle": "Run at each milestone, not only at the end",
+      "repeat_labels": ["Completion Review One", "Completion Review Two", "Completion Review Three"],
+      "elements": { "chips": "dashboard", "panels": [
+        { "label": "Milestone Reached, Or How Far Short", "lines": 3 },
+        { "label": "Hours It Actually Took Against Estimate", "lines": 2 },
+        { "label": "The Sessions That Produced The Most", "lines": 3 },
+        { "label": "What I Would Do Differently", "lines": 3 },
+        { "label": "Carry Forward Or Stop Here", "lines": 2 }
+      ] } },
+
+    { "id": "reflection", "type": "reflection", "layout": "panels",
+      "subtitle": "Three minutes at the end of the day",
+      "repeat_labels": ["Daily Reflection One", "Daily Reflection Two", "Daily Reflection Three"],
+      "elements": { "chips": "review", "panels": [
+        { "label": "Did The Deep Block Happen, And How Long", "lines": 2 },
+        { "label": "What Moved On The Project Today", "lines": 3 },
+        { "label": "What Cost Me The Most Time", "lines": 3 },
+        { "label": "Tomorrow's Block Starts At", "lines": 2 }
+      ] } },
+
+    { "id": "review", "type": "review", "layout": "panels",
+      "subtitle": "Twenty minutes, same time every week",
+      "repeat_labels": ["Weekly Review One", "Weekly Review Two", "Weekly Review Three"],
+      "elements": { "chips": "dashboard", "panels": [
+        { "label": "Deep Hours Target Against Actual", "lines": 2 },
+        { "label": "Distance Covered Toward The Milestone", "lines": 3 },
+        { "label": "The Session Worth Repeating, And Why", "lines": 3 },
+        { "label": "What I Will Change Structurally", "lines": 3 },
+        { "label": "Next Week's Hour Target", "lines": 2 }
+      ] } },
+
+    { "id": "dashboard", "type": "dashboard", "layout": "record",
+      "subtitle": "One line a week. Thirteen weeks of evidence",
+      "repeat_labels": ["Progress Dashboard One", "Progress Dashboard Two"],
+      "elements": { "rows": 13, "chips": "completion",
+        "columns": ["Week", { "label": "Target Hrs", "numeric": true }, { "label": "Actual Hrs", "numeric": true }, { "label": "Sessions", "numeric": true }, { "label": "Flow Sessions", "numeric": true }, "Milestone Progress", "Verdict"] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "sessionlog" } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Deep Work Planner",
+      "subtitle": "Undated · Work That Takes Weeks",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
