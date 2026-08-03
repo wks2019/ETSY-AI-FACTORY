@@ -3,7 +3,6 @@ dist/
 build/
 package/
 exports/
-previews/
 mockups/
 *.pdf
 *.png
@@ -11,6 +10,12 @@ mockups/
 *.jpeg
 *.zip
 *.tmp.pdf
+
+# Source assets, not build output. The blanket image rules above would
+# otherwise exclude the photographic plates the mockup renderer needs.
+!_ASSETS/plates/*.jpg
+!_ASSETS/plates/*.jpeg
+!_ASSETS/plates/*.png
 
 # Fonts — downloaded on demand by _ENGINE/assets.py, never committed.
 # OFL permits embedding in a PDF; shipping the font file is redistribution.
