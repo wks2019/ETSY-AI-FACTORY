@@ -20,3 +20,7 @@ weasyprint>=62.0      # HTML/CSS to PDF — the render engine
 jsonschema>=4.20.0    # spec.json validation against _SCHEMA/spec.schema.json
 pypdf>=4.0.0          # PDF metadata, page/link/bookmark inspection
 pillow>=10.0.0        # preview sheet composition
+pyyaml>=6.0           # Engine 2.1 expansion layer: templates, components,
+                      # shared defaults. Authoring-side only — the renderer
+                      # never reads YAML, so a build from an existing
+                      # spec.json does not require this package.
