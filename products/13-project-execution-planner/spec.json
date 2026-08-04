@@ -1,0 +1,294 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Project Execution Planner",
+    "slug": "project-execution-planner",
+    "collection": "Business Collection",
+    "subtitle": "Undated · Run It, Then Close It Properly",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["project execution planner", "raci matrix printable", "project closure checklist", "daily project planner", "project time blocking", "weekly project planner", "project handover template", "undated project planner", "hyperlinked project planner", "project manager daily planner", "post project review", "issue log printable", "goodnotes project planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Scope", "target": "scope" },
+    { "label": "RACI", "target": "raci" },
+    { "label": "Tasks", "target": "task" },
+    { "label": "Weekly", "target": "weekly" },
+    { "label": "Blocks", "target": "block" },
+    { "label": "Risks", "target": "risk" },
+    { "label": "Closure", "target": "closure" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Project Execution Planner" },
+
+    { "id": "welcome", "type": "welcome", "layout": "prose", "title": "Welcome",
+      "subtitle": "Projects are rarely lost at the planning stage",
+      "elements": { "blocks": [
+        { "heading": "Where projects actually fail", "paragraphs": ["A charter gets written, a scope gets agreed, a Gantt chart gets built, and then the project is run out of an inbox for four months. It does not fail because the plan was wrong. It fails because nobody owned the deliverable, the week had no shape, and nothing was ever formally closed."] },
+        { "heading": "So this planner is weighted to the middle and the end", "items": ["A responsibility matrix, because a task list with owners is not the same as accountability", "A weekly and daily cadence, so the plan meets an actual calendar", "Time blocking, because project work loses every contest with reactive work", "A closure checklist, because unclosed projects leak cost for months", "A final review that separates what happened from what everyone remembers"] },
+        { "heading": "The definition pages are deliberately brief", "paragraphs": ["Overview, charter, scope, objectives, success criteria and the work breakdown get one page each. They are here so the project has a spine, not to be a second planning exercise. The weight of this planner sits after the kick-off meeting."] },
+        { "heading": "One planner, one project", "paragraphs": ["Filled completely for a single project rather than sampled across five. If you run several, duplicate the file per project."] }
+      ] } },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner on your own projects, at work or for clients", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Use it inside a business you own or work for"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies or distribute copies to a team", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "instructions", "type": "instructions", "layout": "prose", "title": "Instructions",
+      "subtitle": "Set the spine in an hour, then run the week",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk and the wall. A5 and Half Letter suit a tablet and a site visit, and print two-up on a full sheet."] },
+        { "heading": "Set the spine", "ordered": true, "items": ["Overview, charter and scope — one page each, thirty minutes total", "Objectives and success criteria — how anyone will know this worked", "Stakeholder register and team directory", "Fill the RACI before the first task is assigned", "Break the work down and set the milestones"] },
+        { "heading": "Every week", "ordered": true, "items": ["Weekly Project Planner — what this week must produce, per day", "Time Blocking — book the project work before the calendar fills", "Update the task planner, risk register and issue log", "Progress Tracker — one line, honestly"] },
+        { "heading": "Every day", "ordered": true, "items": ["Daily Task Planner — three project tasks, in the blocks you booked", "Log anything raised straight into the issue or change log"] },
+        { "heading": "At the end", "ordered": true, "items": ["Work the Project Closure Checklist line by line", "Run the Final Project Review while people still remember", "File the lessons somewhere the next project will actually find them"] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "The spine",
+      "links": ["index-execute", "index-close"],
+      "elements": { "column_break": 16, "include_types": ["overview", "charter", "scope", "vision", "criteria", "stakeholder", "team", "raci", "milestone", "wbs"] } },
+
+    { "id": "index-execute", "type": "index", "layout": "index", "title": "Contents — Execute",
+      "subtitle": "Running the project week by week",
+      "links": ["index", "index-close"],
+      "elements": { "column_break": 17, "include_types": ["task", "matrix", "timeline", "weekly", "daily", "block", "budget", "resource", "risk", "issue", "decision", "change", "meeting"] } },
+
+    { "id": "index-close", "type": "index", "layout": "index", "title": "Contents — Close",
+      "subtitle": "Measuring, closing and learning",
+      "links": ["index", "index-execute"],
+      "elements": { "column_break": 16, "include_types": ["progress", "kpi", "lessons", "closure", "final", "notes"] } },
+
+    { "id": "overview", "type": "overview", "layout": "panels", "title": "Project Overview",
+      "subtitle": "The whole project on one page",
+      "elements": { "chips": "charter", "panels": [
+        { "label": "Project Name And Client", "lines": 2 },
+        { "label": "What This Project Delivers", "lines": 3 },
+        { "label": "Start And Finish Dates", "lines": 2 },
+        { "label": "Project Lead And Sponsor", "lines": 2 },
+        { "label": "Budget And Headline Numbers", "lines": 2 },
+        { "label": "Current Status", "lines": 2 }
+      ] } },
+
+    { "id": "charter", "type": "charter", "layout": "panels", "title": "Project Charter",
+      "subtitle": "Why it exists and who decides",
+      "elements": { "chips": "scope", "panels": [
+        { "label": "The Problem This Solves", "lines": 3 },
+        { "label": "Why Now", "lines": 2 },
+        { "label": "Who Authorised It", "lines": 2 },
+        { "label": "Who Decides When We Disagree", "lines": 3 },
+        { "label": "What Happens If We Do Nothing", "lines": 3 }
+      ] } },
+
+    { "id": "scope", "type": "scope", "layout": "panels", "title": "Project Scope",
+      "subtitle": "The boundary, drawn on purpose",
+      "elements": { "chips": "change", "panels": [
+        { "label": "In Scope", "lines": 6 },
+        { "label": "Out Of Scope", "lines": 5 },
+        { "label": "Assumptions We Are Making", "lines": 4 },
+        { "label": "Constraints We Cannot Move", "lines": 4 }
+      ] } },
+
+    { "id": "vision", "type": "vision", "layout": "panels", "title": "Vision And Objectives",
+      "subtitle": "Three at most, or none of them happen",
+      "elements": { "chips": "criteria", "panels": [
+        { "label": "What This Looks Like When It Works", "lines": 3 },
+        { "label": "Objective One", "lines": 3 },
+        { "label": "Objective Two", "lines": 3 },
+        { "label": "Objective Three", "lines": 3 },
+        { "label": "Explicitly Not An Objective", "lines": 3 }
+      ] } },
+
+    { "id": "criteria", "type": "criteria", "layout": "record", "title": "Success Criteria",
+      "subtitle": "How anyone will know this worked",
+      "elements": { "rows": 14, "chips": "kpi",
+        "columns": ["Criterion", "How It Is Measured", { "label": "Target", "numeric": true }, "Verified By", "Met"] } },
+
+    { "id": "stakeholder", "type": "stakeholder", "layout": "record",
+      "subtitle": "Who cares, how much, and what they need to hear",
+      "repeat_labels": ["Stakeholder Register One", "Stakeholder Register Two"],
+      "elements": { "rows": 15, "chips": "raci",
+        "columns": ["Name", "Role", "Interest", "Influence", "What They Need", "Contact"] } },
+
+    { "id": "team", "type": "team", "layout": "record",
+      "subtitle": "Who is on this, and how much of them we actually have",
+      "repeat_labels": ["Team Directory One", "Team Directory Two"],
+      "elements": { "rows": 15, "chips": "raci",
+        "columns": ["Name", "Role On Project", "Responsible For", { "label": "Days Allocated", "numeric": true }, "Available From", "Contact"] } },
+
+    { "id": "raci", "type": "raci", "layout": "record",
+      "subtitle": "Responsible · Accountable · Consulted · Informed",
+      "repeat_labels": ["Responsibility Matrix One", "Responsibility Matrix Two", "Responsibility Matrix Three"],
+      "elements": { "rows": 15, "chips": "task",
+        "columns": ["Deliverable Or Decision", "Responsible", "Accountable", "Consulted", "Informed", "Agreed On"],
+        "notice": "One name in the Accountable column. Two names there means the deliverable has no owner, and it will be discovered at the deadline." } },
+
+    { "id": "milestone", "type": "milestone", "layout": "record",
+      "subtitle": "The dates that actually matter",
+      "repeat_labels": ["Milestone Planner One", "Milestone Planner Two"],
+      "elements": { "rows": 14, "chips": "timeline",
+        "columns": ["Milestone", "What Proves It Is Done", "Owner", "Planned", "Actual", "Slip"] } },
+
+    { "id": "wbs", "type": "wbs", "layout": "record", "title": "Work Breakdown Structure",
+      "subtitle": "Break it down until each piece has one owner",
+      "elements": { "rows": 16, "chips": "task",
+        "columns": ["Ref", "Phase", "Deliverable", "Owner", { "label": "Estimate", "numeric": true }, "Depends On"] } },
+
+    { "id": "task", "type": "task", "layout": "record",
+      "subtitle": "Every task has an owner and a date, or it is not a task",
+      "repeat_labels": ["Task Planner One", "Task Planner Two", "Task Planner Three"],
+      "elements": { "rows": 16, "chips": "daily",
+        "columns": ["Task", "Owner", "Priority", "Due", "Blocked By", "Done"] } },
+
+    { "id": "matrix", "type": "matrix", "layout": "panels", "title": "Priority Matrix",
+      "subtitle": "Urgency is not importance",
+      "elements": { "chips": "task", "panels": [
+        { "label": "Important And Urgent — Do Now", "lines": 4 },
+        { "label": "Important Not Urgent — Schedule", "lines": 5 },
+        { "label": "Urgent Not Important — Delegate", "lines": 4 },
+        { "label": "Neither — Delete It", "lines": 3 }
+      ] } },
+
+    { "id": "timeline", "type": "timeline", "layout": "timeline",
+      "subtitle": "Twelve weeks, shaded by hand",
+      "repeat_labels": ["Timeline Planner One", "Timeline Planner Two"],
+      "elements": { "chips": "milestone",
+        "periods": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10", "W11", "W12"],
+        "items": ["Phase one", "Phase two", "Phase three", "Phase four", "Phase five", "Phase six"],
+        "panels": [
+          { "label": "Critical Path", "lines": 2 },
+          { "label": "Float We Actually Have", "lines": 2 }
+        ] } },
+
+    { "id": "weekly", "type": "weekly", "layout": "week",
+      "subtitle": "What this week must produce, per day",
+      "repeat_labels": ["Weekly Project Planner One", "Weekly Project Planner Two", "Weekly Project Planner Three", "Weekly Project Planner Four"],
+      "elements": { "lines": 4, "chips": "block",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Milestone This Week", "Blocked, And By Whom"] } },
+
+    { "id": "daily", "type": "daily", "layout": "panels",
+      "subtitle": "Three project tasks, in the blocks you booked",
+      "repeat_labels": ["Daily Task Planner One", "Daily Task Planner Two", "Daily Task Planner Three", "Daily Task Planner Four"],
+      "elements": { "chips": "task", "panels": [
+        { "label": "Three Project Tasks Today", "lines": 3 },
+        { "label": "Which Block Each Sits In", "lines": 3 },
+        { "label": "Waiting On Someone Else", "lines": 3 },
+        { "label": "Raised Today, Logged Where", "lines": 3 },
+        { "label": "Handed Over Before I Stop", "lines": 2 }
+      ] } },
+
+    { "id": "block", "type": "block", "layout": "day",
+      "subtitle": "Book the project work before the calendar fills",
+      "repeat_labels": ["Time Blocking One", "Time Blocking Two", "Time Blocking Three", "Time Blocking Four"],
+      "elements": { "hour_start": 7, "hour_end": 19, "chips": "daily", "panels": [
+        { "label": "Project Blocks Booked Today", "lines": 3 },
+        { "label": "Meetings I Cannot Move", "lines": 3 },
+        { "label": "Reactive Work, Batched", "lines": 3 },
+        { "label": "Buffer Before The Next Deadline", "lines": 2 }
+      ] } },
+
+    { "id": "budget", "type": "budget", "layout": "ledger",
+      "subtitle": "Planned against actual, line by line",
+      "repeat_labels": ["Budget Tracker One", "Budget Tracker Two"],
+      "elements": { "rows": 15, "totals": true, "chips": "resource",
+        "columns": ["Line Item", "Category", { "label": "Planned", "numeric": true }, { "label": "Actual", "numeric": true }, { "label": "Variance", "numeric": true }, "Approved"] } },
+
+    { "id": "resource", "type": "resource", "layout": "record",
+      "subtitle": "People, tools, and when they are needed",
+      "repeat_labels": ["Resource Planner One", "Resource Planner Two"],
+      "elements": { "rows": 15, "chips": "budget",
+        "columns": ["Resource", "Type", "Needed From", "Needed Until", { "label": "Cost", "numeric": true }, "Confirmed"] } },
+
+    { "id": "risk", "type": "risk", "layout": "record",
+      "subtitle": "Registered before the first task, not after the first problem",
+      "repeat_labels": ["Risk Register One", "Risk Register Two"],
+      "elements": { "rows": 15, "chips": "issue",
+        "columns": ["Risk", { "label": "Likely 1-5", "numeric": true }, { "label": "Impact 1-5", "numeric": true }, "Owner", "Mitigation", "Review On"] } },
+
+    { "id": "issue", "type": "issue", "layout": "record",
+      "subtitle": "A risk that happened",
+      "repeat_labels": ["Issue Log One", "Issue Log Two"],
+      "elements": { "rows": 15, "chips": "risk",
+        "columns": ["Date", "Issue", "Impact", "Owner", "Resolution", "Closed"] } },
+
+    { "id": "decision", "type": "decision", "layout": "record",
+      "subtitle": "What was decided, on what basis, and by whom",
+      "repeat_labels": ["Decision Log One", "Decision Log Two"],
+      "elements": { "rows": 15, "chips": "raci",
+        "columns": ["Date", "The Decision", "Made By", "What We Believed", "Alternative Rejected"] } },
+
+    { "id": "change", "type": "change", "layout": "record",
+      "subtitle": "Scope moves. Record it or it becomes creep",
+      "repeat_labels": ["Change Request Log One", "Change Request Log Two"],
+      "elements": { "rows": 15, "chips": "scope",
+        "columns": ["Date", "Change Requested", "Requested By", "Effect On Cost", "Effect On Date", "Approved"] } },
+
+    { "id": "meeting", "type": "meeting", "layout": "agenda",
+      "subtitle": "Decisions and owners, not minutes",
+      "repeat_labels": ["Meeting Notes One", "Meeting Notes Two", "Meeting Notes Three"],
+      "elements": { "lines": 6, "rows": 7,
+        "panels": [
+          { "label": "Attending", "lines": 2 },
+          { "label": "Decision This Meeting Must Make", "lines": 2 }
+        ],
+        "action_columns": ["Action Agreed", "Owner", "By When", "Done"] } },
+
+    { "id": "progress", "type": "progress", "layout": "record",
+      "subtitle": "One line a week, honestly",
+      "repeat_labels": ["Progress Tracker One", "Progress Tracker Two"],
+      "elements": { "rows": 14, "chips": "kpi",
+        "columns": ["Week", { "label": "Tasks Closed", "numeric": true }, { "label": "Open", "numeric": true }, { "label": "Days Slipped", "numeric": true }, "Milestone Status", "On Track"] } },
+
+    { "id": "kpi", "type": "kpi", "layout": "record", "title": "KPI Dashboard",
+      "subtitle": "The numbers that describe project health",
+      "repeat_labels": ["KPI Dashboard One", "KPI Dashboard Two"],
+      "elements": { "rows": 14, "chips": "progress",
+        "columns": ["Measure", { "label": "Target", "numeric": true }, { "label": "Last Week", "numeric": true }, { "label": "This Week", "numeric": true }, "Trend", "Status"] } },
+
+    { "id": "lessons", "type": "lessons", "layout": "panels",
+      "subtitle": "Written while they are still true",
+      "repeat_labels": ["Lessons Learned One", "Lessons Learned Two"],
+      "elements": { "chips": "final", "panels": [
+        { "label": "What Worked, And Why", "lines": 4 },
+        { "label": "What Did Not, And Why", "lines": 4 },
+        { "label": "What We Underestimated", "lines": 3 },
+        { "label": "Carry Into The Next Project", "lines": 4 }
+      ] } },
+
+    { "id": "closure", "type": "closure", "layout": "record",
+      "subtitle": "Worked line by line. Unclosed projects leak cost for months",
+      "repeat_labels": ["Closure Checklist One", "Closure Checklist Two", "Closure Checklist Three"],
+      "elements": { "rows": 16, "chips": "final",
+        "columns": ["Closure Step", "Owner", "Evidence It Is Done", "Due", "Signed Off"],
+        "notice": "Cover deliverables accepted, invoices raised and paid, access and licences revoked, files archived, contractors released, and the team formally stood down." } },
+
+    { "id": "final", "type": "final", "layout": "panels",
+      "subtitle": "Run while people still remember what actually happened",
+      "repeat_labels": ["Final Project Review One", "Final Project Review Two", "Final Project Review Three"],
+      "elements": { "chips": "lessons", "panels": [
+        { "label": "Delivered Against What Was Promised", "lines": 3 },
+        { "label": "Final Cost Against Budget", "lines": 2 },
+        { "label": "Final Date Against The Original", "lines": 2 },
+        { "label": "What The Client Or Sponsor Said", "lines": 3 },
+        { "label": "Would We Take This Project Again", "lines": 3 }
+      ] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Sketches And Ideas"],
+      "elements": { "lines": 23, "chips": "task" } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Project Execution Planner",
+      "subtitle": "Undated · Run It, Then Close It Properly",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}
