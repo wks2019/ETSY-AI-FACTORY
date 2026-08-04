@@ -1,0 +1,25 @@
+{
+  "$comment": "Preview and listing asset manifest. Generated assets live in dist/ and are gitignored.",
+  "product": "Morning Routine Planner",
+  "slug": "morning-routine-planner",
+  "version": "1.0",
+  "generated": "2026-08-04",
+  "assets": [
+    { "file": "morning-routine-planner-cover.png", "role": "cover", "format": "PNG", "dpi": 300, "source": "a4 page 1", "listing_position": 1 },
+    { "file": "morning-routine-planner-listing-preview.jpg", "role": "listing preview", "format": "JPEG", "quality": 90, "panels": 12, "columns": 4, "source": "a4 pages 1-12", "listing_position": 2 }
+  ],
+  "mockups_required": [
+    { "context": "desk", "shows": "printed wake-up tracker beside a cup, early natural light", "listing_position": 3 },
+    { "context": "tablet", "shows": "vision for the day open in an annotation app", "listing_position": 4 },
+    { "context": "flat lay", "shows": "routine consistency tracker, habit grid and morning journal together", "listing_position": 5 },
+    { "context": "detail", "shows": "time blocking page starting at 05:00", "listing_position": 6 },
+    { "context": "thumbnail", "shows": "cover, readable at small size", "listing_position": 7 }
+  ],
+  "mockup_rules": {
+    "honesty": "Every mockup must show the actual product. A mockup implying content the buyer will not receive is prohibited — systems/BRAND_SYSTEM.md 13",
+    "light": "Early morning light, cool and low. 017 must use warm lamp light so the two products are distinguishable at thumbnail size.",
+    "props": "maximum two, both plausible",
+    "people": "hands only, no faces"
+  },
+  "status": { "cover": "generated", "listing_preview": "generated", "mockups": "not started" }
+}

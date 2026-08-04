@@ -1,0 +1,47 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Morning Routine Planner",
+    "slug": "morning-routine-planner",
+    "subtitle": "Undated · The First Hour Decides The Rest",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "016",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 70,
+    "sizes": 4,
+    "internal_links": 1636
+  },
+  "positioning": {
+    "unit_of_planning": "the first hour of the day",
+    "scope": "waking, preparation and energy — forward-facing",
+    "one_line": "A fixed wake time, a sequence decided the night before, a short version written in advance for bad mornings, and a consistency tracker that shows within a fortnight whether you are running a routine or an intention."
+  },
+  "audience": {
+    "primary": ["People who have started a morning routine three times", "Shift workers rebuilding a wake time", "Students and early-career professionals", "Anyone whose day is owned by other people after ten"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "Wake-Up Tracker records planned against actual, snoozes, and whether the phone was touched in the first ten minutes",
+    "A short version for bad mornings, written in advance rather than improvised",
+    "Body work and mind work separated, because they fail differently",
+    "Energy tracked hourly against sleep, so the routine's actual return is visible",
+    "Routine Consistency Tracker — one year of mornings, twelve rows of thirty-one days",
+    "Time blocking runs 05:00 to 20:00, not the standard 06:00",
+    "Add-nothing-for-two-weeks rule stated on the guide page",
+    "Four sizes, verified page and link parity",
+    "Undated — start on any morning"
+  ],
+  "differs_from": {
+    "017-evening-routine-planner": "MUST NOT MIRROR. This product is forward-facing: waking, intention, preparation, energy. 017 is backward-facing: reflection, review, wind-down, sleep quality. The two share only the idea of a fixed sequence. Built as mirror images they would become a fifth overlapping pair, and the listings would be indistinguishable.",
+    "013-habit-tracker": "12 carries two Morning Habits pages inside a general habit system. This is a morning system with a habit grid inside it.",
+    "015-life-planner": "14 carries two Morning Routine pages as one life area among twelve."
+  },
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended"
+  }
+}
