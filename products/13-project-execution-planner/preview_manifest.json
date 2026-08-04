@@ -1,0 +1,26 @@
+{
+  "$comment": "Preview and listing asset manifest. Generated assets live in dist/ and are gitignored.",
+  "product": "Project Execution Planner",
+  "slug": "project-execution-planner",
+  "version": "1.0",
+  "generated": "2026-08-03",
+  "assets": [
+    { "file": "project-execution-planner-cover.png", "role": "cover", "format": "PNG", "dpi": 300, "source": "a4 page 1", "listing_position": 1 },
+    { "file": "project-execution-planner-listing-preview.jpg", "role": "listing preview", "format": "JPEG", "quality": 90, "panels": 12, "columns": 4, "source": "a4 pages 1-12", "listing_position": 2 }
+  ],
+  "mockups_required": [
+    { "context": "desk", "shows": "printed RACI matrix partly filled", "listing_position": 3 },
+    { "context": "tablet", "shows": "weekly project planner open in an annotation app", "listing_position": 4 },
+    { "context": "flat lay", "shows": "time blocking, daily task planner and closure checklist together", "listing_position": 5 },
+    { "context": "detail", "shows": "project closure checklist at full size", "listing_position": 6 },
+    { "context": "thumbnail", "shows": "cover, readable at small size and clearly distinct from product 04", "listing_position": 7 }
+  ],
+  "mockup_rules": {
+    "honesty": "Every mockup must show the actual product. A mockup implying content the buyer will not receive is prohibited — systems/BRAND_SYSTEM.md 13",
+    "differentiation": "Mockups must not reuse or resemble those of products/04-project-planner",
+    "lighting": "natural, soft, single direction",
+    "props": "maximum two, both plausible",
+    "people": "hands only, no faces"
+  },
+  "status": { "cover": "generated", "listing_preview": "generated", "mockups": "not started" }
+}

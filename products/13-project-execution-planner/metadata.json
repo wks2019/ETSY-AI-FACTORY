@@ -1,0 +1,45 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Project Execution Planner",
+    "slug": "project-execution-planner",
+    "subtitle": "Undated · Run It, Then Close It Properly",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "014",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 70,
+    "sizes": 4,
+    "internal_links": 1674
+  },
+  "positioning": {
+    "unit_of_planning": "the project week, and the closure at the end",
+    "scope": "running a project day to day and closing it formally",
+    "one_line": "For the phase after the kick-off meeting: a responsibility matrix, a weekly and daily cadence, time blocking that protects project work from reactive work, and a closure checklist that stops finished projects leaking cost."
+  },
+  "audience": {
+    "primary": ["Delivery and project managers", "Freelancers and consultants running client projects", "Agency producers", "Anyone inheriting a project already scoped by someone else"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "Responsibility Matrix (RACI) with a one-name-accountable rule",
+    "Weekly Project Planner and Daily Task Planner — the plan meets an actual calendar",
+    "Time Blocking, because project work loses every contest with reactive work",
+    "Project Closure Checklist covering access revocation, invoicing and archiving",
+    "Final Project Review separating what happened from what everyone remembers",
+    "Definition pages deliberately held to one page each",
+    "Four sizes, verified page and link parity",
+    "Undated — reusable on every project"
+  ],
+  "differs_from": {
+    "003-project-planner": "SEVERE OVERLAP — SAME CATEGORY, AND THE THINNEST DISTINCTION IN THE CATALOGUE. 04 defines and controls a project: charter, scope, requirements, WBS, gantt, sprint, kanban, budget, expenses, deliverables, communication plan. This product runs and closes one: RACI, weekly and daily cadence, time blocking, closure checklist, final review. Only six of this product's sections are genuinely absent from 04, and three of those are generic execution pages. Merging the two is the stronger commercial option."
+  },
+  "catalogue_warning": "Fourth shadow product built after an overlap was flagged. The differentiating axis is materially weaker than for 10-meeting-planner-pro or 11-goal-achievement-planner. Recommendation: merge 04 and this into one larger Project Planner rather than listing both.",
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$comment": "Build record for v1.0. Regenerated into dist/package on every build; this copy is the committed record. Directory number is build order, collection_number is catalogue position.",
+  "product": "Project Execution Planner",
+  "slug": "project-execution-planner",
+  "version": "1.0",
+  "edition": "Ultimate",
+  "collection": "Business Productivity Bundle",
+  "collection_number": "014",
+  "directory": "products/13-project-execution-planner",
+  "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+  "generated": "2026-08-03",
+  "engine": "planner_engine 2.1",
+  "schema": "1.1",
+  "theme": "neutral",
+  "sizes": [
+    { "size": "a4", "file": "project-execution-planner-a4.pdf", "pages": 70, "links": 1674, "bookmarks": 70 },
+    { "size": "a5", "file": "project-execution-planner-a5.pdf", "pages": 70, "links": 1674, "bookmarks": 70 },
+    { "size": "us_letter", "file": "project-execution-planner-us_letter.pdf", "pages": 70, "links": 1674, "bookmarks": 70 },
+    { "size": "half_letter", "file": "project-execution-planner-half_letter.pdf", "pages": 70, "links": 1674, "bookmarks": 70 }
+  ],
+  "fonts": {
+    "display": "Cormorant Garamond",
+    "body": "Inter",
+    "licence": "SIL Open Font License 1.1",
+    "embedding": "subset, Type0, live text"
+  },
+  "layouts_used": ["cover", "prose", "index", "panels", "record", "timeline", "week", "day", "ledger", "agenda", "notes"],
+  "engine_modifications": "none",
+  "schema_modifications": "none",
+  "new_renderers": 0,
+  "blockers_found": 0,
+  "verification": {
+    "page_parity": true,
+    "link_parity": true,
+    "bookmark_parity": true,
+    "schema_valid": true,
+    "literal_colours": 0,
+    "contrast_pairings_checked": 9,
+    "contrast_failures": 0,
+    "dead_link_targets": 0,
+    "unresolved_pdf_destinations": 0,
+    "named_destinations": 70,
+    "archive_extraction_test": "passed",
+    "passed_first_build": true,
+    "agenda_us_letter_note": "agenda page held to two panels and no chips, per the ceiling established after the failures in products 05 and 10. Verified visually at US Letter."
+  },
+  "outstanding": [
+    "CATALOGUE RISK — overlaps products/04-project-planner. Fourth overlapping pair. The differentiating axis here is thinner than for 10 or 11 and merging into a single larger product is the stronger option.",
+    "Canva import verification — manual",
+    "Physical print test",
+    "SEO package, keyword-separated from 04",
+    "Mockups"
+  ]
+}
