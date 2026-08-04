@@ -1,0 +1,5 @@
+name: TIME24
+description: Hour grid from 06:00 to 21:00 on the day renderer.
+elements:
+  hour_start: 6
+  hour_end: 21

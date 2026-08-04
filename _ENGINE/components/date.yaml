@@ -1,0 +1,5 @@
+name: DATE
+description: A single dated line at the top of a page.
+elements:
+  panels:
+    - {label: Date, lines: 1}

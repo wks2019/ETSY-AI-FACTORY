@@ -1,0 +1,14 @@
+name: MEETING_STANDARD
+description: Agenda page with an action table. Held to two panels and no chip
+  row — four panels plus notes plus actions plus chips overflows at US Letter,
+  which is how products 05 and 10 failed the link parity gate.
+page:
+  layout: agenda
+  subtitle: Decisions and owners, not minutes
+  elements:
+    lines: 6
+    rows: 7
+    action_columns: [Action Agreed, Owner, By When, Done]
+    panels:
+      - {label: Attending, lines: 2}
+      - {label: Decision This Meeting Must Make, lines: 2}

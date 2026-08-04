@@ -1,0 +1,6 @@
+name: NOTES_STANDARD
+description: Open writing page.
+uses: [NOTE]
+page:
+  layout: notes
+  subtitle: Open space

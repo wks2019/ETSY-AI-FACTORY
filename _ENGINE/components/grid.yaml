@@ -1,0 +1,5 @@
+name: GRID
+description: Generic six-column record table.
+elements:
+  rows: 15
+  columns: [Item, Detail, Owner, Date, Status, Done]

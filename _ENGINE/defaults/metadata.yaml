@@ -1,0 +1,16 @@
+# Shared default metadata. Engine 2.1 section 5.
+# A product declares only what differs from these values.
+schema: "1.1"
+language: en
+sizes: [a4, a5, us_letter, half_letter]
+product:
+  collection: Business Collection
+  edition: Ultimate
+  version: "1.0"
+  author: wks2019
+  standard: BUSINESS_PLANNER_STANDARD 1.0
+design:
+  theme: neutral
+  fonts:
+    display: Cormorant Garamond
+    body: Inter

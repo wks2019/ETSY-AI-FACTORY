@@ -1,0 +1,6 @@
+name: HABIT
+description: Ten habits across thirty-one days.
+elements:
+  columns: 31
+  items: [Habit one, Habit two, Habit three, Habit four, Habit five,
+          Habit six, Habit seven, Habit eight, Habit nine, Habit ten]

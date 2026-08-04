@@ -1,0 +1,8 @@
+name: REFLECT
+description: Four-panel end-of-period reflection.
+elements:
+  panels:
+    - {label: What Went Well, lines: 3}
+    - {label: What Did Not, lines: 3}
+    - {label: What I Learned, lines: 3}
+    - {label: One Change Next Time, lines: 2}

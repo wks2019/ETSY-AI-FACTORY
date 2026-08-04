@@ -1,0 +1,7 @@
+name: TASK
+description: Three-priority block used across daily pages.
+elements:
+  panels:
+    - {label: Top Priority, lines: 2}
+    - {label: Second Priority, lines: 2}
+    - {label: Third Priority, lines: 2}

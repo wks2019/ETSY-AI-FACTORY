@@ -1,0 +1,7 @@
+name: MONTHLY_STANDARD
+description: Six-row month calendar.
+page:
+  layout: month
+  subtitle: The month at a glance
+  elements:
+    rows: 6

@@ -1,0 +1,7 @@
+name: GOAL
+description: Three-goal block with a stated number.
+elements:
+  panels:
+    - {label: Goal One, And Its Number, lines: 3}
+    - {label: Goal Two, And Its Number, lines: 3}
+    - {label: Goal Three, And Its Number, lines: 3}

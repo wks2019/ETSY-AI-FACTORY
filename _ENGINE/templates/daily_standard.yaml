@@ -1,0 +1,6 @@
+name: DAILY_STANDARD
+description: Daily planning page — priorities, schedule, reflection.
+uses: [TASK, REFLECT]
+page:
+  layout: panels
+  subtitle: Two minutes, the night before

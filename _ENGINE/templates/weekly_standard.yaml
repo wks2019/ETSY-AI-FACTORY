@@ -1,0 +1,8 @@
+name: WEEKLY_STANDARD
+description: Seven-day week grid with four writing lines per day.
+page:
+  layout: week
+  subtitle: The week at a glance
+  elements:
+    lines: 4
+    day_labels: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]

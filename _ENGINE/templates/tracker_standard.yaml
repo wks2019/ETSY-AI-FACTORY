@@ -1,0 +1,6 @@
+name: TRACKER_STANDARD
+description: Thirty-one day habit grid.
+uses: [HABIT]
+page:
+  layout: tracker
+  subtitle: Thirty-one days

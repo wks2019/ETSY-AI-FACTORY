@@ -1,0 +1,5 @@
+name: RECORD_STANDARD
+description: Six-column record table.
+uses: [GRID]
+page:
+  layout: record

@@ -1,0 +1,6 @@
+name: CHK12
+description: Twelve-row tick grid across seven days.
+elements:
+  columns: 7
+  items: [Item one, Item two, Item three, Item four, Item five, Item six,
+          Item seven, Item eight, Item nine, Item ten, Item eleven, Item twelve]
