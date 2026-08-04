@@ -1,0 +1,342 @@
+{
+  "schema": "1.1",
+  "language": "en",
+  "product": {
+    "name": "Life Planner",
+    "slug": "life-planner",
+    "collection": "Business Collection",
+    "subtitle": "Undated · Every Area, One System",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "author": "wks2019",
+    "standard": "BUSINESS_PLANNER_STANDARD 1.0",
+    "keywords": ["life planner printable", "wheel of life assessment", "undated life planner", "personal planner printable", "self care planner", "health and wellness planner", "gratitude journal printable", "hyperlinked life planner", "budget and savings planner", "bucket list printable", "goodnotes life planner", "all in one planner", "personal development planner"]
+  },
+  "design": { "theme": "neutral", "fonts": { "display": "Cormorant Garamond", "body": "Inter" } },
+  "sizes": ["a4", "a5", "us_letter", "half_letter"],
+  "navigation": { "tabs": [
+    { "label": "Index", "target": "index" },
+    { "label": "Wheel", "target": "wheel" },
+    { "label": "Monthly", "target": "monthly" },
+    { "label": "Weekly", "target": "weekly" },
+    { "label": "Daily", "target": "daily" },
+    { "label": "Health", "target": "health" },
+    { "label": "Money", "target": "budget" },
+    { "label": "Review", "target": "monthlyreview" }
+  ] },
+  "pages": [
+    { "id": "cover", "type": "cover", "layout": "cover", "title": "Life Planner" },
+
+    { "id": "welcome", "type": "welcome", "layout": "prose", "title": "Welcome",
+      "subtitle": "One system for the whole of it",
+      "elements": { "blocks": [
+        { "heading": "Why a single planner", "paragraphs": ["Most people run their life across four systems that do not speak to each other: a work calendar, a fitness app, a banking app, and good intentions. The gaps between them are where things get dropped, and the dropped things are almost always the personal ones."] },
+        { "heading": "What is inside", "items": ["A wheel of life assessment, scored, so you can see which areas are actually thin", "Annual down to daily planning, in the same book as everything else", "Health, sleep, food and movement tracked without a separate app", "Money — an overview, a budget and savings goals", "People, learning, travel and the things you keep meaning to do"] },
+        { "heading": "You will not use all of it", "paragraphs": ["That is the design. Print or fill the sections that match the year you are having. A planner that demands completion gets abandoned in February; one you can use partially gets used in November."] },
+        { "heading": "Start with the wheel", "paragraphs": ["Score the areas before you set a single goal. Effort spent on an area already scoring eight returns very little. The same effort on an area scoring three changes the year."] }
+      ] } },
+
+    { "id": "licence", "type": "licence", "layout": "prose", "title": "Licence",
+      "subtitle": "What you may and may not do",
+      "elements": { "blocks": [
+        { "heading": "You may", "items": ["Use this planner for your own life", "Print unlimited copies for your own use", "Annotate digitally on any device you own", "Fill it alongside a partner or family member on your own copy"] },
+        { "heading": "You may not", "items": ["Resell, share or redistribute the files in any form", "Sell printed copies", "Include the files in another product or bundle", "Claim the design as your own"] },
+        { "heading": "Fonts", "paragraphs": ["Cormorant Garamond and Inter are used under the SIL Open Font License 1.1. That licence covers the fonts only, not this document. All other design elements are original work."] }
+      ] } },
+
+    { "id": "instructions", "type": "instructions", "layout": "prose", "title": "Instructions",
+      "subtitle": "An evening to set up, ten minutes a week to keep",
+      "elements": { "blocks": [
+        { "heading": "Choose your size", "paragraphs": ["Four sizes are included and all four contain identical pages. A4 and US Letter suit the desk. A5 and Half Letter suit a bag or a tablet, and print two-up on a full sheet."] },
+        { "heading": "Set up once", "ordered": true, "items": ["Score the Wheel of Life honestly and quickly", "Write the life vision and the mission statement", "Name your core values — five at most, or they are not values", "Set annual goals only in the areas the wheel says are thin", "Fill the morning and evening routine pages"] },
+        { "heading": "Keep it running", "ordered": true, "items": ["Daily planner and habit tracker — two minutes", "Weekly planner on a Sunday", "Monthly planner and monthly review at the turn of the month", "Annual review once, properly, in December"] },
+        { "heading": "Digital use", "ordered": true, "items": ["Import the PDF as a document, not as an image", "Switch to read mode to tap links, write mode to write", "Use the tabs to move between life areas from any page"] }
+      ] } },
+
+    { "id": "index", "type": "index", "layout": "index", "title": "Contents",
+      "subtitle": "Vision and planning",
+      "links": ["index-life", "index-grow"],
+      "elements": { "column_break": 16, "include_types": ["vision", "mission", "values", "wheel", "annual", "quarterly", "monthly", "weekly", "daily"] } },
+
+    { "id": "index-life", "type": "index", "layout": "index", "title": "Contents — Living",
+      "subtitle": "Body, mind, people and money",
+      "links": ["index", "index-grow"],
+      "elements": { "column_break": 16, "include_types": ["morning", "evening", "habits", "health", "fitness", "nutrition", "water", "sleep", "mental", "gratitude", "selfcare", "relationship", "family", "finance", "budget", "savings"] } },
+
+    { "id": "index-grow", "type": "index", "layout": "index", "title": "Contents — Growing",
+      "subtitle": "Learning, doing and reviewing",
+      "links": ["index", "index-life"],
+      "elements": { "column_break": 16, "include_types": ["development", "reading", "learning", "travel", "bucket", "reflection", "monthlyreview", "annualreview", "dashboard", "notes"] } },
+
+    { "id": "vision", "type": "vision", "layout": "panels",
+      "subtitle": "Where this is all going",
+      "repeat_labels": ["Life Vision One", "Life Vision Two"],
+      "elements": { "chips": "mission", "panels": [
+        { "label": "What I Want True In Five Years", "lines": 4 },
+        { "label": "Who I Want To Be Around", "lines": 3 },
+        { "label": "How I Want My Days To Feel", "lines": 3 },
+        { "label": "What I Am Willing To Give Up", "lines": 3 }
+      ] } },
+
+    { "id": "mission", "type": "mission", "layout": "panels", "title": "Personal Mission Statement",
+      "subtitle": "One paragraph you could say out loud",
+      "elements": { "chips": "values", "panels": [
+        { "label": "What I Am Here To Do", "lines": 4 },
+        { "label": "Who It Is For", "lines": 3 },
+        { "label": "How I Want To Work And Live", "lines": 3 },
+        { "label": "The One Sentence Version", "lines": 2 }
+      ] } },
+
+    { "id": "values", "type": "values", "layout": "panels", "title": "Core Values",
+      "subtitle": "Five at most, or they are not values",
+      "elements": { "chips": "annual", "panels": [
+        { "label": "Value One, And What It Costs Me", "lines": 3 },
+        { "label": "Value Two, And What It Costs Me", "lines": 3 },
+        { "label": "Value Three, And What It Costs Me", "lines": 3 },
+        { "label": "Value Four, And What It Costs Me", "lines": 3 },
+        { "label": "Value Five, And What It Costs Me", "lines": 3 }
+      ] } },
+
+    { "id": "wheel", "type": "wheel", "layout": "tracker",
+      "subtitle": "Score each area one to ten. Quickly, and honestly",
+      "repeat_labels": ["Wheel Of Life One", "Wheel Of Life Two"],
+      "elements": { "columns": 10, "chips": "annual",
+        "items": ["Career or business", "Money", "Health and fitness", "Rest and sleep", "Family", "Friendships", "Romance", "Personal growth", "Fun and recreation", "Home environment", "Contribution", "Spirituality"] } },
+
+    { "id": "annual", "type": "annual", "layout": "panels",
+      "subtitle": "Set only where the wheel says you are thin",
+      "repeat_labels": ["Annual Life Goals One", "Annual Life Goals Two"],
+      "elements": { "chips": "quarterly", "panels": [
+        { "label": "Goal One, And Which Life Area", "lines": 3 },
+        { "label": "Goal Two, And Which Life Area", "lines": 3 },
+        { "label": "Goal Three, And Which Life Area", "lines": 3 },
+        { "label": "Waiting Until Next Year", "lines": 3 },
+        { "label": "The One That Decides The Year", "lines": 2 }
+      ] } },
+
+    { "id": "quarterly", "type": "quarterly", "layout": "panels", "title": "Quarterly Planning",
+      "subtitle": "Ninety days is long enough to change something",
+      "elements": { "chips": "monthly", "panels": [
+        { "label": "This Quarter's Focus", "lines": 2 },
+        { "label": "What Has To Happen By Week Six", "lines": 3 },
+        { "label": "Already Booked Against My Time", "lines": 3 },
+        { "label": "Paused Until Next Quarter", "lines": 3 },
+        { "label": "How I Will Know It Worked", "lines": 2 }
+      ] } },
+
+    { "id": "monthly", "type": "monthly", "layout": "month",
+      "subtitle": "The month at a glance",
+      "repeat_labels": ["Monthly Planner One", "Monthly Planner Two", "Monthly Planner Three"],
+      "elements": { "rows": 6, "chips": "weekly" } },
+
+    { "id": "weekly", "type": "weekly", "layout": "week",
+      "subtitle": "Seven days, and what is actually yours",
+      "repeat_labels": ["Weekly Planner One", "Weekly Planner Two", "Weekly Planner Three"],
+      "elements": { "lines": 4, "chips": "daily",
+        "day_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] } },
+
+    { "id": "daily", "type": "daily", "layout": "panels",
+      "subtitle": "Two minutes, the night before",
+      "repeat_labels": ["Daily Planner One", "Daily Planner Two", "Daily Planner Three"],
+      "elements": { "chips": "habits", "panels": [
+        { "label": "The One Thing That Must Happen", "lines": 2 },
+        { "label": "Then Everything Else", "lines": 5 },
+        { "label": "For Me, Not For Anyone Else", "lines": 2 },
+        { "label": "Who I Want To Speak To Today", "lines": 2 },
+        { "label": "Good Today, However Small", "lines": 3 }
+      ] } },
+
+    { "id": "morning", "type": "morning", "layout": "panels",
+      "subtitle": "The first hour, decided in advance",
+      "repeat_labels": ["Morning Routine One", "Morning Routine Two"],
+      "elements": { "chips": "habits", "panels": [
+        { "label": "Wake Time, And What Happens First", "lines": 2 },
+        { "label": "The Sequence, In Order", "lines": 5 },
+        { "label": "What I Do Not Touch Until It Is Done", "lines": 2 },
+        { "label": "The Short Version For Bad Mornings", "lines": 3 }
+      ] } },
+
+    { "id": "evening", "type": "evening", "layout": "panels",
+      "subtitle": "The last hour decides tomorrow's first",
+      "repeat_labels": ["Evening Routine One", "Evening Routine Two"],
+      "elements": { "chips": "sleep", "panels": [
+        { "label": "The Cue That Starts The Wind Down", "lines": 2 },
+        { "label": "The Sequence, In Order", "lines": 5 },
+        { "label": "Screens Off At", "lines": 1 },
+        { "label": "Prepared Tonight For Tomorrow", "lines": 3 }
+      ] } },
+
+    { "id": "habits", "type": "habits", "layout": "tracker",
+      "subtitle": "Thirty-one days. The behaviour beneath everything else",
+      "repeat_labels": ["Habit Tracker One", "Habit Tracker Two"],
+      "elements": { "columns": 31, "chips": "dashboard",
+        "items": ["Habit one", "Habit two", "Habit three", "Habit four", "Habit five", "Habit six", "Habit seven", "Habit eight", "Habit nine", "Habit ten"] } },
+
+    { "id": "health", "type": "health", "layout": "panels",
+      "subtitle": "The baseline everything else depends on",
+      "repeat_labels": ["Health And Wellness One", "Health And Wellness Two"],
+      "elements": { "chips": "fitness", "panels": [
+        { "label": "How I Feel Physically Right Now", "lines": 3 },
+        { "label": "Appointments And Checks Due", "lines": 3 },
+        { "label": "Medication Or Supplements", "lines": 2 },
+        { "label": "What I Know I Should Change", "lines": 3 },
+        { "label": "One Thing I Will Actually Do", "lines": 2 }
+      ] } },
+
+    { "id": "fitness", "type": "fitness", "layout": "record",
+      "subtitle": "What you did, not what you planned",
+      "repeat_labels": ["Fitness Tracker One", "Fitness Tracker Two"],
+      "elements": { "rows": 16, "chips": "health",
+        "columns": ["Date", "Activity", { "label": "Minutes", "numeric": true }, "Intensity", "How I Felt After", "Repeat"] } },
+
+    { "id": "nutrition", "type": "nutrition", "layout": "record",
+      "subtitle": "Meals planned, and how they actually went",
+      "repeat_labels": ["Nutrition Planner One", "Nutrition Planner Two"],
+      "elements": { "rows": 15, "chips": "water",
+        "columns": ["Day", "Breakfast", "Lunch", "Dinner", "Snacks", "Notes"] } },
+
+    { "id": "water", "type": "water", "layout": "tracker", "title": "Water Intake Tracker",
+      "subtitle": "Thirty-one days, eight glasses",
+      "elements": { "columns": 31, "chips": "nutrition",
+        "items": ["Glass one", "Glass two", "Glass three", "Glass four", "Glass five", "Glass six", "Glass seven", "Glass eight"] } },
+
+    { "id": "sleep", "type": "sleep", "layout": "record",
+      "subtitle": "Hours, quality, and what preceded them",
+      "repeat_labels": ["Sleep Tracker One", "Sleep Tracker Two"],
+      "elements": { "rows": 16, "chips": "evening",
+        "columns": ["Date", "To Bed", "Woke", { "label": "Hours", "numeric": true }, { "label": "Quality 1-5", "numeric": true }, "What Affected It"] } },
+
+    { "id": "mental", "type": "mental", "layout": "notes",
+      "subtitle": "Whatever is actually going on",
+      "repeat_labels": ["Mental Wellness Journal One", "Mental Wellness Journal Two"],
+      "elements": { "lines": 23, "chips": "selfcare" } },
+
+    { "id": "gratitude", "type": "gratitude", "layout": "notes",
+      "subtitle": "Three specific things. Specific is the whole point",
+      "repeat_labels": ["Gratitude Journal One", "Gratitude Journal Two"],
+      "elements": { "lines": 23, "chips": "reflection" } },
+
+    { "id": "selfcare", "type": "selfcare", "layout": "panels", "title": "Self-Care Planner",
+      "subtitle": "Booked, not hoped for",
+      "elements": { "chips": "mental", "panels": [
+        { "label": "What Actually Restores Me", "lines": 4 },
+        { "label": "What I Mistake For Rest", "lines": 3 },
+        { "label": "Booked This Month, With Dates", "lines": 4 },
+        { "label": "The Early Sign I Am Running Empty", "lines": 3 }
+      ] } },
+
+    { "id": "relationship", "type": "relationship", "layout": "record",
+      "subtitle": "The people who matter, and when you last spoke",
+      "repeat_labels": ["Relationship Planner One", "Relationship Planner Two"],
+      "elements": { "rows": 16, "chips": "family",
+        "columns": ["Name", "How We Are", "Last Spoke", "How Often I Want To", "Next Contact", "Occasion Coming Up"] } },
+
+    { "id": "family", "type": "family", "layout": "panels", "title": "Family Planner",
+      "subtitle": "The shared calendar and the shared load",
+      "elements": { "chips": "relationship", "panels": [
+        { "label": "Coming Up This Month", "lines": 4 },
+        { "label": "Who Does What At Home", "lines": 4 },
+        { "label": "Something Together, Booked", "lines": 3 },
+        { "label": "Anything We Need To Talk About", "lines": 3 }
+      ] } },
+
+    { "id": "finance", "type": "finance", "layout": "panels", "title": "Financial Overview",
+      "subtitle": "The whole picture on one page",
+      "elements": { "chips": "budget", "panels": [
+        { "label": "Money In, Per Month", "lines": 2 },
+        { "label": "Fixed Costs", "lines": 3 },
+        { "label": "What Is Owed, And To Whom", "lines": 3 },
+        { "label": "What Is Saved", "lines": 2 },
+        { "label": "The Number That Would Change Things", "lines": 2 }
+      ] } },
+
+    { "id": "budget", "type": "budget", "layout": "ledger",
+      "subtitle": "Planned against actual, line by line",
+      "repeat_labels": ["Budget Planner One", "Budget Planner Two"],
+      "elements": { "rows": 15, "totals": true, "chips": "savings",
+        "columns": ["Line Item", "Category", { "label": "Planned", "numeric": true }, { "label": "Actual", "numeric": true }, { "label": "Difference", "numeric": true }, "Fixed"] } },
+
+    { "id": "savings", "type": "savings", "layout": "record", "title": "Savings Goals",
+      "subtitle": "What it is for, and when it is needed",
+      "elements": { "rows": 14, "chips": "finance",
+        "columns": ["Saving For", { "label": "Target", "numeric": true }, { "label": "Saved", "numeric": true }, { "label": "Per Month", "numeric": true }, "Needed By", "On Track"] } },
+
+    { "id": "development", "type": "development", "layout": "panels",
+      "subtitle": "Who you are becoming, on purpose",
+      "repeat_labels": ["Personal Development One", "Personal Development Two"],
+      "elements": { "chips": "learning", "panels": [
+        { "label": "The Skill I Am Building This Year", "lines": 3 },
+        { "label": "Why It Matters To Me", "lines": 3 },
+        { "label": "How I Practise It Weekly", "lines": 3 },
+        { "label": "Who Is Ahead That I Can Learn From", "lines": 2 },
+        { "label": "Evidence I Have Improved", "lines": 3 }
+      ] } },
+
+    { "id": "reading", "type": "reading", "layout": "record",
+      "subtitle": "What you read, and what stayed with you",
+      "repeat_labels": ["Reading Tracker One", "Reading Tracker Two"],
+      "elements": { "rows": 16, "chips": "learning",
+        "columns": ["Title", "Author", "Started", "Finished", { "label": "Rating", "numeric": true }, "The One Idea I Kept"] } },
+
+    { "id": "learning", "type": "learning", "layout": "record",
+      "subtitle": "Courses, skills, and whether you finished",
+      "repeat_labels": ["Learning Planner One", "Learning Planner Two"],
+      "elements": { "rows": 15, "chips": "development",
+        "columns": ["What I Am Learning", "Source Or Course", "Hours Per Week", "Started", "Finished", "Used It Yet"] } },
+
+    { "id": "travel", "type": "travel", "layout": "record", "title": "Travel Planner",
+      "subtitle": "Where, when, and what it will cost",
+      "elements": { "rows": 15, "chips": "bucket",
+        "columns": ["Destination", "When", "Who With", { "label": "Budget", "numeric": true }, "Booked", "Notes"] } },
+
+    { "id": "bucket", "type": "bucket", "layout": "record", "title": "Bucket List",
+      "subtitle": "With a date, or it is a daydream",
+      "elements": { "rows": 16, "chips": "travel",
+        "columns": ["What", "Why It Matters", "Roughly When", { "label": "Cost", "numeric": true }, "First Step", "Done"] } },
+
+    { "id": "reflection", "type": "reflection", "layout": "panels",
+      "subtitle": "Honest before optimistic",
+      "repeat_labels": ["Reflection One", "Reflection Two"],
+      "elements": { "chips": "monthlyreview", "panels": [
+        { "label": "What Actually Happened", "lines": 4 },
+        { "label": "What I Am Pleased About", "lines": 3 },
+        { "label": "What I Am Avoiding", "lines": 3 },
+        { "label": "One Thing I Will Change", "lines": 2 }
+      ] } },
+
+    { "id": "monthlyreview", "type": "monthlyreview", "layout": "panels",
+      "subtitle": "Twenty minutes at the turn of the month",
+      "repeat_labels": ["Monthly Review One", "Monthly Review Two"],
+      "elements": { "chips": "dashboard", "panels": [
+        { "label": "Which Life Areas Moved, Up Or Down", "lines": 3 },
+        { "label": "Habits Held, And The One That Slipped", "lines": 3 },
+        { "label": "Money — Better Or Worse Than Planned", "lines": 2 },
+        { "label": "People I Neglected", "lines": 2 },
+        { "label": "Next Month's One Priority", "lines": 2 }
+      ] } },
+
+    { "id": "annualreview", "type": "annualreview", "layout": "panels", "title": "Annual Review",
+      "subtitle": "Once a year, properly, with the pages in front of you",
+      "elements": { "chips": "vision", "panels": [
+        { "label": "What This Year Actually Contained", "lines": 4 },
+        { "label": "The Wheel Then Against The Wheel Now", "lines": 3 },
+        { "label": "What I Finished", "lines": 3 },
+        { "label": "What I Abandoned, And Whether I Mind", "lines": 3 },
+        { "label": "What Next Year Is For", "lines": 3 }
+      ] } },
+
+    { "id": "dashboard", "type": "dashboard", "layout": "record",
+      "subtitle": "Twelve months. The whole year on one page",
+      "repeat_labels": ["Life Dashboard One", "Life Dashboard Two"],
+      "elements": { "rows": 13, "chips": "monthlyreview",
+        "columns": ["Month", { "label": "Habits %", "numeric": true }, { "label": "Movement", "numeric": true }, { "label": "Sleep Avg", "numeric": true }, { "label": "Saved", "numeric": true }, "Wheel Score", "Verdict"] } },
+
+    { "id": "notes", "type": "notes", "layout": "notes", "subtitle": "Open space",
+      "repeat_labels": ["Notes", "Notes"],
+      "elements": { "lines": 23, "chips": "daily" } },
+
+    { "id": "backcover", "type": "backcover", "layout": "cover", "title": "Life Planner",
+      "subtitle": "Undated · Every Area, One System",
+      "elements": { "eyebrow": "Business Collection" } }
+  ]
+}

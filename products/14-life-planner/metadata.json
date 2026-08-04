@@ -1,0 +1,47 @@
+{
+  "$comment": "Product metadata for listing and catalogue use. Not read by the engine.",
+  "product": {
+    "name": "Life Planner",
+    "slug": "life-planner",
+    "subtitle": "Undated · Every Area, One System",
+    "collection": "Business Productivity Bundle",
+    "collection_number": "015",
+    "edition": "Ultimate",
+    "version": "1.0",
+    "dated": false,
+    "pages": 70,
+    "sizes": 4,
+    "internal_links": 1594
+  },
+  "positioning": {
+    "unit_of_planning": "the life area",
+    "scope": "the whole of a personal life, in one book",
+    "one_line": "Twelve life areas scored before a single goal is set, then annual to daily planning, health, sleep, money, people, learning and travel in the same system."
+  },
+  "audience": {
+    "primary": ["People running life across four apps that do not talk to each other", "New-year planners who want one book instead of five", "Bullet journal users wanting structure", "Anyone in a life transition"],
+    "devices": ["iPad with GoodNotes or Notability", "Home or office printer"],
+    "markets": ["US", "UK", "CA", "AU"]
+  },
+  "differentiators": [
+    "Wheel of Life scored across twelve areas before any goal is set",
+    "Health, sleep, food, water and movement tracked without a separate app",
+    "Money — overview, budget with totals, and savings goals",
+    "Relationship planner recording when you last actually spoke to people",
+    "Reading, learning, travel and a bucket list with first steps and dates",
+    "Life Dashboard — twelve months of habits, movement, sleep and savings on one page",
+    "41 distinct page types, the widest of any product in the collection",
+    "Four sizes, verified page and link parity",
+    "Undated — start in any month"
+  ],
+  "differs_from": {
+    "whole_collection": "FIRST PERSONAL-LIFE PRODUCT. Every other product in the catalogue is business or work-productivity facing. This is the only one covering health, relationships, family, personal finance and wellbeing. No catalogue conflict.",
+    "013-habit-tracker": "12 is a habit system in depth. This carries a single 31-day habit grid as one section of a much wider planner.",
+    "012-goal-achievement-planner": "11 is goal selection and review for any goal. This is the life-wide context those goals sit inside."
+  },
+  "compatibility": {
+    "apps": ["GoodNotes", "Notability", "Noteshelf", "Xodo", "any PDF annotation app"],
+    "canva": "import supported — verification pending",
+    "print": "100% scale, no bleed required, 100–120 gsm recommended"
+  }
+}

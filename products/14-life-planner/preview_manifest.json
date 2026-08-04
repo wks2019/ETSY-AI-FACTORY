@@ -1,0 +1,26 @@
+{
+  "$comment": "Preview and listing asset manifest. Generated assets live in dist/ and are gitignored.",
+  "product": "Life Planner",
+  "slug": "life-planner",
+  "version": "1.0",
+  "generated": "2026-08-04",
+  "assets": [
+    { "file": "life-planner-cover.png", "role": "cover", "format": "PNG", "dpi": 300, "source": "a4 page 1", "listing_position": 1 },
+    { "file": "life-planner-listing-preview.jpg", "role": "listing preview", "format": "JPEG", "quality": 90, "panels": 12, "columns": 4, "source": "a4 pages 1-12", "listing_position": 2 }
+  ],
+  "mockups_required": [
+    { "context": "desk", "shows": "printed wheel of life partly scored", "listing_position": 3 },
+    { "context": "tablet", "shows": "weekly planner open in an annotation app", "listing_position": 4 },
+    { "context": "flat lay", "shows": "habit tracker, sleep tracker and budget planner together", "listing_position": 5 },
+    { "context": "detail", "shows": "life dashboard at full size", "listing_position": 6 },
+    { "context": "thumbnail", "shows": "cover, readable at small size", "listing_position": 7 }
+  ],
+  "mockup_rules": {
+    "honesty": "Every mockup must show the actual product. A mockup implying content the buyer will not receive is prohibited — systems/BRAND_SYSTEM.md 13",
+    "tone": "Warmer and more domestic than the business products. This is the only personal-life product in the catalogue and its imagery should say so.",
+    "lighting": "natural, soft, single direction",
+    "props": "maximum two, both plausible",
+    "people": "hands only, no faces"
+  },
+  "status": { "cover": "generated", "listing_preview": "generated", "mockups": "not started" }
+}
